@@ -1,0 +1,258 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_good_distance"
+    android:orientation="vertical">
+
+    <com.ecjia.widgets.ECJiaTopView
+        android:id="@+id/mypurse_topview"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_new_distance"
+        android:background="@drawable/new_good_distance"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/new_nothing_bg"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="@color/line_long_dark"/>
+
+
+        <LinearLayout
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:id="@+id/mypurse_purse_item"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/selecter_newitem_press"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/mypurse"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:text="@string/purse_mypurse"
+                android:textColor="#FF666666"
+                android:textSize="@dimen/list_item_title"/>
+
+            <TextView
+                android:id="@+id/my_purse"
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:paddingBottom="3dp"
+                android:text="￥0.00"
+                android:textColor="#FF0000"
+                android:textSize="@dimen/list_item_title"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/header_right_arrow"
+                android:visibility="visible"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="50dp"
+            android:background="@color/line_long_dark"/>
+
+
+        <LinearLayout
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:id="@+id/mypurse_redpaper_item"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/selecter_newitem_press"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/my_redpaper"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:text="@string/purse_redpaper"
+                android:textColor="#FF666666"
+                android:textSize="@dimen/list_item_title"/>
+
+            <TextView
+                android:layout_marginRight="5dp"
+                android:id="@+id/my_redpaper"
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:gravity="center"
+                android:paddingBottom="3dp"
+                android:text="@string/purse_zero"
+                android:textColor="#FF0000"
+                android:textSize="@dimen/list_item_title"/>
+
+            <ImageView
+                android:id="@+id/iv_redpager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/header_right_arrow"
+                android:visibility="visible"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="50dp"
+            android:background="@color/line_long_dark"/>
+
+        <LinearLayout
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:id="@+id/add_redpaper_item"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/selecter_newitem_press"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/mypurse_add_redpaper"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:text="@string/mypurse_add_redpper"
+                android:textColor="#FF666666"
+                android:textSize="@dimen/list_item_title"/>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/header_right_arrow"
+                android:visibility="visible"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="50dp"
+            android:background="@color/line_long_dark"/>
+
+
+        <LinearLayout
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:id="@+id/mypurse_integral_item"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/selecter_newitem_press"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/my_integral"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:text="@string/purse_integral"
+                android:textColor="#FF666666"
+                android:textSize="@dimen/list_item_title"/>
+
+            <TextView
+                android:layout_marginRight="5dp"
+                android:id="@+id/my_integral"
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:gravity="center"
+                android:paddingBottom="3dp"
+                android:text="0"
+                android:textColor="#FF0000"
+                android:textSize="@dimen/list_item_title"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/header_right_arrow"
+                android:visibility="gone"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="50dp"
+            android:background="@color/line_long_dark"/>
+
+
+        <LinearLayout
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:id="@+id/mypurse_win_integral_item"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/selecter_newitem_press"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/win_integral"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:text="@string/invitation_get_reward"
+                android:textColor="#FF666666"
+                android:textSize="@dimen/list_item_title"/>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/header_right_arrow"
+                android:visibility="visible"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_long_dark"/>
+    </LinearLayout>
+
+</LinearLayout>

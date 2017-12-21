@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ecjia.view.adapter.adaptercell.MyHotCell xmlns:android="http://schemas.android.com/apk/res/android"
+                                              android:layout_width="match_parent"
+                                              android:layout_height="wrap_content"
+                                              android:layout_marginTop="5dp"
+                                              android:background="@drawable/new_nothing_bg"
+                                              android:orientation="horizontal" >
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="0.5" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:id="@+id/fl_hot_left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <com.ecjia.widgets.webimageview.WebImageView
+                    android:id="@+id/new_gooditem_photo1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/default_image"
+                    android:scaleType="centerCrop"
+                    />
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="right"
+                    android:src="@drawable/promote_new_tag"
+                    android:gravity="center"
+                     />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/new_good_info1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="5dp"
+                android:lines="2"
+                android:textSize="13dp"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/new_shop_price1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:maxWidth="140dp"
+                android:textColor="#FFFF0000" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="0.5" >
+
+        <LinearLayout
+            android:id="@+id/home_myhotcell2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:id="@+id/fl_hot_right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <com.ecjia.widgets.webimageview.WebImageView
+                    android:id="@+id/new_gooditem_photo2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/default_image"
+                    android:scaleType="centerCrop"
+                    />
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="right"
+                    android:src="@drawable/promote_new_tag"
+                    android:gravity="center"
+                    />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/new_good_info2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="5dp"
+                android:textSize="13dp"
+                android:lines="2"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/new_shop_price2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:maxWidth="140dp"
+                android:textColor="#FFFF0000" />
+        </LinearLayout>
+    </FrameLayout>
+
+</com.ecjia.view.adapter.adaptercell.MyHotCell>

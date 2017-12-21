@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#FFFFFF"
+              android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/goods_image_ll"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="#EEEEEE"
+        android:orientation="horizontal"
+        android:padding="0.5dp">
+
+        <ImageView
+            android:id="@+id/goods_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:scaleType="centerCrop"
+            android:textColor="#666666"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/goods_name"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="2"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="#555555"
+        android:textSize="12dp"/>
+
+    <TextView
+        android:id="@+id/goods_price"
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:singleLine="true"
+        android:text="￥0.00"
+        android:textColor="@color/my_red"
+        android:textSize="12dp"/>
+
+</LinearLayout>
+

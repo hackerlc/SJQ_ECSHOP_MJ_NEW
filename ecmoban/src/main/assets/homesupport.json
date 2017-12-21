@@ -1,0 +1,8 @@
+{
+    "support": [
+        {
+            "name": "player",
+            "method": "addPlayer"
+        }
+    ]
+}

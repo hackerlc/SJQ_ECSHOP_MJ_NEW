@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_good_distance"
+    android:orientation="vertical" >
+
+    <com.ecjia.widgets.ECJiaTopView
+        android:id="@+id/register_topview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.ecjia.widgets.ECJiaTopView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/new_nothing_bg"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_new_distance"
+                android:background="@drawable/new_good_distance" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.6dp"
+                android:background="#FFCCCCCC" />
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/log_in_user_name_icon2" />
+
+                <EditText
+                    android:id="@+id/register_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="45dp"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical"
+                    android:hint="请输入用户名"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/list_item_title" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.6dp"
+                android:layout_marginLeft="50dp"
+                android:background="#FFCCCCCC" />
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/log_in_key_icon2" />
+
+                <EditText
+                    android:id="@+id/register_password1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="45dp"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical"
+                    android:hint="@string/login_password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:password="true"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/list_item_title"/>
+            </FrameLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.6dp"
+                android:layout_marginLeft="50dp"
+                android:background="#FFCCCCCC" />
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/register_email_icon" />
+
+                <EditText
+                    android:id="@+id/register_email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="45dp"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical"
+                    android:hint="@string/register_email"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.6dp"
+                android:background="#FFCCCCCC"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/register_password2"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:hint="@string/register_confirm"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:password="true"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="@dimen/list_item_title"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.6dp"
+                android:background="#FFCCCCCC" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_new_distance"
+            android:background="@drawable/new_good_distance" />
+
+        <Button
+            android:id="@+id/register_register"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/selector_login_button"
+            android:minWidth="100dp"
+            android:text="@string/login_register"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/title_textsize" />
+    </LinearLayout>
+
+</LinearLayout>

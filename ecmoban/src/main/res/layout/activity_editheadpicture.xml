@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/shape_white_stroke_corner_unpress">
+
+        <LinearLayout
+            android:id="@+id/ll_editheadpicture_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/editheadpicture_title"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:background="#00000000"
+            android:text="@string/comment_upload_pic_tips"
+            android:textSize="12dp"
+            android:textColor="@color/new_textColor"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#ffeeeeee"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/editheadpicture_take_photo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="#00000000"
+            android:text="@string/take_photo"
+            android:textSize="@dimen/title_right_textsize"
+            android:textColor="@color/actionsheet_blue"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#ffeeeeee"/>
+
+        <TextView
+            android:id="@+id/editheadpicture_from_photos"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="#00000000"
+            android:text="@string/from_photos"
+            android:textSize="@dimen/title_right_textsize"
+            android:textColor="@color/actionsheet_blue"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/editheadpicture_cancle"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/shape_white_stroke_corner_unpress"
+        android:text="@string/button_cancel"
+        android:gravity="center"
+        android:textSize="@dimen/title_right_textsize"
+        android:textColor="@color/actionsheet_blue"/>
+
+
+</LinearLayout>

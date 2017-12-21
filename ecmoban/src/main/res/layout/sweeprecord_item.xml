@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_record_time"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#EEEEEE"
+        android:gravity="bottom"
+        android:paddingBottom="8dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="@color/filter_text_color"
+        android:textSize="16dp"/>
+
+    <com.ecjia.widgets.MyHorizontalScrollView
+        android:id="@+id/hsv_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/item_sweep_left"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="#EEEEEE"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/top_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_gravity="top"
+                    android:background="@color/line_long_dark"/>
+
+                <View
+                    android:id="@+id/top_short_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/line_long_dark"
+                    android:visibility="gone"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/sweep_content"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="#333333"
+                        android:textSize="16dp"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/header_right_arrow"
+                        />
+                </LinearLayout>
+
+
+                <View
+                    android:id="@+id/buttom_long_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/line_long_dark"
+                    android:visibility="visible"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_action"
+                android:layout_width="wrap_content"
+                android:layout_height="65dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/sweep_copy"
+                    android:layout_width="65dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#cccccc"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="#cccccc"
+                        android:gravity="center"
+                        android:text="@string/copy"
+                        android:textColor="#666666"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/sweep_delete"
+                    android:layout_width="65dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@color/public_theme_color_normal"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="#FFAACC"
+                        android:gravity="center"
+                        android:text="@string/collect_delete"
+                        android:textColor="#ffffff"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.ecjia.widgets.MyHorizontalScrollView>
+
+</LinearLayout>

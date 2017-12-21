@@ -1,0 +1,36 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_good_distance"
+    android:orientation="vertical">
+
+    <com.ecjia.widgets.ECJiaTopView
+        android:id="@+id/recharge_history_topview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.ecjia.widgets.ECJiaTopView>
+
+    <include layout="@layout/recharge_history_head"/>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+        <com.ecjia.widgets.XListView
+            android:id="@+id/recharge_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:overScrollMode="never"/>
+
+        <com.ecjia.widgets.ErrorView
+            android:id="@+id/null_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            app:errorImage="@drawable/null_points"/>
+
+    </FrameLayout>
+
+
+</LinearLayout>

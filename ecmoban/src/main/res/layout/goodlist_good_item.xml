@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:iview="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/new_nothing_bg"
+              android:orientation="vertical">
+
+    <View
+        android:id="@+id/goodlist_top_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="@color/line_long_dark"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/goodlist_item"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/selecter_newitem_press"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/goodlist_img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:scaleType="centerCrop"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <com.ecjia.widgets.AutoReturnView
+                android:id="@+id/goodlist_goodname"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginRight="20dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                iview:ar_color="#111111"
+                iview:ar_content="@string/collect_goods_info"
+                iview:ar_maxLines="2"
+                iview:ar_size="15"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/goodlist_shop_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/my_red"
+                    android:textSize="15dp"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_goodlist_mb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/shape_mobile_buy"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    >
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/mobile_buy_icon"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_saving"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/my_red"
+                        android:textSize="12dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/goodlist_promote_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/my_dark"
+                android:textSize="15dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/goodlist_middel_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:layout_marginLeft="110dp"
+        android:background="@color/line_long_dark"
+        android:visibility="gone"/>
+
+    <View
+        android:id="@+id/goodlist_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="@color/line_long_dark"/>
+
+</LinearLayout>

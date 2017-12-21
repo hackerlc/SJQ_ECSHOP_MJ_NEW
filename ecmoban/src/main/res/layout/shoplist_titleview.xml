@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/top_view_height">
+
+    <FrameLayout
+        android:id="@+id/top_view_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/public_theme_color_normal">
+    </FrameLayout>
+
+        <ImageView
+            android:id="@+id/nav_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="10dp"
+            android:src="@drawable/header_back_arrow" />
+
+    <TextView
+        android:id="@+id/top_view_text"
+        android:layout_width="wrap_content"
+        android:maxWidth="170dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/title_textsize"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:gravity="center_vertical"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_top_guide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/shoplist_guide" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="10dp"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:visibility="gone"
+                android:text="@string/shoplist_guide" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_top_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/top_category" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="10dp"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:visibility="gone"
+                android:text="@string/specific_classify" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/search_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/shoplist_search" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="10dp"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:visibility="gone"
+                android:text="@string/search_search" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+</FrameLayout>

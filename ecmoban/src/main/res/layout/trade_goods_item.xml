@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    android:id="@+id/trade_goods_item"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="90dp"
+    android:background="#F9F9F9">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/first_side"
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/iv_trade_goods"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/line_long_dark"
+            android:cropToPadding="true"
+            android:padding="0.6dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_image"/>
+
+        <View
+            android:id="@+id/last_side"
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_trade_goods_num"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_gravity="top|right"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/shape_main_collectnumbg"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_trade_goods_num"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/TextColorWhite"
+            android:textSize="11dp"/>
+
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:iview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/new_nothing_bg"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/goodlist_top_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="@color/line_long_dark"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/goodlist_item"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/selecter_newitem_press"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/goodlist_img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/default_image"
+                android:scaleType="centerCrop" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <com.ecjia.widgets.AutoReturnView
+                android:id="@+id/goodlist_goodname"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginRight="20dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                iview:ar_content="@string/collect_goods_info"
+                iview:ar_maxLines="2"
+                iview:ar_size="15"
+                iview:ar_color="#111111" />
+
+            <TextView
+                android:id="@+id/grouplist_promoteprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/my_red"
+                android:textSize="15dp" />
+            <TextView
+                android:id="@+id/grouplist_shopprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/my_dark"
+                android:textSize="@dimen/list_item_small"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/goodlist_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="@color/line_long_dark" />
+
+</LinearLayout>

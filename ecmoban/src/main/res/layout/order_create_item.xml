@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/balance_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <View
+            android:id="@+id/trade_item_top"
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:visibility="gone"
+            android:background="@color/line_long_dark" />
+
+        <LinearLayout
+            android:id="@+id/order_item"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+             >
+
+            <com.ecjia.widgets.webimageview.WebImageView
+                android:id="@+id/order_body_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="15dp"
+                android:src="@drawable/default_image"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/trade_body_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textColor="@color/my_black"
+                    android:textSize="@dimen/list_item_mid" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/trade_body_total"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|left"
+                        android:textColor="@color/my_red"
+                        android:textSize="@dimen/list_item_mid" />
+
+                    <TextView
+                        android:id="@+id/trade_body_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|right"
+                        android:textColor="@color/my_dark"
+                        android:textSize="@dimen/list_item_mid" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/trade_item_mid"
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:layout_marginLeft="110dp"
+            android:background="@color/line_long_dark" />
+        <View
+            android:id="@+id/trade_item_buttom"
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:visibility="gone"
+            android:background="@color/line_long_dark" />
+    </LinearLayout>
+
+</LinearLayout>

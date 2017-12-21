@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#eeeeee"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/message_date"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/shape_message_date"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="2dp"
+            android:text="2018-07-25"
+            android:textColor="#ffffff"
+            android:textSize="12dp"
+            android:visibility="visible"/>
+
+
+        <LinearLayout
+            android:id="@+id/message_content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:orientation="horizontal">
+
+
+            <com.ecjia.widgets.imagecircle.CircleImage
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ecmoban_logo"/>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/message_arrow_left"/>
+
+                <TextView
+                    android:id="@+id/message_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/shape_message_item"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:textColor="@color/my_dark"
+                    android:textSize="14dp"/>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/message_time"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="right|bottom"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:text="08:37"
+                android:textColor="@color/my_dark"
+                android:textSize="14dp"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

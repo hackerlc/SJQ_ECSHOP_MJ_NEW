@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             android:background="@color/white"
+             >
+
+    <com.ecjia.widgets.ECJiaTopView
+        android:id="@+id/reward_topview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.ecjia.widgets.ECJiaTopView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/page_container"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@color/white"
+            android:clipChildren="false"
+           >
+
+            <com.ecjia.widgets.clipviewpager.ClipViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerInParent="true"
+                android:clipChildren="false"
+                android:overScrollMode="never" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/first_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="@color/line_long_dark"
+        />
+
+
+    <com.ecjia.widgets.XListView
+        android:id="@+id/xlv_invitation"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent"
+        android:dividerHeight="0dp"
+        android:divider="#00ffffff"
+        android:scrollbars="none"
+        >
+    </com.ecjia.widgets.XListView>
+
+    <com.ecjia.widgets.ErrorView
+        android:id="@+id/null_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/new_good_distance"
+        android:visibility="gone"
+        app:errorImage="@drawable/null_reward"
+        app:errorText="@string/no_result"/>
+
+</LinearLayout>

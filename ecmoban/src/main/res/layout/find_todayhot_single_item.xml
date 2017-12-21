@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cy="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/new_good_distance"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingBottom="20dp"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/news_single_top_view"
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:id="@+id/tv_news_single_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_find_toadyhot_toptext"
+        android:layout_marginBottom="20dp"
+        android:textColor="#ffffff"
+        android:padding="4dp"
+        android:text="18:00"
+        android:textSize="14dp" />
+
+    <LinearLayout
+        android:id="@+id/single_news_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/selector_hot_news_all">
+
+        <com.ecjia.widgets.CYTextView
+            android:id="@+id/single_news_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            cy:mytextSize="17dp"
+            cy:lineSpacingExtra="3dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:textColor="#dd222222" />
+
+        <TextView
+            android:id="@+id/single_news_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:textSize="13dp"
+            android:textColor="@color/filter_text_color" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="0.3dp"
+            android:layout_marginRight="0.3dp"
+            android:layout_marginTop="0.3dp">
+
+            <ImageView
+                android:id="@+id/single_news_first_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/default_image"
+                android:scaleType="centerCrop"
+                android:layout_margin="15dp" />
+
+            <TextView
+                android:id="@+id/single_news_first_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:textSize="19dp"
+                android:padding="5dp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textColor="#ffffff"
+                android:background="#66000000"
+                android:layout_gravity="bottom" />
+        </FrameLayout>
+
+        <com.ecjia.widgets.CYTextView
+            android:id="@+id/single_news_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="18dp"
+            android:layout_marginRight="15dp"
+            cy:mytextSize="13dp"
+            cy:mytextColor="@color/filter_text_color" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#FFCCCCCC"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp"
+                android:textSize="14dp"
+                android:text="@string/watch_all" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/header_right_arrow"
+                android:layout_marginRight="15dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

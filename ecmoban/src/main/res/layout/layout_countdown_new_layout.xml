@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="50dp"
+              android:gravity="center_vertical|right"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_activity_end"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="活动已结束"
+        android:textColor="#aaffffff"
+        android:textSize="@dimen/texte_size_16"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/ly_activity_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_detail_time_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:singleLine="true"
+            android:text="@string/promote_will_end"
+            android:textColor="#aaffffff"
+            android:textSize="@dimen/texte_size_12"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="#aaffffff"
+                android:textSize="@dimen/texte_size_12"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/px5"
+                android:singleLine="true"
+                android:text="@string/end"
+                android:textColor="#aaffffff"
+                android:textSize="@dimen/texte_size_12"/>
+
+            <TextView
+                android:id="@+id/tv_hour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLength="2"
+                android:singleLine="true"
+                android:text="00"
+                android:textColor="#aaffffff"
+                android:textSize="@dimen/texte_size_12"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/px5"
+                android:text="小时"
+                android:textColor="#aaffffff"
+                android:textSize="@dimen/texte_size_12"/>
+
+            <TextView
+                android:id="@+id/tv_minute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLength="2"
+                android:singleLine="true"
+                android:text="00"
+                android:textColor="#aaffffff"
+                android:textSize="@dimen/texte_size_12"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/px5"
+                android:text="分"
+                android:textColor="#aaffffff"
+                android:textSize="@dimen/texte_size_12"
+            />
+
+            <TextView
+                android:id="@+id/tv_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLength="2"
+                android:singleLine="true"
+                android:text="00"
+                android:textColor="#aaffffff"
+                android:textSize="@dimen/texte_size_12"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/px5"
+                android:text="秒"
+                android:textColor="#aaffffff"
+                android:textSize="@dimen/texte_size_12"
+            />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

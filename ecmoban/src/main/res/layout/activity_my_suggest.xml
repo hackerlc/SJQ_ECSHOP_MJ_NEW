@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <com.ecjia.widgets.ECJiaTopView
+        android:id="@+id/suggest_topview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.ecjia.widgets.ECJiaTopView>
+<LinearLayout
+    android:id="@+id/ll_my_suggest"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/suggest_topview">
+
+        <ScrollView
+            android:id="@+id/sc_invite"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:overScrollMode="never">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:background="@drawable/my_suggest_banner"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/ll_share_qr"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/iv_share_qr"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/my_invitation_code"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tv_invitation_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:textColor="@color/my_red"
+                    android:textSize="22dp" />
+
+
+                <EditText
+                    android:id="@+id/et_invitation"
+                    android:layout_width="fill_parent"
+                    android:minHeight="55dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/shape_suggest_edit"
+                    android:gravity="left"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp"
+                    android:paddingTop="7dp"
+                    android:textSize="14dp" />
+
+
+
+                <Button
+                    android:id="@+id/btn_invite"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/selector_login_button"
+                    android:minWidth="100dp"
+                    android:text="@string/invite"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/title_textsize"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:text="@string/invitation_tips"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tv_invitation_tips"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="@color/filter_text_color"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+        </ScrollView>
+</LinearLayout>
+</RelativeLayout>

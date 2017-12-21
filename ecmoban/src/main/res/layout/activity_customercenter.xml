@@ -1,0 +1,254 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/new_good_distance"
+              android:orientation="vertical">
+
+    <include layout="@layout/top_view"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_new_distance"
+        android:background="@drawable/new_good_distance"
+        android:visibility="gone"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:overScrollMode="never" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/new_nothing_bg"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:background="@color/line_long_dark"
+                    android:visibility="gone"/>
+
+                <LinearLayout
+                    android:id="@+id/customercenter_layout_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:background="@drawable/selecter_newitem_press"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/head_picture"
+                        android:textColor="#FF666666"
+                        android:textSize="@dimen/list_item_title"/>
+
+
+                    <com.ecjia.widgets.imagecircle.CircleImage
+                        android:id="@+id/customercenter_img"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        />
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/header_right_arrow"
+                        android:gravity="center_vertical|right"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@color/line_long_dark"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/selecter_newitem_press"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/customer_username"
+                        android:textColor="#FF666666"
+                        android:textSize="@dimen/list_item_title"/>
+
+                    <TextView
+                        android:id="@+id/customercenter_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center_vertical|right"
+                        android:textColor="#FF666666"
+                        android:textSize="@dimen/list_item_title"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.6dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@color/line_long_dark"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/selecter_newitem_press"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/customer_viplevel"
+                        android:textColor="#FF666666"
+                        android:textSize="@dimen/list_item_title"/>
+
+                    <TextView
+                        android:id="@+id/customercenter_level"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center_vertical|right"
+                        android:textColor="#FF666666"
+                        android:textSize="@dimen/list_item_title"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@color/line_long_dark"
+                    android:visibility="gone"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/selecter_newitem_press"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="邮箱状态："
+                        android:textColor="#FF666666"
+                        android:textSize="@dimen/list_item_title"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center_vertical|right"
+                        android:textColor="#FF666666"
+                        android:text="未验证"
+                        android:textSize="@dimen/list_item_title"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:background="@color/line_long_dark"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_new_distance"
+                android:background="@drawable/new_good_distance"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="@color/line_long_dark"/>
+
+            <LinearLayout
+                android:id="@+id/change_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/selecter_newitem_press"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/customer_change_password"
+                    android:textColor="#FF666666"
+                    android:textSize="@dimen/list_item_title"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/header_right_arrow"
+                    android:gravity="center_vertical|right"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center_vertical|right"
+                    android:textColor="#FF666666"
+                    android:text="未验证"
+                    android:textSize="@dimen/list_item_title"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="@color/line_long_dark"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_new_distance"
+                android:background="@drawable/new_good_distance"/>
+
+            <LinearLayout
+                android:id="@+id/setting_exitLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/shape_public_bg"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:text="@string/setting_logout"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/list_item_title"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

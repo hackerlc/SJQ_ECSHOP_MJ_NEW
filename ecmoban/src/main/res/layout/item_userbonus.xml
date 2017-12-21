@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="horizontal"
+              android:paddingBottom="10dp"
+              android:paddingLeft="8dp"
+              android:paddingRight="8dp"
+              android:paddingTop="10dp">
+
+    <ImageView
+        android:id="@+id/coupon_lv_item_checked"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="4dp"
+        android:background="@drawable/ic_checkbox_normal"
+        android:scaleType="fitXY"
+        android:visibility="visible"/>
+
+    <RelativeLayout
+        android:id="@+id/coupon_lv_item_rl"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/coupon_item_bg_1"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_shopname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/texte_size_16"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/coupon_item_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:text="￥"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"/>
+
+                <TextView
+                    android:id="@+id/coupon_lv_item_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="200.00"
+                    android:textColor="@color/white"
+                    android:textSize="40sp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/coupon_lv_item_condition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/coupon_item_value"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="6dp"
+                android:singleLine="true"
+                android:text="订单满1000.00元使用(不含邮费)"
+                android:textColor="#aaffffff"
+                android:textSize="10sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.54">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/coupon_item_bg_right"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/coupon_lv_item_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="全场通用"
+                android:textColor="@color/text_color_33"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:paddingTop="10dp"
+                android:text="使用期限"
+                android:textColor="@color/main_font_color_6"
+                android:textSize="9sp"/>
+
+            <TextView
+                android:id="@+id/coupon_lv_item_starttime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="2015.06.05"
+                android:textColor="@color/main_font_color_6"
+                android:textSize="9sp"/>
+
+            <TextView
+                android:id="@+id/coupon_lv_item_endtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2015.06.18"
+                android:textColor="@color/main_font_color_6"
+                android:textSize="9sp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/coupon_lv_item_flag"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/coupon_item_expired" android:scaleType="fitCenter"
+            android:visibility="visible"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/coupon_lv_item_zhanweizhiView"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="4dp"
+        android:background="@drawable/ic_checkbox_normal"
+        android:scaleType="fitXY"
+        android:visibility="invisible"/>
+
+
+</LinearLayout>

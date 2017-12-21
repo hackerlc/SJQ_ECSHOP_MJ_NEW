@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/new_good_distance"
+    >
+
+    <include layout="@layout/top_view" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.ecjia.widgets.XListView
+            android:id="@+id/orderdetail_comment_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:background="@drawable/new_nothing_bg"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:listSelector="@android:color/transparent"
+            android:visibility="visible">
+        </com.ecjia.widgets.XListView>
+        <com.ecjia.widgets.ErrorView
+            app:errorImage="@drawable/null_goods"
+            android:id="@+id/null_pager"
+            android:background="@drawable/new_good_distance"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"/>
+    </FrameLayout>
+
+
+</LinearLayout>

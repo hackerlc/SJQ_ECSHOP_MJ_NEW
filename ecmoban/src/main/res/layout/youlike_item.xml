@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:orientation="vertical">
+
+    <com.ecjia.widgets.webimageview.WebImageView
+        android:id="@+id/youlike_item_photo"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:src="@drawable/default_image"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/youlike_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:maxLines="2"
+        android:text="序号"
+        android:textSize="@dimen/list_item_small" />
+
+    <TextView
+        android:id="@+id/youlike_item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:singleLine="true"
+        android:text="￥"
+        android:textColor="@color/my_red"
+        android:textSize="@dimen/list_item_small" />
+
+
+</LinearLayout>

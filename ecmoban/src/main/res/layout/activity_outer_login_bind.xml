@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="onClick"
+            type="android.view.View.OnClickListener"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <com.ecjia.widgets.ECJiaTopView
+            android:id="@+id/bind_topview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.ecjia.widgets.ECJiaTopView>
+
+        <LinearLayout
+            android:id="@+id/root_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_new_distance"/>
+
+            <RelativeLayout
+                android:id="@+id/user_img_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp">
+
+                <com.ecjia.widgets.imagecircle.CircleImage
+                    android:id="@+id/user_head_img"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/profile_no_avarta_icon"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/tv_dear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dear_third_login_user"
+                    android:textColor="@color/filter_text_color"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:id="@+id/tv_nick_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/new_textColor"
+                    android:textSize="17dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                android:text="@string/third_login_bonus"
+                android:textColor="@color/new_textColor"
+                android:textSize="15dp"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机号"
+                android:textSize="@dimen/texte_size_18"/>
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/phone"
+                android:inputType="phone"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@id/phone"
+                android:background="@null"
+                android:hint="@string/login_username"
+                android:textSize="18sp"/>
+
+            <View
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/phone"
+                android:layout_marginBottom="18dp"
+                android:layout_marginTop="6dp"
+                android:background="@color/line_e6"/>
+
+            <TextView
+                android:id="@+id/code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line1"
+                android:text="验证码"
+                android:textSize="@dimen/texte_size_18"/>
+
+            <TextView
+                android:id="@+id/tv_get_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/code"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/line1"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:background="@drawable/shape_able"
+                android:onClick="@{onClick}"
+                android:text="获取验证码"/>
+
+            <EditText
+                android:id="@+id/et_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/code"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_toLeftOf="@id/tv_get_code"
+                android:layout_toRightOf="@id/phone"
+                android:background="@null"
+                android:hint="@string/register_enter_code"
+                android:textSize="18sp"/>
+
+            <View
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignRight="@id/et_code"
+                android:layout_below="@id/code"
+                android:layout_marginTop="6dp"
+                android:background="@color/line_e6"/>
+
+            <EditText
+                android:id="@+id/et_invitation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line2"
+                android:layout_marginTop="34dp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/invitation_code_hint"
+                android:maxLength="6"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="16dp"/>
+
+            <View
+                android:id="@+id/line3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/et_invitation"
+                android:layout_marginTop="6dp"
+                android:background="@color/line_e6"/>
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/line3"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/shape_unable"
+                android:enabled="false"
+                android:minWidth="100dp"
+                android:text="@string/register_next"
+                android:textColor="#ff999999"
+                android:textSize="@dimen/texte_size_20"
+                android:onClick="@{onClick}"/>
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="#ffeeeeee"/>
+
+            <corners android:radius="3dp"/>
+
+            <!-- 边框宽度-->
+            <!-- 边框颜色-->
+            <stroke
+                android:width="0.5dp"
+                android:color="@color/title_bg_color"/>
+        </shape>
+    </item>
+
+    <!-- normal -->
+    <item>
+        <shape>
+            <solid android:color="@color/title_bg_color" />
+
+            <corners
+                android:radius="3dp" />
+            <!-- 边框宽度-->
+            <!-- 边框颜色-->
+            <stroke
+                android:width="0.5dp"
+                android:color="@color/title_bg_color"/>
+        </shape>
+    </item>
+</selector>

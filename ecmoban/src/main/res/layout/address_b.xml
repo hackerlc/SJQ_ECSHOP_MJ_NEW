@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="#FFFFFF">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/searcher_new_header_bg"/>
+
+        <ImageView
+            android:id="@+id/address_title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="10dp"
+            android:src="@drawable/header_back_arrow"/>
+
+        <TextView
+            android:id="@+id/address_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/manage_edit_address"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/title_textsize"/>
+
+        <TextView
+            android:id="@+id/address_title_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="10dp"
+            android:background="#00000000"
+            android:text="@string/button_cancel"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/title_right_textsize"
+            android:visibility="visible"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/address_choosed_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/addressb_country"
+            android:textColor="#000000"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/address_choosed_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:textSize="15dp"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:id="@+id/address_choosed_area1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:textSize="15dp"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:id="@+id/address_choosed_area2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:textSize="15dp"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:id="@+id/address_choosed_area3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:textSize="15dp"
+            android:layout_marginLeft="10dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@drawable/new_good_distance"/>
+
+        <ListView
+            android:id="@+id/address_list"
+            android:overScrollMode="never"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp">
+        </ListView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@drawable/new_good_distance"/>
+    </LinearLayout>
+
+
+</LinearLayout>

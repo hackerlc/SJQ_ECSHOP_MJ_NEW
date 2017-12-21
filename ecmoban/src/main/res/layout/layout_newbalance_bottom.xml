@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="@color/line_long_dark"/>
+    <!-- 红包 -->
+    <LinearLayout
+        android:id="@+id/balance_redPaper"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/new_nothing_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_redPaper"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:text="@string/balance_redpocket"
+            android:textColor="#FF666666"
+            android:textSize="@dimen/list_item_title"/>
+
+        <TextView
+            android:id="@+id/balance_redPaper_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="@dimen/list_item_title"/>
+
+        <ImageView
+            android:id="@+id/iv_redpager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/header_right_arrow"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="@color/line_long_dark"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_new_distance"
+        android:background="@drawable/new_good_distance"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="@color/line_long_dark"/>
+    <!-- 价格总计 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/new_nothing_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/balance_goodcast"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_cast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:text="@string/balance_freigh"
+                android:textColor="#FF666666"
+                android:textSize="@dimen/list_item_title"/>
+
+            <TextView
+                android:id="@+id/tv_shipping_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:text="￥0.00元"
+                android:textColor="@color/my_red"
+                android:textSize="@dimen/list_item_title"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:layout_marginLeft="15dp"
+            android:background="@color/line_short_dark"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:text="@string/balance_forall"
+                android:textColor="#FF666666"
+                android:textSize="@dimen/list_item_title"/>
+
+            <TextView
+                android:id="@+id/tv_good_amount_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:text="￥0.00元"
+                android:textColor="@color/my_red"
+                android:textSize="@dimen/list_item_title"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:layout_marginLeft="15dp"
+            android:background="@color/line_short_dark"/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/px100"
+            android:background="@drawable/selecter_newitem_press"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingRight="@dimen/layout_marginLR">
+
+            <TextView
+                android:id="@+id/tv_good_allnumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:text="共24件商品(含运费) ："
+                android:textColor="@color/_333333"
+                android:textSize="@dimen/list_item_title"/>
+            <TextView
+                android:id="@+id/tv_good_allmoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/layout_marginLR"
+                android:text="￥2,300.00"
+                android:textColor="@color/my_red"
+                android:textSize="@dimen/list_item_title"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

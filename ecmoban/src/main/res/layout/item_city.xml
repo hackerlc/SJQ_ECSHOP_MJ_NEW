@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:id="@+id/rl_div"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:background="@color/white">
+        <ImageView
+            android:id="@+id/iv_city_img"
+            android:layout_width="100dp"
+            android:layout_height="76dp"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:id="@+id/tv_city_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/iv_city_img"
+            android:textSize="20sp"
+            android:textColor="@color/main_font_color_3"
+            tools:text="杭州"/>
+        <!--label div-->
+        <LinearLayout
+            android:id="@+id/ll_label_div"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_city_name"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_city_img"
+            android:layout_below="@id/tv_city_name"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="2dp"
+            android:textSize="14sp"
+            android:maxLines="3"
+            tools:text="中国华中区最大的服饰批发市场 汇聚杭派、广派厂家货源中国华中区最大的服饰批发市场 汇聚杭派、广派厂家货源"/>
+    </RelativeLayout>
+
+</layout>

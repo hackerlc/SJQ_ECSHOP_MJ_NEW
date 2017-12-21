@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="onClick"
+            type="android.view.View.OnClickListener"/>
+    </data>
+
+    <LinearLayout
+        android:id="@+id/dreamcategory"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="12dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/tabOne"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/filter_title_tabone"
+                style="@style/filter_toolbar_data_binding_tab_title"
+                android:text="@string/new_good"
+                android:textColor="@color/main_font_color_f82d7c"/>
+
+            <ImageView
+                android:id="@+id/filter_order_tabone"
+                style="@style/filter_toolbar_data_binding_tab_order"
+                android:layout_alignTop="@+id/filter_title_tabone"
+                android:layout_toRightOf="@+id/filter_title_tabone"
+                android:src="@drawable/item_grid_filter_down_active_arrow"/>
+
+            <View
+                android:id="@+id/filter_one"
+                style="@style/filter_toolbar_data_binding_tab_view"
+                android:visibility="visible"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tabTwo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <View style="@style/filter_toolbar_data_binding_tab_view_div"/>
+
+            <TextView
+                android:id="@+id/filter_title_tabtwo"
+                style="@style/filter_toolbar_data_binding_tab_title"
+                android:text="@string/popularity"/>
+
+            <ImageView
+                android:id="@+id/filter_order_tabtwo"
+                style="@style/filter_toolbar_data_binding_tab_order"
+                android:layout_alignTop="@+id/filter_title_tabtwo"
+                android:layout_toRightOf="@+id/filter_title_tabtwo"
+                android:src="@drawable/item_grid_filter_down_active_arrow"/>
+
+            <ImageView
+                android:id="@+id/filter_triangle_tabtwo"
+                style="@style/filter_toolbar_data_binding_tab_order"
+                android:layout_alignTop="@+id/filter_title_tabtwo"
+                android:layout_toRightOf="@+id/filter_title_tabtwo"
+                android:src="@drawable/item_grid_filter_sanjiao_icon"/>
+
+            <View
+                android:id="@+id/filter_two"
+                style="@style/filter_toolbar_data_binding_tab_view"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tabThree"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <View style="@style/filter_toolbar_data_binding_tab_view_div"/>
+
+            <TextView
+                android:id="@+id/filter_title_tabthree"
+                style="@style/filter_toolbar_data_binding_tab_title"
+                android:text="@string/price"/>
+
+            <ImageView
+                android:id="@+id/filter_order_tabthree"
+                style="@style/filter_toolbar_data_binding_tab_order"
+                android:layout_alignTop="@+id/filter_title_tabthree"
+                android:layout_toRightOf="@+id/filter_title_tabthree"/>
+
+            <ImageView
+                android:id="@+id/filter_triangle_tabthree"
+                style="@style/filter_toolbar_data_binding_tab_order"
+                android:layout_alignTop="@+id/filter_title_tabthree"
+                android:layout_toRightOf="@+id/filter_title_tabthree"
+                android:src="@drawable/item_grid_filter_sanjiao_icon"/>
+
+            <View
+                android:id="@+id/filter_three"
+                style="@style/filter_toolbar_data_binding_tab_view"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tabfour"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <View style="@style/filter_toolbar_data_binding_tab_view_div"/>
+
+
+            <TextView
+                android:id="@+id/filter_title_tabfour"
+                style="@style/filter_toolbar_data_binding_tab_title"
+                android:text="@string/filter"/>
+
+            <ImageView
+                android:id="@+id/filter_order_tabfour"
+                style="@style/filter_toolbar_data_binding_tab_order"
+                android:layout_alignTop="@+id/filter_title_tabfour"
+                android:layout_toRightOf="@+id/filter_title_tabfour"
+                android:src="@drawable/item_grid_filter_down_active_arrow"/>
+
+            <ImageView
+                android:id="@+id/filter_triangle_tabfour"
+                style="@style/filter_toolbar_data_binding_tab_order"
+                android:layout_alignTop="@+id/filter_title_tabfour"
+                android:layout_toRightOf="@+id/filter_title_tabfour"
+                android:src="@drawable/item_grid_filter_sanjiao_icon"/>
+
+            <View
+                android:id="@+id/filter_four"
+                style="@style/filter_toolbar_data_binding_tab_view"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/new_good_distance"
+              android:orientation="vertical">
+
+    <include layout="@layout/top_view"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_new_distance"
+        android:background="@drawable/new_good_distance"/>
+
+    <com.ecjia.widgets.XListView
+        android:id="@+id/language_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null">
+    </com.ecjia.widgets.XListView>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_new_distance"
+        android:background="@drawable/new_good_distance"/>
+</LinearLayout>

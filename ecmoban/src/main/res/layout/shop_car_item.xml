@@ -1,0 +1,226 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="match_parent"
+              android:background="#ffffff"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/new_nothing_bg"
+            android:orientation="vertical">
+
+
+            <View
+                android:id="@+id/shop_item_topline"
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="@color/line_long_dark"
+                android:visibility="gone"/>
+
+            <FrameLayout
+                android:id="@+id/shop_car_item_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="140dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/shop_car_item_view1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/shopcar_item"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/shop_car_check_item"
+                                android:layout_width="45dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center">
+
+                                <CheckBox
+                                    android:id="@+id/shop_car_item_check"
+                                    style="@style/CustomCheckboxshopcarTheme"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:clickable="false"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    android:gravity="center_vertical"/>
+
+                                <TextView
+                                    android:id="@+id/tv_is_valid"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="失效"
+                                    android:textColor="@color/gray"
+                                    android:textSize="@dimen/texte_size_14"
+                                    android:visibility="gone"/>
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/shop_car_item_image"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="10dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/default_image"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/shop_car_item_text"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:ellipsize="end"
+                                    android:maxLines="2"
+                                    android:textColor="@color/my_black"
+                                    android:textSize="@dimen/texte_size_16"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/shop_car_item_total"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginRight="@dimen/layout_marginLR"
+                                        android:layout_weight="1"
+                                        android:gravity="center_vertical"
+                                        android:singleLine="true"
+                                        android:text="￥0"
+                                        android:textColor="@color/my_red"
+                                        android:textSize="@dimen/texte_size_16"/>
+
+                                    <TextView
+                                        android:id="@+id/tv_attr"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:singleLine="true"
+                                        android:textColor="@color/gray"
+                                        android:textSize="@dimen/texte_size_16"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:id="@+id/shopcar_item_edit"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical|left"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/shop_car_item_min"
+                                            android:layout_width="26dp"
+                                            android:layout_height="26dp"
+                                            android:background="@drawable/selector_shopcar_min"
+                                            android:gravity="center"
+                                            android:text="—"
+                                            android:textColor="#666666"/>
+
+                                        <TextView
+                                            android:id="@+id/shop_car_item_editNum"
+                                            android:layout_width="55dp"
+                                            android:layout_height="26dp"
+                                            android:layout_marginLeft="8dp"
+                                            android:layout_marginRight="8dp"
+                                            android:background="@drawable/shopping_cart_edit_choose_num_bg_new"
+                                            android:gravity="center"
+                                            android:padding="3dp"
+                                            android:singleLine="true"
+                                            android:text="0"
+                                            android:textColor="#666666"
+                                            android:textSize="13dp"/>
+
+                                        <TextView
+                                            android:id="@+id/shop_car_item_sum"
+                                            android:layout_width="26dp"
+                                            android:layout_height="26dp"
+                                            android:background="@drawable/selector_shopcar_max"
+                                            android:gravity="center"
+                                            android:text="+"
+                                            android:textColor="#666666"
+                                            android:textSize="16dp"/>
+
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/tv_arrive_warn"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.5"
+                                    android:textColor="@color/my_red"
+                                    android:textSize="@dimen/texte_size_14"
+                                    android:visibility="invisible"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/buttom_short_line"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.6dp"
+                            android:layout_marginLeft="155dp"
+                            android:background="@color/line_long_dark"
+                            android:visibility="gone"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view_base"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:visibility="gone"
+                    android:background="#33808080"/>
+
+            </FrameLayout>
+
+            <View
+                android:id="@+id/buttom_long_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="@color/line_long_dark"
+                android:visibility="gone"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

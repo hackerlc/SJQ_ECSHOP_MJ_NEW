@@ -1,0 +1,172 @@
+-dontoptimize
+-dontwarn com.google.android.maps.**
+-dontwarn android.webkit.WebView
+ -dontwarn com.umeng.**
+ -dontwarn com.tencent.weibo.sdk.**
+ -keep public class javax.**
+ -keep public class android.webkit.**
+-dontwarn com.alipay.**
+-dontwarn com.baidu.navisdk.**
+
+-keep enum com.facebook.**
+-keepattributes Exceptions,InnerClasses,Signature
+-keepattributes *Annotation*
+-keepattributes SourceFile,LineNumberTable
+
+-keep public interface com.tencent.**
+ -keep public interface com.umeng.socialize.**
+ -keep public interface com.umeng.socialize.sensor.**
+ -keep public interface com.umeng.scrshot.**
+ -dontwarn com.tencent.**
+ -dontwarn com.umeng.socialize.**
+ -dontwarn com.umeng.socialize.sensor.**
+ -dontwarn com.umeng.scrshot.**
+
+ -keep public class com.umeng.socialize.* {*;}
+ -dontwarn com.umeng.socialize.*
+
+ -keep class com.umeng.scrshot.**
+ -keep public class com.tencent.** {*;}
+ -keep class com.umeng.socialize.sensor.**
+ -dontwarn com.umeng.scrshot.**
+ -dontwarn com.tencent.**
+ -dontwarn com.umeng.socialize.sensor.**
+
+ -keep class com.umeng.socialize.handler.**
+ -keep class com.umeng.socialize.handler.*
+ -keep class com.tencent.mm.sdk.modelmsg.WXMediaMessage {*;}
+ -keep class com.tencent.mm.sdk.modelmsg.** implements com.tencent.mm.sdk.modelmsg.WXMediaMessage$IMediaObject {*;}
+ -dontwarn com.umeng.socialize.handler.**
+ -dontwarn com.umeng.socialize.handler.*
+ -dontwarn com.tencent.mm.sdk.modelmsg.**
+
+ -keep class com.tencent.** {*;}
+ -dontwarn com.tencent.**
+ -keep public class com.umeng.soexample.R$*{
+     public static final int *;
+ }
+
+ -keep class com.tencent.open.TDialog$*
+ -keep class com.tencent.open.TDialog$* {*;}
+ -keep class com.tencent.open.PKDialog
+ -keep class com.tencent.open.PKDialog {*;}
+ -keep class com.tencent.open.PKDialog$*
+ -keep class com.tencent.open.PKDialog$* {*;}
+ -dontwarn com.tencent.open.**
+
+ -keep class com.sina.** {*;}
+ -dontwarn com.sina.**
+
+ -keep public class com.ecmoban.android.sijiqing.R$*{
+     public static final int *;
+ }
+
+-keep public class com.ecmoban.android.wxianw.streetR$*{
+    public static final int *;
+}
+
+
+#自定义控件不要混淆
+-keep public class * extends android.view.View {*;}
+
+-dontwarn android.support.v4.**
+-keep class android.support.v4.** { *; }
+-keep interface android.support.v4.app.** { *; }
+-keep public class * extends android.support.v4.**
+-keep public class * extends android.app.Fragment
+
+-dontwarn android.support.**
+-keep class android.support.** { *; }
+-keep class com.actionbarsherlock.** { *; }
+-keep interface com.actionbarsherlock.** { *; }
+
+# slidingmenu 的混淆
+-dontwarn com.jeremyfeinstein.slidingmenu.lib.**
+-keep class com.jeremyfeinstein.slidingmenu.lib.**{*;}
+
+# imglibrary 的混淆
+-dontwarn ru.truba.touchgallery.**
+-keep class ru.truba.touchgallery.**{*;}
+
+
+ # universal-image-loader 混淆
+-dontwarn com.nostra13.universalimageloader.**
+-keep class com.nostra13.universalimageloader.** { *; }
+
+
+
+-keepclassmembers class * implements android.os.Parcelable {
+    static android.os.Parcelable$Creator CREATOR;
+}
+-keep public class * implements java.io.Serializable {
+        public *;
+}
+#Eventbus混淆
+
+-keepclassmembers class ** {
+    public void onEvent*(**);
+}
+
+#xutils的jar包不要混淆
+-keep class com.lidroid.** { *; }                     #xutils包下所有类不要混淆，包括类里面的方法
+
+-keep class com.alipay.android.app.IALiPay{*;} #alipay混淆
+-keep class com.alipay.android.app.IALixPay{*;}
+-keep class com.alipay.android.app.IRemoteServiceCallback{*;}
+
+-keep class com.squareup.wire.**{
+        public <fields>;
+        public <methods>;
+}
+-keep class org.android.agoo.impl.**{
+        public <fields>;
+        public <methods>;
+}
+-keep class org.android.agoo.service.**{*;}
+-keep class org.android.spdy.**{*;}
+
+-keepclassmembers class * {
+        public <init>(org.json.JSONObject);
+}
+
+-dontwarn com.unionpay.mobile.android.**
+
+#新版umeng推送
+-dontwarn com.taobao.**
+-dontwarn anet.channel.**
+-dontwarn anetwork.channel.**
+-dontwarn org.android.**
+-dontwarn org.apache.thrift.**
+-dontwarn com.xiaomi.**
+-dontwarn com.huawei.**
+
+-keepattributes *Annotation*
+
+-keep class com.taobao.** {*;}
+-keep class org.android.** {*;}
+-keep class anet.channel.** {*;}
+-keep class com.umeng.** {*;}
+-keep class com.xiaomi.** {*;}
+-keep class com.huawei.** {*;}
+-keep class org.apache.thrift.** {*;}
+
+-keepclassmembers class * extends android.webkit.WebChromeClient{
+   		public void openFileChooser(...);
+   		public boolean onShowFileChoose(...);
+}
+-keepattributes *Annotation*
+-keepattributes *JavascriptInterface*
+
+ # 百度地图 混淆
+-dontwarn com.baidu.mapapi.**
+-dontwarn com.baidu.platform.**
+-dontwarn com.baidu.location.**
+-dontwarn com.baidu.vi.**
+-dontwarn com.baidu.**
+-dontwarn vi.com.gdi.bgl.android.**
+-keep class com.baidu.mapapi.** {*; }
+-keep class com.baidu.platform.** {*; }
+-keep class com.baidu.location.** {*; }
+-keep class com.baidu.vi.** {*; }
+-keep class vi.com.gdi.bgl.android.** {*; }
+-keep class com.baidu.** { *; }

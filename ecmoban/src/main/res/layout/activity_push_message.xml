@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:bind="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="onClick"
+            type="android.view.View.OnClickListener"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/ic_head"
+            layout="@layout/layout_data_binding_head"
+            bind:onClick="@{onClick}"/>
+
+        <include android:id="@+id/ic_tab"
+            layout="@layout/layout_tab"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</layout>

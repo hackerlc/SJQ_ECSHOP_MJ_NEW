@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <FrameLayout
+        android:id="@+id/fl_substation_div"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@android:color/white"
+        android:clipChildren="false"
+        android:layerType="software">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_substation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="120dp"
+            android:clipChildren="false"/>
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/goodslist_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/filter_toolbar"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/main_font_color_e7e7e7"/>
+</LinearLayout>

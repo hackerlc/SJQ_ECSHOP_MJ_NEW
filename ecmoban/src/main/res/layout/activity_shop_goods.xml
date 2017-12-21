@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/new_good_distance"
+              android:orientation="vertical">
+
+    <include layout="@layout/top_view"/>
+
+    <ListView
+        android:id="@+id/shop_goods"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:divider="@null"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:overScrollMode="never">
+    </ListView>
+
+</LinearLayout>

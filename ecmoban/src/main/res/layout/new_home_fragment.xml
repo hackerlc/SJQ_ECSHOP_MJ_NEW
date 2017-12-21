@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="onClick"
+            type="android.view.View.OnClickListener"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/home_topvoew"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/public_theme_color_normal">
+
+            <LinearLayout
+                android:id="@+id/city_item"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:onClick="@{onClick}"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/city_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="2dp"
+                    android:gravity="center_vertical|right"
+                    android:text="杭州"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp"/>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/home_cityshow"
+                    android:tint="@color/white"
+                    android:visibility="visible"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_div"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:onClick="@{onClick}"
+                android:orientation="horizontal"
+                android:paddingRight="10dp">
+
+                <FrameLayout
+                    android:id="@+id/search_frame_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="6dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        android:src="@drawable/home_messege_icon"
+                        android:textColorHint="#aaaaaa"
+                        android:textSize="@dimen/list_item_small"/>
+
+                    <TextView
+                        android:id="@+id/message_num"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_gravity="right|top"
+                        android:background="@drawable/shape_public_withe_bg_vol"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        android:textSize="8dp"
+                        android:visibility="gone"/>
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="8dp"
+                android:layout_toLeftOf="@id/ll_div"
+                android:layout_toRightOf="@id/city_item"
+                android:background="@drawable/shape_search_div"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:src="@drawable/bg_search"
+                    android:textColorHint="#aaaaaa"
+                    android:textSize="@dimen/list_item_small"/>
+                <TextView
+                    android:id="@+id/search_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="输入您要找的商品或店铺"
+                    android:textColor="@color/main_search_div_text"
+                    android:textSize="14sp"
+                    android:onClick="@{onClick}"/>
+                <ImageView
+                    android:id="@+id/ll_div_scan"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:layout_marginLeft="4dp"
+                    android:src="@drawable/icon_found_scan"
+                    android:textColorHint="#aaaaaa"
+                    android:textSize="@dimen/list_item_small"
+                    android:onClick="@{onClick}"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/home_good_shop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </FrameLayout>
+
+    </LinearLayout>
+</layout>

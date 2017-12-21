@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/headview2_item"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.ecjia.widgets.HorizontalListView
+            android:id="@+id/headview_categorylist"
+            android:gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/category_num"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textSize="16dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/TextColorGray"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="0.4dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/TextColorGray" />
+
+        <LinearLayout
+            android:id="@+id/headview2_show_more"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/show_more_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/search_showchild" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

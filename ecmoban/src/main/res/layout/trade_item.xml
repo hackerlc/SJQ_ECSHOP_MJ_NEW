@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/trade_item_press"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.ecjia.widgets.MyGraygapView
+        android:id="@+id/trade_first_item"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selecter_newitem_press"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="@string/tradeitem_number"
+                    android:textColor="@color/new_textColor"
+                    android:textSize="@dimen/list_item_title"/>
+
+                <TextView
+                    android:id="@+id/trade_item_sno"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="11"
+                    android:textColor="@color/new_textColor"
+                    android:textSize="@dimen/list_item_title"/>
+
+
+            </LinearLayout>
+
+            <!-- 隐藏交易时间 -->
+
+            <LinearLayout
+                android:id="@+id/trade_item_body"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/trade_more_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.6dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#FFCCCCCC"/>
+
+            <LinearLayout
+                android:id="@+id/trade_ship_fee"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/balance_transportation"
+                    android:textColor="#ea0025"
+                    android:textSize="13dp"/>
+
+                <TextView
+                    android:id="@+id/trade_item_fee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="￥0.00"
+                    android:textColor="#ea0025"
+                    android:textSize="13dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/trade_redpaper"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/balance_redpocket"
+                    android:textColor="#009900"
+                    android:textSize="13dp"/>
+
+                <TextView
+                    android:id="@+id/trade_item_redPaper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="-￥0.00"
+                    android:textColor="#009900"
+                    android:textSize="13dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/trade_jifen"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/balance_exp"
+                    android:textColor="#009900"
+                    android:textSize="13dp"/>
+
+                <TextView
+                    android:id="@+id/trade_item_integral"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="-￥0.00"
+                    android:textColor="#009900"
+                    android:textSize="13dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/trade_zhekou"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/balance_formateddiscount"
+                    android:textColor="#009900"
+                    android:textSize="13dp"/>
+
+                <TextView
+                    android:id="@+id/trade_item_formated_discount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="-￥0.00"
+                    android:textColor="#009900"
+                    android:textSize="13dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.ecjia.widgets.MyGraygapView
+            android:id="@+id/trade_end_item"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>

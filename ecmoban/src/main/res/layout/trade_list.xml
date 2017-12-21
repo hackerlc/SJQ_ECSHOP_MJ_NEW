@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@drawable/new_good_distance">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/top_view"/>
+
+
+        <RadioGroup
+            android:id="@+id/group_top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px100"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/layout_marginLR"
+            android:paddingRight="@dimen/layout_marginLR"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="@dimen/px60"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/profile_obligation"
+                android:textColor="@drawable/rdo_orderlist_textcolor"
+                android:background="@drawable/rdo_orderlist_bgcolor_left"
+                android:textSize="@dimen/texte_size_14"/>
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="@dimen/px60"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="待成团"
+                android:background="@drawable/rdo_orderlist_bgcolor_center"
+                android:textColor="@drawable/rdo_orderlist_textcolor"
+                android:textSize="@dimen/texte_size_14"/>
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="@dimen/px60"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/profile_readyforshipment"
+                android:textColor="@drawable/rdo_orderlist_textcolor"
+                android:background="@drawable/rdo_orderlist_bgcolor_center"
+                android:textSize="@dimen/texte_size_14"/>
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="@dimen/px60"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/profile_forthegoods"
+                android:textColor="@drawable/rdo_orderlist_textcolor"
+                android:background="@drawable/rdo_orderlist_bgcolor_center"
+                android:textSize="@dimen/texte_size_14"/>
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="@dimen/px60"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:background="@drawable/rdo_orderlist_bgcolor_right"
+                android:text="退换货"
+                android:textColor="@drawable/rdo_orderlist_textcolor"
+                android:textSize="@dimen/texte_size_14"/>
+
+        </RadioGroup>
+
+        <FrameLayout
+            android:id="@+id/order_list_framgent_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="96dp"
+        android:background="#FFCCCCCC"/>
+</FrameLayout>

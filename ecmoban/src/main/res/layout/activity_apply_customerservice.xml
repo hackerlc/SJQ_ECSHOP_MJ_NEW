@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/layout_bg_f8"
+              android:orientation="vertical">
+
+    <include layout="@layout/layout_public_titlehead"/>
+
+    <LinearLayout
+        android:id="@+id/ly_return_goods_and_money"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px150"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_marginLR"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:text="退货退款"
+            android:textSize="@dimen/texte_size_16"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_marginLR"
+            android:layout_weight="1"
+            android:text="已收到货，需要退还已收到的货物"
+            android:textSize="@dimen/texte_size_14"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px1"
+            android:layout_gravity="bottom"
+            android:background="@color/line_e6"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ly_return_money"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px150"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_marginLR"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:text="仅退款"
+            android:textSize="@dimen/texte_size_16"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_marginLR"
+            android:layout_weight="1"
+            android:text="未收到货，或者与卖家协商同意前提下申请"
+            android:textSize="@dimen/texte_size_14"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px1"
+            android:layout_gravity="bottom"
+            android:background="@color/line_e6"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ly_return_goods"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px150"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_marginLR"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:text="换货"
+            android:textSize="@dimen/texte_size_16"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_marginLR"
+            android:layout_weight="1"
+            android:text="对已收到的货物不满意，联系卖家协商换货"
+            android:textSize="@dimen/texte_size_14"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px1"
+            android:layout_gravity="bottom"
+            android:background="@color/line_e6"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

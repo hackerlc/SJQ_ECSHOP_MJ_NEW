@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <!--标题-->
+        <include
+            android:id="@+id/buttom_toolbar"
+            layout="@layout/gooddetail_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/top_view_height"/>
+        <!--webview-->
+        <FrameLayout
+            android:id="@+id/webview_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:visibility="gone">
+
+            <WebView
+                android:id="@+id/my_web"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"/>
+
+
+            <com.ecjia.widgets.ErrorView
+                android:id="@+id/no_webview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:visibility="gone"/>
+        </FrameLayout>
+        <!--商品属性-->
+        <FrameLayout
+            android:id="@+id/property_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:visibility="gone">
+
+            <ListView
+                android:id="@+id/property_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:headerDividersEnabled="false"
+                android:overScrollFooter="#00000000"/>
+
+            <com.ecjia.widgets.ErrorView
+                android:id="@+id/no_features"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:visibility="gone"
+                app:errorImage="@drawable/null_paramer"
+                app:errorText="@string/no_result">
+
+            </com.ecjia.widgets.ErrorView>
+
+        </FrameLayout>
+
+    </LinearLayout>
+</LinearLayout>

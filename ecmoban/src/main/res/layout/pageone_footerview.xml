@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#FFFFFF"
+              android:orientation="vertical">
+
+    <include
+        android:id="@+id/goodsdetail_footitem"
+        layout="@layout/gooddetail_footitem"/>
+    <!--猜你喜欢-->
+    <include
+        android:id="@+id/goodsdetail_mylove"
+        layout="@layout/layout_goodsdetail_mylove"/>
+
+    <!--浏览记录-->
+    <include
+        android:id="@+id/goodsdetail_history"
+        layout="@layout/layout_goodsdetail_history"/>
+
+    <com.ecjia.widgets.MyGraygapView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/foottext"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/header_right_arrow"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/load_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/detail_refresh_list_push"
+            android:textColor="#FF666666"
+            android:textSize="@dimen/list_item_title"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

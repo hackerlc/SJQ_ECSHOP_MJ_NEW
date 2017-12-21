@@ -1,0 +1,1137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">摩街</string>
+    <string name="ecmoban">摩街</string>
+    <string name="shopgoods">Product Details</string>
+    <string name="custormercenter">User Center</string>
+    <string name="lifecycle_all">All</string>
+    <string name="lifecycle_visible">Visible</string>
+    <string name="lifecycle_frontdeskoperation">Running in Foreground</string>
+    <string name="address_consignee">Consignee</string>
+    <string name="address_consigneeinfo">Consignee</string>
+    <string name="address_tel">Phone</string>
+    <string name="address_email">Email(Optional)</string>
+    <string name="address_phone">Mobile</string>
+    <string name="address_zip">Postal / ZIP code(Optional)</string>
+    <string name="address_area">Country</string>
+    <string name="address_address">Address</string>
+    <string name="address_add">Add Address</string>
+    <string name="address_save">Save</string>
+    <string name="select_address">Select Address</string>
+    <string name="addressb_country">Select Country</string>
+    <string name="manage_edit_address">Edit Address</string>
+    <string name="manage_add_address">Create Address</string>
+    <string name="manage2_over">Done</string>
+    <string name="manage2_name">Consignee</string>
+    <string name="change_send">发送验证码</string>
+    <string name="manage2_tel">Phone</string>
+    <string name="manage2_email">Email(Optional)</string>
+    <string name="manage2_phone">Mobile</string>
+    <string name="manage2_address">Address</string>
+    <string name="manage2_set">Set Default </string>
+    <string name="manage2_delete">Delete Address </string>
+    <string name="modify_address">Modify Address</string>
+    <string name="balance_receiver">Consignee</string>
+    <string name="balance_address">Consignee Address</string>
+    <string name="balance_pay">Payment </string>
+    <string name="balance_shipping">Shipping</string>
+    <string name="balance_bill">Invoice</string>
+    <string name="balance_list">Product List</string>
+    <string name="balance_redpocket">Bonus</string>
+    <string name="balance_exp">Integral</string>
+    <string name="balance_detail">Order Details</string>
+    <string name="balance_transportation">Transportation</string>
+    <string name="balance_rental">Subtotal:</string>
+    <string name="balance_submit">Place Order</string>
+    <string name="balance_cancel">Cancel</string>
+    <string name="bill_save">Save</string>
+    <string name="bill_office">Stationery</string>
+    <string name="bill_food">Food</string>
+    <string name="bill_commodity">Supplies</string>
+    <string name="bill_title">Invoice Title</string>
+    <string name="balance_formateddiscount">Discount</string>
+    <string name="profile_follow">Order Tracking</string>
+    <string name="lastbrowse">History</string>
+    <string name="profile_new_userhelp">Guide</string>
+    <string name="order_paynow">Payment</string>
+    <string name="main_address">Address</string>
+    <string name="manage_address">Address List</string>
+    <string name="collect_myfavorite">Favorite Goods</string>
+    <string name="collect_done">Done</string>
+    <string name="collect_compile">Edit</string>
+    <string name="debughome_log">Protocol Log</string>
+    <string name="debughome_activity">Activity Cycle</string>
+    <string name="debughome_crashlog">Crash Log</string>
+    <string name="debughome_floatingwindow">Floating Window Settings</string>
+    <string name="dialog_title">Title</string>
+    <string name="dialog_message">Message</string>
+    <string name="dialog_ensure">Confirm</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="express_logistics">Logistics Information</string>
+    <string name="floatView_floatingwindowopen">Open The NetTraffic</string>
+    <string name="floatView_floatingwindowclose">Close The NetTraffic</string>
+    <string name="floatView_3g">Simulate the 3G Network</string>
+    <string name="floatView_cancel3g">Cancel the Simulation of 3G Network</string>
+    <string name="floatView_2g">Simulate the 2G Network</string>
+    <string name="floatView_cancel2g">Cancel the Simulation of 2G Network</string>
+    <string name="gooddetail_parameter">Product Specifications</string>
+    <string name="gooddetail_product">Product Description</string>
+    <string name="gooddetail_commit">Customer Reviews</string>
+    <string name="gooddetail_buy">Buy Now</string>
+    <string name="gooddetail_shoppingcart">Add to Cart</string>
+    <string name="hotselling_recommend">Special Offer</string>
+    <string name="integral_creditsexchange">Score Exchange</string>
+    <string name="integral_submit">Submit</string>
+    <string name="login_account">Account</string>
+    <string name="login_login">Sign In</string>
+    <string name="login_username">Phone Number </string>
+    <string name="login_username2">User Name or Phone Number </string>
+    <string name="login_username_normal">User Name </string>
+    <string name="login_password">Password</string>
+    <string name="login_register">Sign Up</string>
+    <string name="profile_personal">Account</string>
+    <string name="failue_service">Server processing failed..</string>
+    <string name="data_null">no data</string>
+
+    <string name="profile_message">Messages</string>
+    <string name="redpaper_input">Please Enter a Score</string>
+    <string name="register_regist">Sign Up</string>
+    <string name="register_email">E-mail</string>
+    <string name="register_confirm">Re-Type Password</string>
+    <string name="search_input">please input keywords</string>
+    <string name="search_input_shop">please input keywords</string>
+    <string name="search_input_shop_goods">please input keywords</string>
+    <string name="setting_app_setting">Cache Setting</string>
+    <string name="setting_clear_cache">Clear Cache</string>
+    <string name="setting_picture">Picture Resolution</string>
+    <string name="setting_smartmode">Auto</string>
+    <string name="setting_hqpicture">High Quality (for WIFI)</string>
+    <string name="setting_normal">Low Quality (for 2G/3G)</string>
+    <string name="setting_official">Official Info</string>
+    <string name="setting_service">Customer Care</string>
+    <string name="setting_newfunction">Welcome Pages</string>
+    <string name="setting_website">Official Site</string>
+    <string name="setting_tech">Technical Support</string>
+    <string name="setting_rate">Rating for Us</string>
+    <string name="setting_geekzoo">About Geek-Zoo</string>
+    <string name="setting_about">About</string>
+    <string name="setting_logout">Sign Out</string>
+    <string name="share_share">Share</string>
+    <string name="share_sina">Share to Sina Weibo</string>
+    <string name="share_tencent">Share to Tencent Weibo</string>
+    <string name="shopcar_shopcar">Cart</string>
+    <string name="shopcar_nothing">Cart is empty</string>
+    <string name="shopcar_add">Go shopping</string>
+    <string name="shopcarfooter_total">Subtotal:</string>
+    <string name="shopcarfooter_settleaccounts">Checkout</string>
+    <string name="shopcarhead_ecm">ECMoban</string>
+    <string name="shopcaritem_done">Done</string>
+    <string name="shopcaritem_modification">Modify</string>
+    <string name="shopcaritem_remove">Remove Product</string>
+    <string name="topview_message">Notification</string>
+    <string name="tradeitem_number">Order NO.</string>
+    <string name="tradeitem_time">Create Time</string>
+    <string name="tradeitem_rental">Subtotal:</string>
+    <string name="tradeitem_receive">Confirm Received</string>
+    <string name="voiceview_text">Speak now...</string>
+    <string name="life_cycle">Lifcycle of Activity </string>
+    <string name="exit_again">Press Again to Exit</string>
+    <string name="exit_debug_mode">Confirm Exit Debug Mode?</string>
+    <string name="add_name">Please Enter Your Name</string>
+    <string name="add_tel">Please Enter Phone Number</string>
+    <string name="add_email">Please Enter Email Address</string>
+    <string name="add_correct_email">Please Enter Correct Email Address</string>
+    <string name="add_address">Please Enter Address</string>
+    <string name="confirm_address">Please Check Address</string>
+    <string name="select_province">Select Province</string>
+    <string name="select_city">Select City</string>
+    <string name="select_area">Select District</string>
+    <string name="country">Country</string>
+    <string name="province">Province</string>
+    <string name="city">City</string>
+    <string name="area">District</string>
+    <string name="can_not_delete">Can not delete the default address</string>
+    <string name="successful_operation">Operation Succeed</string>
+    <string name="non_address">Have no Shipping Address yet</string>
+    <string name="not_support_a_red_envelope">Not support bonus</string>
+    <string name="browser">Internet Explorer</string>
+    <string name="public_done">DONE</string>
+
+    <string name="no_commit">No Reviews</string>
+    <string name="deliverStatus">Logistics Status</string>
+    <string name="order_number">Order Number:</string>
+    <string name="hold_on">Loading</string>
+    <string name="not_support">Not Support yet</string>
+    <string name="check_the_network">Please Check the Network Configuration</string>
+    <string name="no_login">Please Signin First</string>
+    <string name="formerprice">Promotion Price</string>
+    <string name="market_price">Market Price </string>
+    <string name="exemption_from_postage">Freight: Free</string>
+    <string name="not_pack_mail">Freight: not Free</string>
+    <string name="brstock">Inventory:</string>
+    <string name="market_price_plus">Market Price：</string>
+    <string name="total">Subtotal</string>
+    <string name="checkout">Check Out</string>
+    <string name="modify">Modify</string>
+    <string name="redpaper">Please select a correct number</string>
+
+    <string name="required_cannot_be_empty">Required fields can not be empty</string>
+    <string name="password_not_match">Passwords not match, please try again</string>
+    <string name="setting">Settings</string>
+
+    <string name="exit">Exit</string>
+    <string name="ensure_exit">Sign Out Now?</string>
+    <string name="no_mode_of_distribution">No Shipping Informations</string>
+    <string name="pay_or_not">Order generated, pay right now?</string>
+    <string name="personal_center">Go to account page to check  orders</string>
+    <string name="understock">Sorry, Understock</string>
+    <string name="total_price">Subtotal</string>
+
+    <string name="no_data">No Informations</string>
+    <string name="check_or_not">Check orders right now?</string>
+    <string name="use">Exchange</string>
+    <string name="share_blog">I found an incredible product on ECMobile, check it out</string>
+    <string name="number">Quantity:</string>
+    <string name="crash_log_analysis">Crash log analysis</string>
+
+    <string name="no_sdcard">SD-card invalid or no insert!</string>
+    <string name="piece"> </string>
+    <string name="delivery">You must select a shipping type</string>
+    <string name="collected">Already collected</string>
+    <string name="been_used">Username or Email has been used</string>
+    <string name="submit_the_parameter_error">Error word</string>
+    <string name="failed">Failed</string>
+    <string name="purchase_failed">Purchase Failed</string>
+    <string name="no_shipping_information">No Shipping Information</string>
+    <string name="click_to_login">Click here to sign in</string>
+    <string name="share_weixin">Share to Weixin</string>
+    <string name="share_weixin_timeline">Share to Weixin Timeline</string>
+    <string name="button_yes">Yes</string>
+    <string name="button_no">No</string>
+    <string name="button_ignore">Ignore</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_forward">Go</string>
+    <string name="button_ok">OK</string>
+    <string name="error_network">NetworkNo error, please try again later</string>
+    <string name="error_1">Failed</string>
+    <string name="error_100">Failed</string>
+    <string name="error_10001">You must select a shipping method</string>
+    <string name="error_10007">You have already collected the goods</string>
+    <string name="error_10008">Understock</string>
+    <string name="error_11">Username or email is used</string>
+    <string name="error_101">Wrong Parameter</string>
+    <string name="error_8">Failed</string>
+    <string name="error_14">Purchase Failed</string>
+    <string name="error_10009">No Shipping Information</string>
+    <string name="error_10010">No products in the shopping cart</string>
+    <string name="tips_modifying">Modifying…</string>
+    <string name="tips_removing">Removing…</string>
+    <string name="tips_loading">Loading…</string>
+    <string name="tips_more">Click to load more</string>
+    <string name="tips_no_more">No More</string>
+    <string name="tips_pull_refresh">Pull to Refresh</string>
+    <string name="tips_release_refresh">Release to Refresh</string>
+    <string name="tips_last_update">Last Update：</string>
+    <string name="again_exit">Press again to exit the APP</string>
+
+    <string name="xlistview_header_hint_normal">Pull to Refresh</string>
+    <string name="xlistview_header_hint_ready">Looson to Refresh</string>
+
+    <string name="xlistview_header_hint_normal_load">Pull to Load more</string>
+    <string name="xlistview_header_hint_ready_load">Looson to Load more</string>
+
+    <string name="xlistview_header_hint_loading">Loading…</string>
+    <string name="xlistview_header_last_time">Last Refresh Time:</string>
+    <string name="xlistview_footer_hint_normal">Loading More</string>
+    <string name="xlistview_footer_hint_ready">Release to Load more</string>
+
+    <string name="popularity">Popular</string>
+    <string name="expensive">Expensive</string>
+    <string name="cheapest">Cheapest</string>
+    <string name="sales">Sales Ranking</string>
+    <string name="price">Price</string>
+    <string name="select_specification_first">Please select specification first</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="add_to_cart_success">Added to Cart</string>
+    <string name="session_expires_tips">For safety reason, please signin again</string>
+    <string name="collection_success">Added to Collection</string>
+    <string name="del_collection_success">Cancel Collection</string>
+    <string name="remote_call_failed">Cannot Call Number</string>
+    <string name="confirm_install_hint">Installation Notes</string>
+    <string name="confirm_install">To ensure the safety of your transaction, you need to  install alipay to make a payment.  Click OK to install it now.</string>
+    <string name="check_sign_failed">Your order information has been illegally tampered</string>
+    <string name="date_format">MM/dd/yyyy</string>
+    <string name="warn_no_recipient">Please enter recipient name</string>
+    <string name="warn_no_mobile">Please enter mobile number</string>
+    <string name="warn_no_email">Please enter email</string>
+    <string name="warn_no_address">Please entre address</string>
+    <string name="warn_no_region">Please select region</string>
+    <string name="please_select">Please select</string>
+    <string name="click_to_speak">Click to Speak</string>
+    <string name="address_updated">Address Updated</string>
+    <string name="address_selected">Address Selected</string>
+    <string name="no_orders">No more order date</string>
+    <string name="remain_redpacks">%d point available</string>
+    <string name="amount">Amount</string>
+    <string name="delete_confirm">Are You Sure?</string>
+    <string name="yuan_unit">￥</string>
+    <string name="yuan">元</string>
+    <string name="warn_no_pay">Please select Payment</string>
+    <string name="warn_no_shipping">Please select shipping</string>
+    <string name="no_of_items">Item(s)</string>
+    <string name="use_exp">Exchange %@ points</string>
+    <string name="favorite_added">Added to Collection</string>
+    <string name="product_category">Category</string>
+    <string name="product_specification">Specification</string>
+    <string name="select_specification">Select Specification</string>
+    <string name="single">Single</string>
+    <string name="multiple">Multiple</string>
+    <string name="unique">Unique</string>
+    <string name="new_activity">New Activities</string>
+    <string name="save">Save</string>
+    <string name="avail_exp">Available Points</string>
+    <string name="warn_wrong_exp">Wrong Number</string>
+    <string name="tips_verifying">Verifying…</string>
+    <string name="no_product">No products</string>
+    <string name="delete_photo">Delete Photo</string>
+    <string name="from_camera">Take Photo</string>
+    <string name="from_album">Choose From Album</string>
+    <string name="recording">Recording…</string>
+    <string name="searching">Searching…</string>
+    <string name="signout">Signout</string>
+    <string name="cancel">Cancel</string>
+    <string name="cannot_open">Cannot open page</string>
+    <string name="cannot_call">Cannot call number</string>
+    <string name="member_signin">Member Signin</string>
+    <string name="wrong_username">Please enter correct username</string>
+    <string name="username_too_short">Username too short</string>
+    <string name="username_too_long">Username too long</string>
+    <string name="wrong_password">Please enter correct password</string>
+    <string name="password_too_short">Password too short</string>
+    <string name="password_too_long">Password too long</string>
+    <string name="wrong_email">Please Enter correct email</string>
+    <string name="signing_in">Signing…</string>
+    <string name="member_signup">Member signup</string>
+    <string name="please_input">Please input</string>
+    <string name="signing_up">Signing…</string>
+    <string name="large_photo">Large photo</string>
+
+    <string name="user_or_email_exists">Username or email has been used</string>
+    <string name="unexist_information">Information does not exists</string>
+    <string name="success_share">Success!!</string>
+    <string name="user_cancel">User Cancelled!!</string>
+    <string name="fail_share">：Failed!!</string>
+    <string name="successful_authentication">Successful Authentication!</string>
+    <string name="none">None</string>
+    <string name="broadcast_success">Broadcast Success</string>
+    <string name="shop_price">Shop Price</string>
+    <string name="remain">Inventory</string>
+    <string name="shipping_fee">Freight</string>
+    <string name="shipping_fee_free">Free</string>
+    <string name="shipping_fee_notfree">Not Free</string>
+    <string name="no_result">No Result</string>
+    <string name="switch_auto_mode">Switched to auto mode</string>
+    <string name="switch_high_mode">Switched to high quality</string>
+    <string name="switch_low_mode">Switched to low quality</string>
+    <string name="network_unreachable">Network Unavailable</string>
+    <string name="network_wifi">Switched to WIFI mode</string>
+    <string name="network_wlan">Switched to WLAN mode</string>
+    <string name="help">Help</string>
+    <string name="brand">Brand</string>
+    <string name="advance_search">Advance_Search</string>
+    <string name="filter">Filter</string>
+    <string name="promote_will_end">Promotion remains</string>
+    <string name="end">days</string>
+    <string name="required">Required</string>
+    <string name="QQweiboo">QQ Micro-Blog</string>
+    <string name="settings">Settings</string>
+    <string name="update">Update</string>
+    <string name="check_update">Check_Update</string>
+    <string name="download">Download</string>
+    <string name="install">Install</string>
+    <string name="result">Return Value</string>
+    <string name="launch_preferences">Startup Settings</string>
+    <string name="preference_attributes">Attribute Set</string>
+    <string name="global_preference">Global Settings</string>
+    <string name="global_preference_summary">Secure payment services and general DEMO set</string>
+
+    <string-array name="launch_list_entries">
+        <item>External Business Orders</item>
+        <item>Remote Order</item>
+    </string-array>
+
+    <string name="order_mode">Order Mode</string>
+    <string name="popup_result">Display the return value</string>
+    <string name="result_status_title">Result Status : </string>
+    <string name="memo_title">Memo : </string>
+    <string name="result_title">Result : </string>
+    <string name="check_result_title">Check Sign Result : </string>
+    <string name="external_token_title">External Token</string>
+    <string name="trade_number_title">Trade Number</string>
+    <string name="payPhaseId_title">Pay PhaseId</string>
+    <string name="taobao_pay">The order of Payment</string>
+    <string name="taobao_add">Increase the Order</string>
+    <string name="taobao_reset">Order to Reset</string>
+    <string name="start_order">Open the Order Page</string>
+    <string name="not_null">Not Null</string>
+    <string name="extern_partner">External Business Orders</string>
+    <string name="user_id">USER ID</string>
+    <string name="btn_logon">Fast Login</string>
+    <string name="data_auth">Data Authorization</string>
+    <string name="name">Name</string>
+    <string name="gender">Sex</string>
+    <string name="certinfo">Certificates</string>
+    <string name="email">Email</string>
+    <string name="mobile">Mobile</string>
+    <string name="address">Address</string>
+    <string name="logonId">LogonId</string>
+
+    <!--TradeActivity 订单列表-->
+    <string name="trade_lists">Order List</string>
+    <string name="profile_obligation">WaitPay</string>
+    <string name="profile_readyforshipment">WaitShip</string>
+    <string name="profile_forthegoods">Shiped</string>
+    <string name="profile_finished">Finished</string>
+    <string name="profile_await_comment">WaitComment</string>
+    <string name="order_await_pay">WaitPay</string>
+    <string name="order_await_ship">WaitShip</string>
+    <string name="order_await_group">WaitGroup</string>
+    <string name="order_shipped">Shiped</string>
+    <string name="order_history">Finished</string>
+    <string name="order_await_comment">WaitComment</string>
+    <string name="goods_and_total">    Quantity, subtotal:</string>
+    <string name="trade_order_time">Order Time:</string>
+    <string name="pay">Purchase</string>
+
+    <!--OrderDetailActivity 订单详情页-->
+    <string name="order_detail">Order Detail</string>
+    <string name="detail_detail_status">Status:</string>
+    <string name="detail_receive_info">Delivery Info</string>
+    <string name="detail_receiver">Consignee:</string>
+    <string name="detail_receive_address">Address:</string>
+    <string name="detail_remarks">Remarks:</string>
+    <string name="detail_detail_info">Infomation</string>
+    <string name="detail_detail_no">Serial Quantity:</string>
+    <string name="detail_detail_time">Create Time:</string>
+    <string name="detail_ship_time">Ship Time</string>
+    <string name="detail_price_info">Price Info</string>
+    <string name="detail_ship_expense">Ship Fee:</string>
+    <string name="detail_score_offset">Integral Deduction:</string>
+    <string name="detail_redpaper_offset">Bonus Deduction:</string>
+    <string name="detail_rebate_cash">Discount:</string>
+    <string name="detail_rebate_coupon">UseCoupon:</string>
+    <string name="detail_balance_realpay">Subtotal:</string>
+    <string name="order_payorder">Payment Order</string>
+    <string name="order_cancel">Cancellation of Order</string>
+    <string name="order_cancel_sure">Are you sure to cancel the order?</string>
+    <string name="order_canceled">Order has been cancelled.</string>
+
+    <!--Address2Activity-->
+    <string name="address2_choosed_area">Area Selected</string>
+    <string name="address2_no_choosed"> </string>
+
+    <!--AddAddressActivity-->
+    <string name="address_zipcode_notnull">Postal code can not be empty</string>
+    <string name="address_name_toolong">The consignee name is too long</string>
+    <string name="address_mobile_false">Please input the correct phone number</string>
+    <string name="address_zipcode_false">Please input the correct postal code</string>
+    <string name="address_email_false">Address_email_false</string>
+    <!--BalanceActivity-->
+    <string name="balance_buy_success">Buy Success！</string>
+    <string name="balance_pay2">Orders have been successfully generated, free goods without paying</string>
+    <string name="balance_gobalancelist">The order has been generated, please order the list view</string>
+    <string name="balance_choose_payment_first">Please choose the payment</string>
+    <string name="balance_invoice_close">Reactive power has close invoice!</string>
+    <string name="balance_notsupport_redpaper">Not support bonus!</string>
+    <string name="balance_notsupport_integral">Not support integration!</string>
+    <string name="balance_choose_payment">Please choose the payment first!</string>
+    <string name="balance_choose_shipping">Please select the distribution!</string>
+    <string name="balance_notsupport_COD">Cash on delivery not support</string>
+    <string name="balance_order_incloud">The order includes [</string>
+    <string name="balance_deng">] etc.</string>
+    <string name="balance_zhong_goods"> Commodities.</string>
+    <string name="balance_nopayment">No Payment Support</string>
+
+    <!--ChangePasswordActivity-->
+    <string name="please_input_old_password">Please input old password</string>
+    <string name="please_input_new_password">Please input new password</string>
+    <string name="please_sure_new_password">Please sure new password</string>
+    <string name="change_password_succeed">Change succeeded！</string>
+
+    <!--ChoosePayActivity-->
+    <string name="payment_center">Payment Center</string>
+    <string name="payment_way">Payment Type</string>
+    <string name="payment_Online">Online</string>
+    <string name="payment_Offline">Offline</string>
+    <string name="payment_otherway">Switch</string>
+    <string name="payment_succeed">Pay Succeed</string>
+    <string name="newdetail_Succeed">Success for new orders!</string>
+    <string name="payment_PC_Alipay">PC Pay Treasure</string>
+    <string name="payment_phone_Alipay">Mobile Alipay</string>
+    <string name="payment_WAP_Alipay">Mobile phone pay treasure</string>
+    <string name="payment_caifutong">TenPay</string>
+    <string name="payment_yinlian">UnionPay payment</string>
+    <string name="payment_COD">Cash on Delivery</string>
+    <string name="payment_yinhangzhuanzhang">Bank transfer</string>
+    <string name="payment_network_problem">Network anomaly, please refresh the page！</string>
+    <string name="payment_paysuccess">Payment is Successful！</string>
+    <string name="payment_payfail">Payment Failed！</string>
+    <string name="payment_paywait">Payment is waiting for result！</string>
+    <string name="payment_goshopping">Go Shopping</string>
+    <string name="payment_checkdetail">Check order</string>
+    <string name="payment_cancel_pay">User cancelled the payment！</string>
+    <string name="payment_system_busy">The system is busy, please pay again later！</string>
+
+    <!--CollectActivity-->
+    <string name="collect_cancel_collect">Remove Collection</string>
+    <string name="collect_cancel_sure">Are you sure?</string>
+    <string name="collect_delete_success">Successfully Deleted</string>
+    <string name="collect_delete">Delete</string>
+    <string name="collect_no_favorite">You Have No More Collection</string>
+
+    <!--EcmobanMainActivity-->
+    <string name="main_level">Grade：</string>
+    <string name="main_no_network">Network Error!</string>
+    <string name="main_start_load">To start the download</string>
+    <string name="main_exit">Exit</string>
+    <string name="main_exit_content">OK to Exit？</string>
+
+    <!--GoodDetailActivity-->
+    <string name="detail_refresh_list_push">Push to load more</string>
+    <string name="detail_refresh_list_pull">Pull to hide detail</string>
+    <string name="detail_goodsdetail">Description</string>
+    <string name="detail_goodsparamas">Details</string>
+    <string name="detail_goods_youlike">Recommend</string>
+    <string name="detail_refresh_info">Please refresh the commodity information!</string>
+    <string name="detail_empty_img">The picture is empty!</string>
+    <string name="detail_sale">selling"</string>
+    <string name="detail_good">"Very Good，</string>
+    <string name="detail_no_network">Network Error!</string>
+    <string name="detail_home">Home</string>
+    <string name="detail_search">Search</string>
+    <string name="detail_share">Share</string>
+
+    <!--GoodLiseActivity-->
+    <string name="goodlist_network_problem">Network anomaly, please refresh network</string>
+    <string name="goodlist_brand">Brand</string>
+    <string name="goodlist_classify">Categories</string>
+    <string name="goodlist_price">Price Range</string>
+    <string name="goodlist_title">Listing</string>
+
+    <!--IntegralActivity-->
+    <string name="integral_enter_score">Please input the correct integral</string>
+    <string name="integral_score_not_zero">The input integral cannot be 0</string>
+    <string name="integral_all_of_you">You have a total of </string>
+    <string name="integral_can_use">You Can Use </string>
+    <string name="integral_integral"> points</string>
+
+    <!--HomeFragment-->
+    <string name="newgoods_putaway">Newest</string>
+    <string name="newgoods">New Arrivals</string>
+    <!--LastBrowseActivity-->
+    <string name="lastbrowse_no_browse">You have no browsing history!</string>
+    <string name="lastbrowse_delete">Delete history</string>
+    <string name="lasebrowse_delete_sure">Are you sure to delete?</string>
+    <string name="lasebrowse_delete_sure2">Are you sure to delete?</string>
+
+    <!--LoginActivity-->
+    <string name="login_user_not_exist">The user name does not exist</string>
+    <string name="login_invalid_password">Wrong Password</string>
+    <string name="login_welcome">Welcome back</string>
+    <!--MyFindActivity-->
+    <string name="find_find">Discover</string>
+    <string name="find_today_hot">Today News</string>
+    <string name="watch_all">Watch All</string>
+    <!--MyPurseActivity-->
+    <string name="purse_mypurse">Wallet</string>
+
+    <!--RedPapperListActivity-->
+    <string name="redpaper_detail">Red Details</string>
+    <!--RegisterActivity-->
+    <string name="register_user_name_cannot_be_empty">The user name cannot be empty</string>
+    <string name="register_password_cannot_be_empty">Password can not be empty</string>
+    <string name="register_email_cannot_be_empty">Email cannot be empty</string>
+    <string name="register_email_format_false">Email format error, please verify</string>
+    <string name="register_username_toolong">The user name is too long</string>
+    <string name="register_pwd_tooshort">The password cannot be less than 6</string>
+    <string name="register_pwd_format_false">The password is not in the correct format</string>
+    <!--RemarkActivity-->
+    <string name="remark_content_cannot_be_empty">Note the content cannot be empty!</string>
+    <string name="remark_content_over_limit">Input exceeds the limit!</string>
+    <!--SettingActivity-->
+    <string name="setting_version">Version Info</string>
+    <string name="setting_version_callback">This is the latest version</string>
+    <string name="setting_call_or_not">Dial?</string>
+    <string name="setting_call_cannot_empty">Dial the number can not be empty!</string>
+    <string name="setting_zoo_introduce">Geek-Zoo Introduction</string>
+    <!--ShareActivity-->
+    <string name="share_no_accredit">No Authorization</string>
+    <string name="share_failed">Sharing Failed</string>
+    <string name="share_succeed">Sharing Succeed</string>
+    <!--SpecificationActivity-->
+    <string name="specific_classify">Classification</string>
+    <string name="specific_inventory">Stock</string>
+    <!--ShoppingCartAdapter-->
+    <string name="shopcart_goods_num_cannot_empty">The quantity of the goods can not be empty!</string>
+    <string name="shopcar_remove_sure">Are you sure to remove the goods?</string>
+    <string name="shopcar_goods_num_cannot_negative">The commodity quantity error!</string>
+
+    <!--Model-->
+    <string name="loading">Loading...</string>
+
+
+    <!--XML-->
+    <string name="compontent_num">Quantity:</string>
+    <string name="address_defalt">The Default Address</string>
+    <string name="address_back">Return</string>
+    <string name="order_traffic">Freight</string>
+    <!--activity_customercenter-->
+    <string name="customer_username">Username:</string>
+    <string name="customer_viplevel">Member Grade:</string>
+    <string name="customer_change_password">Modify Password</string>
+
+    <!--activity_goodlist_menu-->
+    <string name="goodlist_screen">Filter</string>
+    <string name="goodlist_no_screen">No Suit</string>
+    <!--activity_my_find-->
+    <string name="find_run_zxing">Scan QR Code</string>
+    <!--activity_my_purse-->
+    <string name="purse_redpaper">Bonus</string>
+    <string name="purse_zero">0</string>
+    <string name="purse_integral">Integral</string>
+    <!--activity_orderdetail-->
+
+    <string name="order_cost">Order Cost</string>
+    <string name="order_totalcost">Goods Total Fee</string>
+    <string name="order_freight">Freight</string>
+    <string name="order_deliver">The Delivery Method</string>
+    <string name="order_deliver_workday">Delivery only on weekdays</string>
+    <string name="order_have_invoice">Invoice</string>
+    <string name="order_no_invoice">Not Invoice</string>
+    <!--activity_remark-->
+    <string name="remark_info">Remarks Information</string>
+    <string name="remark_content">The Remarks</string>
+    <string name="remark_input">Fill in the notes (not more than 100 words)</string>
+    <string name="remark_remark">Remarks</string>
+    <!--activity_share-->
+    <string name="share_tosina">Sina Weibo</string>
+    <string name="share_totencent">TencentWeibo</string>
+    <string name="share_toqq">QQ Friends</string>
+    <string name="share_towechat">WeChat</string>
+    <string name="share_toWXfriend">Friends Circle</string>
+    <string name="share_tomessage">Message</string>
+    <string name="share_toEmail">Email</string>
+    <string name="share_clip">Clip</string>
+    <string name="share_clip_tips">Content has clipped on Clipboard</string>
+    <string name="share_cancel">Cancel</string>
+    <!--balance-->
+
+    <string name="balance_forall">Total Fee:</string>
+    <string name="balance_return">Discount:</string>
+    <string name="balance_freigh">Freight:</string>
+    <string name="balance_realpay">Subtotal:</string>
+    <!--choose_pay-->
+    <string name="pay_sure">Payment</string>
+    <string name="pay_type">Payment Type</string>
+    <string name="pay_allmoney">Subtotal:</string>
+    <!--collect_item-->
+    <string name="collect_goods_info">Commodity Information</string>
+    <!--comment-->
+    <string name="comment_no_comment">No product reviews!</string>
+    <!--home_quicklyenter-->
+    <string name="quick_address_manage">Address</string>
+    <string name="quick_recently_look">History</string>
+    <string name="quick_my_order">Orders</string>
+    <string name="quick_my_collect">Favorite</string>
+    <string name="quick_map">Map</string>
+    <string name="quick_zxing">QR Code</string>
+    <string name="quick_wallet">Wallet</string>
+    <string name="quick_help">Help</string>
+    <string name="quick_sale_two">The second wave of price storm</string>
+    <!--invoice-->
+    <string name="invoice_content">The content of invoices</string>
+    <string name="invoice_type">Type of Invoice</string>
+    <!--login-->
+    <string name="login_remember_me">Remember Me</string>
+    <string name="login_forget_pwd">Forget Password?</string>
+    <string name="login">Sign in</string>
+    <!--main-->
+    <string name="main_no_login">Sign In First</string>
+    <string name="main_check_order">Orders</string>
+    <string name="main_help">Help</string>
+    <string name="main_home">Home</string>
+    <!--new_good_title-->
+    <string name="goods_sale">Promotion</string>
+    <string name="goods_earth_min">(The lowest global challenge)</string>
+    <string name="goods_new">New Commodity</string>
+    <!--redpapper_list_item-->
+    <string name="redpaper_number">No.:</string>
+    <!--share_tencent-->
+    <string name="tencent_change">Switching Account</string>
+    <string name="tencent_relay">Relay</string>
+    <!--shop_car-->
+    <string name="shopcar_num">Quantity:</string>
+    <string name="shopcar_item_num">Quantity:</string>
+    <string name="shopcar_total">Total:</string>
+    <string name="shopcar_payoff">Checkout</string>
+    <string name="shopcar_modification_num">Input Number</string>
+    <string name="shopcar_testword">This is a test good</string>
+    <!--specification_activity-->
+    <string name="spe_color_size">Please select specification</string>
+    <!--top_view-->
+    <string name="top_clean">Clear</string>
+    <!--trade_head-->
+
+    <!--activit_account-->
+    <string name="use_account">Balance:</string>
+    <string name="account_rechange">Deposit</string>
+    <string name="account_user">Account Balance</string>
+
+    <string name="versionno">Version</string>
+    <string name="versiondate">Release Date</string>
+    <string name="versionupdata">Check Version</string>
+    <!--YueRechange-->
+    <string name="yue_user">Account:</string>
+    <string name="yue_money">Money</string>
+    <string name="yue_inputhint">please input</string>
+    <string name="yue_ok">Confirm</string>
+    <string name="yue_rechange">Deposit</string>
+    <string name="yue_inputnotnull">The filled amount cannot be empty!</string>
+    <string name="update_success">Successful Modification</string>
+    <string name="yue_nopayment">No Payment Support</string>
+
+    <!--shareActivity-->
+    <string name="choose_more">Multiple Choice</string>
+    <string name="choose_one">single Selection</string>
+    <string name="goodlistmeun_clear">Clear</string>
+    <!--SearchActivity以及相关-->
+    <string name="search_please_input">Please enter the keywords</string>
+    <string name="search_search">Search</string>
+    <string name="search_no_history">No search history</string>
+    <string name="search_history">Search history</string>
+    <string name="search_clear_history">Clear history</string>
+    <string name="push_title">Message</string>
+    <string name="push_news">News</string>
+    <string name="search_title">Classify</string>
+    <!--后续添加-->
+    <string name="redpapper_youneed">You need to buy more than</string>
+    <string name="redpapper_goods">Goods!</string>
+    <string name="property_no_info">No basic parameters!</string>
+    <string name="choosepay_zero_nopay">Zero yuan goods, no need to pay!</string>
+    <string name="choosepay_can_use">Pay successful, your available balance</string>
+    <string name="choosepay_need_line_pay">The order requires you to pay online!</string>
+    <string name="choosepay_cod">Cash on delivery, no need to pay!</string>
+    <string name="choosepay_no_alipy">Does not support use alipay!</string>
+    <string name="choosepay_no_unionpay">Does not support UnionPay!</string>
+    <string name="choosepay_no_wxpay">Does not support WeChatPay!</string>
+    <string name="not_install_wxpay">Does not install WeChat!</string>
+    <string name="choosepay_unknown_pay">Unknown payment have been selected!</string>
+    <string name="choosepay_network_problem">Network anomaly!</string>
+    <string name="shopcar_deletes">Confirm delete?</string>
+    <string name="map_nofind">Sorry, cannot find results</string>
+    <!--AccountActivity以及相关-->
+    <string name="accoubt_record">Records</string>
+
+    <string name="accoubt_record_title">Trade Records</string>
+
+    <string name="all">All</string>
+    <string name="accoubt_record_detail">Detail</string>
+    <string name="withdraw">Withdraw</string>
+    <string name="today">today</string>
+    <string name="yesterday">yesterday</string>
+    <string name="user_account">account</string>
+    <string name="point">Attention</string>
+    <string name="sure">Are you sure?</string>
+    <string name="rec_type">Transaction</string>
+    <string name="time">Apply Time</string>
+    <string name="rec_number">Quantity</string>
+    <string name="rec_success">Success</string>
+    <string name="rec_recharge">Deposit</string>
+    <string name="apply">Applying</string>
+    <string name="content_notnull">Content can not be empty！</string>
+    <string name="too_large">The amount is too large</string>
+    <string name="running">Transations</string>
+    <string name="youmoney">Your Money</string>
+    <string name="money">Amount</string>
+    <string name="input">please input</string>
+    <string name="outapply">Apply</string>
+    <string name="new_good">Newest</string>
+    <!--语言设置-->
+    <string name="local">System Language</string>
+    <string name="Chinese">简体中文</string>
+    <string name="English">English</string>
+    <string name="language">Language</string>
+
+    <string name="is_default_address">Is the default address！</string>
+    <string name="is_default">Default</string>
+    <string name="set_language">Language Setting</string>
+
+    <string name="single_choice">(Single Selection)</string>
+    <string name="double_choice">(Double Selection)</string>
+    <string name="getpassword">Find PassWord</string>
+
+    <!--店铺街-->
+    <string name="shoplist">ShopList</string>
+    <string name="homepage">Home</string>
+    <string name="category">Search</string>
+    <string name="type">Type</string>
+    <string name="cart">Cart</string>
+    <string name="shop_collected">Collected</string>
+    <string name="shop_uncollected">COL</string>
+    <string name="follower_num">men collected</string>
+    <string name="shop_allgoods">Goods</string>
+    <string name="shop_addnew">New</string>
+    <string name="shop_promote">Best</string>
+    <string name="shop_news">Hot</string>
+    <string name="goods_score">Goods Score:</string>
+    <string name="logistics_score">Logistics Score:</string>
+    <string name="service_score">Service Score:</string>
+    <string name="company_phone">Phone</string>
+    <string name="company_name">Name</string>
+    <string name="company_area">Area</string>
+    <string name="company_notice">Notice</string>
+    <string name="shop_detail">Shop Detail</string>
+    <string name="shoplist_guide">Guide</string>
+    <string name="collect_myfavoriteshop">Favorite Shops</string>
+    <string name="collect_myfavoritegoods">Favorite Goods</string>
+
+    <string name="choose_city">Choose City</string>
+    <string name="selected_all">All</string>
+    <string name="not_support_feature">Temporarily not support this feature!</string>
+
+    <string name="price_down">Most expensive</string>
+    <string name="price_up">Cheapest</string>
+
+    <string name="search_seller_history">Search Shops history</string>
+    <string name="search_good_history">Search Goods history</string>
+    <string name="clean_seller_history">Clean</string>
+    <string name="clean_good_history">Clean</string>
+    <string name="zero_history">(0)</string>
+    <string name="have_history"></string>
+
+    <string name="search_banner">\"</string>
+    <string name="search_banner_seller">Search Shop \"</string>
+    <string name="search_banner_good">Search Goods \"</string>
+
+    <string name="search_nothing_good">Goods not Found</string>
+    <string name="search_nothing_seller">Shops not Found</string>
+
+    <string name="at_all"></string>
+    <string name="category_for_chioce">Categories for you choose</string>
+
+    <string name="groupbuy_title">Group Buy Goods</string>
+    <string name="groupbuy">Group Buy</string>
+    <string name="groupbuy_act">Group Buy Active</string>
+    <string name="more">more</string>
+
+    <string name="location_city">Location City</string>
+    <string name="hot_city">Hot Cities</string>
+
+    <string name="choose_nothing">You choose nothing</string>
+
+    <string name="choose_all">ALL</string>
+    <string name="collect">Collect</string>
+
+    <string name="shop_service">Service:</string>
+    <string name="shop_send">Send To:</string>
+    <string name="shop_discount">Discount</string>
+    <string name="shop_have_discount">You have these discounts</string>
+
+    <string name="location_refresh">Refresh</string>
+
+    <!--第三方登录-->
+    <string name="outer_login">Outer Login</string>
+
+    <!--手机快速注册-->
+    <string name="mobile_register">Mobile Register</string>
+    <string name="register_success">Register Success</string>
+    <string name="register_next">Next</string>
+    <string name="register_tips">Tips</string>
+    <string name="register_num_null">Number is Null!</string>
+    <string name="register_num_format">Wrong Number Format</string>
+    <string name="register_num_extinct">This Number has been Registered,Still to Register or Not?</string>
+    <string name="register_num_extinct2">This Number has been Registered</string>
+    <string name="register_code_send">We have send SNS code to:</string>
+    <string name="getcode_attention_sendfail">send SNS code Fail</string>
+    <string name="register_back">click“back”register will be cancel，click or not?</string>
+    <string name="register_resend">Resend</string>
+    <string name="register_enter_recode">Please Enter the Code You received</string>
+    <string name="register_enter_code">Please Enter Your Code</string>
+    <string name="register_wrong_code">Wrong Code</string>
+    <string name="register_wrong_invite_code">Wrong Invite Code</string>
+    <string name="register_set_pwd">Please Set Password</string>
+
+
+    <string name="register_enter_pwd">Please Enter 6-20 Characters</string>
+    <string name="register_tips_pwd">Password has 6-20 Characters</string>
+
+    <!--快递咨询-->
+    <string name="logistics_info">Logistics Info</string>
+    <string name="logistics_sign">Sign</string>
+    <string name="logistics_unsign">Not Sign</string>
+    <string name="check_shipinfo">Logistics</string>
+    <string name="company">Company:</string>
+    <string name="log_number">Number:</string>
+
+
+    <!--2.6.0-->
+    <!--用户中心-->
+    <string name="head_picture">Profile Photo</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="from_photos">Photo Album</string>
+
+    <!--咨询-->
+    <string name="consult">Consultation</string>
+    <string name="consult_center">Consultation Center</string>
+    <string name="consult_goods">Goods Consultation</string>
+    <string name="consult_order">Order Consultation</string>
+    <string name="consult_sendlink">Send Link</string>
+    <string name="consult_sendmsg">Send</string>
+    <string name="consult_hint">Please input words</string>
+
+    <string name="ecjiaapplication_ignore">Ignore</string>
+    <string name="ecjiaapplication_open">Open</string>
+    <string name="order_goods_fee">Total amount of goods</string>
+    <string name="home_recommended">Recommended for you</string>
+
+    <!--手机专享-->
+    <string name="mobile_buy">Mobile Buy</string>
+    <!--1.4-->
+    <string name="sweep_history">Scan History</string>
+    <string name="topic_title">More</string>
+    <string name="get_password">Retrieve password</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="theme_street">Theme</string>
+    <string name="more_theme_street">More</string>
+    <string name="find_shop">Recommend shop</string>
+    <string name="more_find_shop">More</string>
+    <string name="copy">Copy</string>
+    <string name="qr_clear">Clear</string>
+    <string name="sure_clear">Are you sure</string>
+    <string name="no_todo">No operation</string>
+    <string name="copy_succeed">Copy success!</string>
+    <string name="balance_invoicefee">Invoice Fee:</string>
+    <string name="goodetail_fapiao">Tex Amount:</string>
+
+    <!--二维码分享-->
+    <string name="share_zxing">Share QRCode</string>
+    <string name="share_zxing_attention">Scan to download </string>
+    <string name="share_back_home">Enter</string>
+
+    <!--为空页面-->
+    <string name="null_bonus">No Redpackets</string>
+    <string name="null_address">No Address</string>
+    <string name="null_browse">No Content</string>
+    <string name="null_collect">No Collect</string>
+    <string name="null_goods">No goods</string>
+    <string name="null_msg">No Message</string>
+    <string name="null_order">No Order</string>
+    <string name="null_points">No Points</string>
+    <string name="null_search">No Content</string>
+    <string name="null_shareqr">No Content</string>
+    <string name="null_shop">No Shop</string>
+    <string name="null_paramer">No Property</string>
+
+    <string name="create_comment">Comment</string>
+
+    <!--商品评价-->
+    <string name="star">Star:</string>
+    <string name="comment_attention">Please write down your experience or method,which can provide a reference for other small partners, and your commentsis also very important to us !</string>
+    <string name="hide_name">Anonymity</string>
+    <string name="comment_create">Publish</string>
+    <string name="comment_num">Comments</string>
+    <string name="comment_create_showorder">Show Pic</string>
+    <string name="comment_create_succeed">Published</string>
+    <string name="comment_toast_no_star">No Stars</string>
+    <string name="comment_toast_no_content">No Content</string>
+
+    <string name="skip">Skip</string>
+
+
+    <!--1.6-->
+    <string name="function_help">Help</string>
+    <string name="function_qrcode">QR Code</string>
+    <string name="function_qrshare">Share</string>
+    <string name="function_mobilebuy">Mobile Buy</string>
+    <string name="function_toptic">Theme</string>
+    <string name="function_shake">Shake</string>
+    <string name="function_promotion">Promotion</string>
+    <string name="function_feedback">Consult</string>
+    <string name="function_checkin">Check In</string>
+    <string name="function_message">Message</string>
+    <string name="function_history">History</string>
+    <string name="function_map">Map</string>
+    <string name="function_todayhot">Today News</string>
+    <string name="function_groupbuy">Group Buy</string>
+
+    <string name="function_streets">Shop Streets</string>
+
+
+    <string name="function_manage">Manage</string>
+
+
+    <string name="found_qrcode">Code Scan</string>
+    <string name="found_streets">Shop Streets</string>
+    <string name="found_checkin">Check In</string>
+    <string name="found_wallet">Wallet</string>
+    <string name="found_theme">Theme</string>
+
+    <string name="function_setting_contain">Barring</string>
+
+    <!--摇一摇功能 start-->
+    <string name="shake_congratulation">Congratulation</string>
+    <string name="shake_reach">Reach</string>
+    <string name="shake_use"></string>
+    <string name="shake_attention">More surperise wait for you!Shake!Shake!</string>
+    <string name="title_shake_history">History</string>
+    <!--摇一摇功能 end-->
+
+    <string name="signin_or_register">Register/Sign in</string>
+
+    <string name="main_mine">My</string>
+    <string name="mine_history">History</string>
+    <string name="mine_collection_goods">Goods Care</string>
+    <string name="mine_collection_shop">Shop Care</string>
+
+    <string name="mine_order_attention">Check all orders</string>
+    <string name="mine_wallet_attention">Able add red pagers</string>
+    <string name="mine_wallet_balance">Balance</string>
+    <string name="mine_wallet_redpaper">Red Paper</string>
+    <string name="mine_wallet_integral">Integral</string>
+
+    <string name="setting_clear_notify">Sure To Clear?</string>
+
+
+    <string name="suggest_hot">Hot Goods</string>
+    <string name="suggest_new">New Goods</string>
+    <string name="suggest_best">Best Goods</string>
+    <string name="suggest_promotion">Promotion Goods</string>
+
+    <string name="goods_detail_enter_shop">Enter Shop</string>
+
+
+    <string name="update_title">New Version</string>
+    <string name="update_ignore">Ignore this version</string>
+    <string name="update_size_left">Update</string>
+    <string name="update_now_is_newest">It is newest!</string>
+    <string name="update_re_check">Recheck</string>
+    <string name="update_have_deleted">Package have deleted</string>
+    <string name="update_delete_file">Delete file</string>
+    <string name="update_continue">Continue</string>
+    <string name="update_cancel">Cancel</string>
+    <string name="update_have_checked_new">New version:</string>
+    <string name="update_this_version">Current:</string>
+    <string name="update_version_feature">New Version Feature:</string>
+
+
+    <string name="address_delete_attention">Sure to delete？</string>
+    <string name="scan_history_delete_attention">Sure to delete？</string>
+
+    <!--1.7-->
+    <string name="invitation_code_hint">Invitation code 6 digits or letters</string>
+    <string name="invitation_code_tips">Invitation code from your friend,if have</string>
+    <string name="input_username">Username</string>
+    <string name="input_username_tips1">username only support english character,number or symbol</string>
+    <string name="input_username_tips2">username cannot more than 20 character</string>
+    <string name="input_username_tips3">username cannot be null</string>
+    <string name="address_add_first">You do not have the goods address, add immediately?</string>
+
+    <string name="my_suggest">Generalize</string>
+    <string name="my_find_invite">Generalize</string>
+    <string name="invite">Invite</string>
+    <string name="my_invitation_code">My invitation code</string>
+    <string name="invitation_tips">Instructions:</string>
+    <string name="invitation_code_format">Invitation code length is 6</string>
+    <string name="my_invitation_record">Reward</string>
+    <string name="my_invitation">Invitation</string>
+    <string name="invitation_reward">Reward</string>
+    <string name="invitation_reward2">Reward:</string>
+    <string name="reward_tips">Tips</string>
+    <string name="reward_tips_content">Invite success can get bonus points\npoints can be used when buying goods</string>
+    <string name="reward_tips_content2">Invite success can get red envelopes awards\na red envelope can be used when buying goods</string>
+    <string name="reward_tips_content3">Invite success can receive cash rewards\ncash can be used when buying goods</string>
+    <string name="invitation_get_reward">To earn integral</string>
+    <string name="invitation_reward_detail">Reward Detail</string>
+    <string name="invitation_reward_detail_tips">No Reward Detail</string>
+    <string name="invitation_reward_points">Points Reward</string>
+    <string name="invitation_reward_redpacket">Red envelope rewards</string>
+    <string name="invitation_reward_cash">Cash Reward</string>
+    <string name="invitation_input1">您的好友</string>
+    <string name="invitation_input2">推荐您使用</string>
+    <string name="invitation_input3">下载URL:</string>
+    <string name="men">人</string>
+
+    <!--第三方登录-->
+    <string name="third_login">Other account login</string>
+    <string name="dear_third_login_user">Dear #replace# user:</string>
+    <string name="third_login_bonus">bind an account for more bonus</string>
+    <string name="no_orign_account">no account？</string>
+    <string name="has_orign_account">has account？</string>
+    <string name="quick_register">Quick Register</string>
+    <string name="quick_bind">Quick Bind</string>
+    <string name="login_bind">Login Bind</string>
+    <string name="register_bind">Register Bind</string>
+    <string name="wechat">WeChat</string>
+
+    <!--红包-->
+    <string name="mypurse_add_redpper">Add Bonus</string>
+    <string name="mypurse_add_text">Add</string>
+    <string name="add_paper_hint">please input NO.</string>
+    <string name="num_null">The number can not be empty</string>
+    <string name="redpaper_name">name:</string>
+    <string name="redpaper_amount">amount:</string>
+    <string name="enable_time">duration of use:</string>
+    <string name="enable_condition">condition:</string>
+    <string name="num_error1">number incorrect，</string>
+    <string name="num_error2">Please input again!</string>
+    <string name="repeat_input">Re input</string>
+    <string name="add_succeed1_text">Congratulations！</string>
+    <string name="add_succeed2_text">Red envelope add success！</string>
+    <string name="add_again_text">Confirm</string>
+    <string name="use_enable">Available</string>
+    <string name="used">Used</string>
+    <string name="over_limit">Expired</string>
+    <string name="instructions">Instructions</string>
+
+    <string name="order_over">Useable at least</string>
+    <string name="no_free_shippingfee">(Free postage)</string>
+    <string name="used_time">Time limite</string>
+    <string name="receive_redpaper">Receive</string>
+    <string name="receive_received">Received</string>
+    <string name="goodsdetail_getredpaper_close">Close</string>
+    <string name="goodsdetail_getredpaper_secceed">Done Success</string>
+    <string name="goodsdetail_getredpaper">Receive Redpaper</string>
+    <string name="no_comments">No comment</string>
+
+    <string name="address_add_succeed">Add Address Succeed!</string>
+
+    <string name="enter_shop">Enter</string>
+
+    <string name="comment_upload_pic_tips">you can upload 5 pictures</string>
+    <string name="comment_upload_pic_tips2">upload picture</string>
+    <string name="see_comment">View evaluation</string>
+
+    <string name="order_to_comment">Comments</string>
+    <string name="order_buy_again">Buy Again</string>
+    <string name="order_lookfor_commment">Look for comments</string>
+    <string name="order_remind_ship">Remind shipping</string>
+    <string name="search_order">Goods name/Order SN</string>
+    <string name="order_all_orders">All orders</string>
+    <string name="orderdetail_remind_success">Reminding success</string>
+    <string name="orderdetail_remind_failed">Your operation is too frequent, Please try again later</string>
+    <string name="comment_type_all">All</string>
+    <string name="comment_type_positive">Praise</string>
+    <string name="comment_type_moderate">Medium</string>
+    <string name="comment_type_negative">Bad</string>
+    <string name="comment_type_showorder">Slide</string>
+    <string name="goods_history">History</string>
+    <string name="goods_recommended">Recommended</string>
+
+    <string name="goods_tab_goods">Goods</string>
+    <string name="goods_tab_details">Details</string>
+    <string name="goods_tab_comment">Comment</string>
+
+    <string name="original_price">Original Price:</string>
+    <string name="new_member_gift">Gift</string>
+</resources>

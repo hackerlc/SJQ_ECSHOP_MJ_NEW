@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:bind="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="onClick"
+            type="android.view.View.OnClickListener"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/main_color_f6f6f6"
+        tools:context="com.ecjia.view.activity.together.TogetherWholesaleActivity">
+
+        <include
+            android:id="@+id/lc_head"
+            layout="@layout/layout_data_binding_head"
+            bind:onClick="@{onClick}"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_data_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/item_together_wholesale"/>
+    </LinearLayout>
+
+</layout>

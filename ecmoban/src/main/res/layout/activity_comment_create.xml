@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/new_good_distance"
+              android:orientation="vertical">
+
+    <include layout="@layout/top_view"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include
+                        layout="@layout/layout_comment_goodsdetail"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#ffdddddd">
+
+                    </View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#FFFFFF"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/star"
+                            android:textSize="13dp"/>
+
+                        <RatingBar
+                            android:id="@+id/comment_ratingbar"
+                            style="@style/myCommentRatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:isIndicator="false"
+                            android:numStars="5"
+                            android:stepSize="1"
+                            />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="#ffdddddd">
+
+                    </View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp"
+
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/comment_edit"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/shape_gray_stro_5rad"
+                            android:gravity="clip_horizontal"
+                            android:hint="@string/comment_attention"
+                            android:padding="10dp"
+                            android:textColorHint="#ffcccccc"
+                            android:textColor="@color/new_textColor"
+                            android:textSize="12dp"/>
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="#FFFFFF"
+                        android:gravity="right|center_vertical"
+                        android:paddingLeft="0dp"
+                        android:paddingRight="15dp"
+                        android:text="500"
+                        android:textColor="#ffcccccc"/>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="horizontal"
+                        >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        >
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            >
+
+                            <ImageView
+                                android:id="@+id/iv_upload1"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+                                android:scaleType="centerCrop"
+                                android:visibility="gone"
+                                />
+
+                            <TextView
+                                android:id="@+id/tv_upload1"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:textColor="#FF666666"
+                                android:background="@drawable/upload_pic"
+                                />
+
+                            <ImageView
+                                android:id="@+id/iv_del_pic1"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="5dp"
+                                android:src="@drawable/del_pic"
+                                android:visibility="gone"
+                                />
+
+                        </FrameLayout>
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            >
+
+                            <ImageView
+                                android:id="@+id/iv_upload2"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+                                android:scaleType="centerCrop"
+                                android:visibility="gone"
+                                />
+
+                            <TextView
+                                android:id="@+id/tv_upload2"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:textColor="#FF666666"
+                                android:visibility="gone"
+                                android:background="@drawable/upload_pic"
+                                />
+
+                            <ImageView
+                                android:id="@+id/iv_del_pic2"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="5dp"
+                                android:src="@drawable/del_pic"
+                                android:visibility="gone"
+                                />
+
+                        </FrameLayout>
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            >
+
+                            <ImageView
+                                android:id="@+id/iv_upload3"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+                                android:scaleType="centerCrop"
+                                android:visibility="gone"
+                                />
+
+                            <TextView
+                                android:id="@+id/tv_upload3"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:textColor="#FF666666"
+                                android:visibility="gone"
+                                android:background="@drawable/upload_pic"
+                                />
+
+                            <ImageView
+                                android:id="@+id/iv_del_pic3"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="5dp"
+                                android:src="@drawable/del_pic"
+                                android:visibility="gone"
+                                />
+
+                        </FrameLayout>
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            >
+
+                            <ImageView
+                                android:id="@+id/iv_upload4"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+                                android:scaleType="centerCrop"
+                                android:visibility="gone"
+                                />
+
+                            <TextView
+                                android:id="@+id/tv_upload4"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:textColor="#FF666666"
+                                android:visibility="gone"
+                                android:background="@drawable/upload_pic"
+                                />
+
+                            <ImageView
+                                android:id="@+id/iv_del_pic4"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="5dp"
+                                android:src="@drawable/del_pic"
+                                android:visibility="gone"
+                                />
+
+                        </FrameLayout>
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            >
+
+                            <ImageView
+                                android:id="@+id/iv_upload5"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+                                android:scaleType="centerCrop"
+                                android:visibility="gone"
+                                />
+
+                            <TextView
+                                android:id="@+id/tv_upload5"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:textColor="#FF666666"
+                                android:visibility="gone"
+                                android:background="@drawable/upload_pic"
+                                />
+
+                            <ImageView
+                                android:id="@+id/iv_del_pic5"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="5dp"
+                                android:src="@drawable/del_pic"
+                                android:visibility="gone"
+                                />
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_first_upload"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center"
+                            android:textColor="@color/TextColorHint"
+                            android:text="@string/comment_upload_pic_tips2"
+                            android:layout_marginLeft="80dp"
+                            />
+                    </FrameLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#ffdddddd"></View>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+        <TextView
+            android:id="@+id/comment_create_close_keyboard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:enabled="false"
+            android:visibility="gone"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_comment_create_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#ffdddddd"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/comment_checkbox"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/comment_checkbox_false"
+            android:checked="false"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:text="@string/hide_name"/>
+
+        <TextView
+            android:id="@+id/comment_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/shape_public_bg"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp"
+            android:text="@string/comment_create"
+            android:textColor="#ffffffff"
+            android:textSize="15dp"/>
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

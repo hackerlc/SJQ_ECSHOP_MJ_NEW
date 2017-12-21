@@ -1,0 +1,1241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@drawable/new_good_distance"
+             android:orientation="vertical">
+
+    <com.ecjia.widgets.ScrollView_Main
+        android:id="@+id/main_sc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:focusableInTouchMode="false"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/mine_head"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/mine_user_bg"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="50dp">
+
+                    <LinearLayout
+                        android:id="@+id/mine_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <FrameLayout
+                            android:layout_width="61dp"
+                            android:layout_height="61dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/shape_wihte_bg_oval"
+                            android:visibility="gone">
+                        </FrameLayout>
+
+                        <com.ecjia.widgets.imagecircle.CircleImage
+                            android:id="@+id/mine_user_image"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/shape_wihte_bg_oval"
+                            android:cropToPadding="true"
+                            android:padding="1px"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/profile_no_avarta_icon_light"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/mine_user_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text=""
+                                android:textColor="#ffffff"
+                                android:textSize="16dp"/>
+
+                            <TextView
+                                android:id="@+id/mine_user_level"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text=""
+                                android:textColor="#ffffff"
+                                android:textSize="13dp"/>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/mine_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/selector_mine_login"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="6dp"
+                        android:text="@string/signin_or_register"
+                        android:textColor="#ffffff"
+                        android:textSize="18dp"
+                        android:visibility="visible"/>
+
+                    <LinearLayout
+                        android:id="@+id/mine_lottery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_gravity="right|center_vertical"
+                        android:background="@drawable/shape_minefragment_signin"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:src="@drawable/new_member_gift"
+                            android:layout_width="23dp"
+                            android:layout_height="23dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="12dp"/>
+
+                        <TextView
+                            android:text="@string/new_member_gift"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp"
+                            android:textColor="#ffffff"
+                            android:textSize="14dp"/>
+                    </LinearLayout>
+                </FrameLayout>
+
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/mine_collection_goods"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp">
+
+                        <TextView
+                            android:id="@+id/mine_collection_goods_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:text="0"
+                            android:textColor="@color/my_black"
+                            android:textSize="@dimen/list_item_title"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="@string/mine_collection_goods"
+                            android:textColor="@color/my_black"
+                            android:textSize="15sp"/>
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/line_short_dark"/>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/mine_collection_shop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp">
+
+                        <TextView
+                            android:id="@+id/mine_collection_shop_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:text="0"
+                            android:textColor="@color/my_black"
+                            android:textSize="@dimen/list_item_title"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="@string/mine_collection_shop"
+                            android:textColor="@color/my_black"
+                            android:textSize="15sp"/>
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/line_short_dark"/>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/mine_history"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp">
+
+                        <TextView
+                            android:id="@+id/mine_history_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:text="0"
+                            android:textColor="@color/my_black"
+                            android:textSize="@dimen/list_item_title"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="@string/mine_history"
+                            android:textColor="@color/my_black"
+                            android:textSize="15sp"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <com.ecjia.widgets.MyGraygapView
+                android:layout_width="match_parent"
+                android:layout_height="10dp">
+
+            </com.ecjia.widgets.MyGraygapView>
+
+            <LinearLayout
+                android:id="@+id/mine_order_ll"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/selecter_newitem_press"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <!--<ImageView-->
+                    <!--android:layout_width="25dp"-->
+                    <!--android:layout_height="25dp"-->
+                    <!--android:layout_marginLeft="15dp"-->
+                    <!--android:background="@drawable/mine_icon_ordrers"/>-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/main_check_order"
+                    android:textColor="#050505"
+                    android:textSize="@dimen/list_item_title"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/mine_order_attention"
+                    android:textColor="@color/TextColorGray"
+                    android:textSize="@dimen/list_item_small"
+                    android:visibility="visible"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/header_right_arrow"
+                    android:visibility="visible"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_long_dark"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/mine_order_waitpay"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/selecter_newitem_press"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="35dp"
+                        android:layout_height="35dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/mine_icon_waitpay"/>
+
+                        <TextView
+                            android:id="@+id/mine_order_waitpay_num"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_gravity="right|top"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@drawable/shape_main_collectnumbg"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textColor="#ffffff"
+                            android:textSize="9sp"
+                            android:visibility="gone"/>
+                    </FrameLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/profile_obligation"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/list_item_small"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mine_order_tuanpi"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/selecter_newitem_press"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="35dp"
+                        android:layout_height="35dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/mine_icon_tuanpi"/>
+
+                        <TextView
+                            android:id="@+id/mine_order_tuanpi_num"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_gravity="right|top"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@drawable/shape_main_collectnumbg"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textColor="#ffffff"
+                            android:textSize="9sp"
+                            android:visibility="gone"/>
+                    </FrameLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="待成团"
+                        android:textColor="#666666"
+                        android:singleLine="true"
+                        android:textSize="@dimen/list_item_small"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mine_order_waitship"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/selecter_newitem_press"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="35dp"
+                        android:layout_height="35dp">
+
+
+                        <ImageView
+                            android:layout_width="33dp"
+                            android:layout_height="33dp"
+                            android:src="@drawable/mine_icon_waitship"/>
+
+                        <TextView
+                            android:id="@+id/mine_order_waitship_num"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_gravity="right|top"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@drawable/shape_main_collectnumbg"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textColor="#ffffff"
+                            android:textSize="9sp"
+                            android:visibility="gone"/>
+                    </FrameLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/profile_readyforshipment"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/list_item_small"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mine_order_shipped"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/selecter_newitem_press"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="35dp"
+                        android:layout_height="35dp">
+
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/mine_icon_shipped"/>
+
+                        <TextView
+                            android:id="@+id/mine_order_shipped_num"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_gravity="right|top"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@drawable/shape_main_collectnumbg"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textColor="#ffffff"
+                            android:textSize="9sp"
+                            android:visibility="gone"/>
+                    </FrameLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/profile_forthegoods"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/list_item_small"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mine_order_finished"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/selecter_newitem_press"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="35dp"
+                        android:layout_height="35dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/mine_icon_finished"/>
+
+                        <TextView
+                            android:id="@+id/mine_order_finished_num"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_gravity="right|top"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@drawable/shape_main_collectnumbg"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textColor="#ffffff"
+                            android:textSize="9sp"
+                            android:visibility="gone"/>
+                    </FrameLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/profile_await_comment"
+                        android:singleLine="true"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/list_item_small"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mine_order_returngood"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/selecter_newitem_press"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="35dp"
+                        android:layout_height="35dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/mine_icon_returngood"/>
+
+                        <TextView
+                            android:id="@+id/mine_order_returngood_num"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_gravity="right|top"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@drawable/shape_main_collectnumbg"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textColor="#ffffff"
+                            android:textSize="9sp"
+                            android:visibility="gone"/>
+                    </FrameLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="退换货"
+                        android:textColor="#666666"
+                        android:singleLine="true"
+                        android:textSize="@dimen/list_item_small"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.ecjia.widgets.MyGraygapView
+                android:layout_width="match_parent"
+                android:layout_height="10dp">
+
+            </com.ecjia.widgets.MyGraygapView>
+
+
+            <LinearLayout
+                android:id="@+id/mine_wallet"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:visibility="gone"
+                android:background="@drawable/selecter_newitem_press"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/mine_icon_wallet"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/purse_mypurse"
+                    android:textColor="#050505"
+                    android:textSize="@dimen/list_item_title"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/mine_wallet_attention"
+                    android:textColor="@color/TextColorGray"
+                    android:textSize="@dimen/list_item_small"
+                    android:visibility="visible"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/header_right_arrow"
+                    android:visibility="visible"/>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:visibility="gone"
+                android:background="@color/line_long_dark"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/mine_wallet_balance_ll"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/selecter_newitem_press"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/mine_wallet_balance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#050505"
+                        android:textSize="@dimen/list_item_mid"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/mine_wallet_balance"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/list_item_small"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/mine_wallet_redpaper_ll"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/selecter_newitem_press"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/mine_wallet_redpaper"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:gravity="center"
+                        android:text="3"
+                        android:textColor="#050505"
+                        android:textSize="@dimen/list_item_mid"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/mine_wallet_redpaper"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/list_item_small"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/mine_wallet_integral_ll"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/mine_wallet_integral"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:gravity="center"
+                        android:text="1000000"
+                        android:textColor="#050505"
+                        android:textSize="@dimen/list_item_mid"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/mine_wallet_integral"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/list_item_small"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <com.ecjia.widgets.MyGraygapView
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="10dp"/>
+
+            <LinearLayout
+                android:id="@+id/mine_apply_menber"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/selecter_newitem_press"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/mine_icon_applymenber"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:text="采购商认证"
+                    android:textColor="#050505"
+                    android:textSize="@dimen/list_item_title"/>
+
+                <TextView
+                    android:id="@+id/tv_apply_menber"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    tools:text="认证即可享受批发价"
+                    android:textColor="@color/TextColorGray"
+                    android:textSize="13dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/header_right_arrow"
+                    android:visibility="visible"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="50dp"
+                android:visibility="gone"
+                android:background="@color/line_long_dark"/>
+
+            <LinearLayout
+                android:id="@+id/mine_redpapper"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/selecter_newitem_press"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/mine_icon_redpapper"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:text="我的红包"
+                    android:textColor="#050505"
+                    android:textSize="@dimen/list_item_title"/>
+
+                <TextView
+                    android:id="@+id/tv_redpapper"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    tools:text="1个红包"
+                    android:textColor="@color/TextColorGray"
+                    android:textSize="13dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/header_right_arrow"
+                    android:visibility="visible"/>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="50dp"
+                android:background="@color/line_long_dark"/>
+
+            <LinearLayout
+                android:id="@+id/mine_mycoupon"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/selecter_newitem_press"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/mine_icon_coupon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:text="我的优惠券"
+                    android:textColor="#050505"
+                    android:textSize="@dimen/list_item_title"/>
+
+                <TextView
+                    android:id="@+id/tv_mycoupon"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    tools:text="1张优惠券"
+                    android:textColor="@color/TextColorGray"
+                    android:textSize="13dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/header_right_arrow"
+                    android:visibility="visible"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="50dp"
+                android:background="@color/line_long_dark"/>
+
+            <LinearLayout
+                android:id="@+id/ll_my_code"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/selecter_newitem_press"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/mine_icon_website"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:text="我要推广"
+                    android:textColor="#050505"
+                    android:textSize="@dimen/list_item_title"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    tools:text="1张优惠券"
+                    android:visibility="invisible"
+                    android:textColor="@color/TextColorGray"
+                    android:textSize="13dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/header_right_arrow"
+                    android:visibility="visible"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="50dp"
+                android:background="@color/line_long_dark"/>
+
+            <LinearLayout
+                android:id="@+id/mine_address"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/selecter_newitem_press"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/mine_icon_address"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/main_address"
+                    android:textColor="#050505"
+                    android:textSize="@dimen/list_item_title"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:text=""
+                    android:textColor="@color/TextColorGray"
+                    android:textSize="13dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/header_right_arrow"
+                    android:visibility="visible"/>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="50dp"
+                android:background="@color/line_long_dark"/>
+
+            <LinearLayout
+                android:id="@+id/mine_changepassword"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/selecter_newitem_press"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/mine_icon_changps"/>
+
+                <TextView
+                    android:id="@+id/tv_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/customer_change_password"
+                    android:textColor="#050505"
+                    android:textSize="@dimen/list_item_title"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:text=""
+                    android:textColor="@color/TextColorGray"
+                    android:textSize="13dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/header_right_arrow"
+                    android:visibility="visible"/>
+
+            </LinearLayout>
+
+            <com.ecjia.widgets.MyGraygapView
+                android:layout_width="match_parent"
+                android:layout_height="10dp">
+
+            </com.ecjia.widgets.MyGraygapView>
+
+            <LinearLayout
+                android:id="@+id/mine_help"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/selecter_newitem_press"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical"
+                android:measureWithLargestChild="false"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/icon_find_help"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/main_help"
+                    android:textColor="#050505"
+                    android:textSize="@dimen/list_item_title"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/list_item_small"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/header_right_arrow"
+                    android:visibility="visible"/>
+
+            </LinearLayout>
+
+            <com.ecjia.widgets.MyGraygapView
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="10dp">
+
+            </com.ecjia.widgets.MyGraygapView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="50dp"
+                android:background="@color/line_long_dark"/>
+
+            <LinearLayout
+                android:id="@+id/mine_official_service"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/selecter_newitem_press"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/mine_icon_care"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/setting_service"
+                    android:textColor="#050505"
+                    android:textSize="@dimen/list_item_title"/>
+
+                <TextView
+                    android:id="@+id/mine_official_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/list_item_small"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/header_right_arrow"
+                    android:visibility="visible"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="50dp"
+                android:visibility="gone"
+                android:background="@color/line_long_dark"/>
+
+            <LinearLayout
+                android:id="@+id/mine_official_website"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:visibility="gone"
+                android:background="@drawable/selecter_newitem_press"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical"
+                android:measureWithLargestChild="false"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/mine_icon_website"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/setting_website"
+                    android:textColor="#050505"
+                    android:textSize="@dimen/list_item_title"/>
+
+                <TextView
+                    android:id="@+id/mine_official_siteurl"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical|right"
+                    android:maxLines="1"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/list_item_small"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/header_right_arrow"
+                    android:visibility="visible"/>
+
+            </LinearLayout>
+
+            <com.ecjia.widgets.MyGraygapView
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="10dp">
+
+            </com.ecjia.widgets.MyGraygapView>
+
+
+            <com.ecjia.widgets.MyListView
+                android:id="@+id/fragment_mine_help_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null">
+
+            </com.ecjia.widgets.MyListView>
+
+            <com.ecjia.widgets.MyGraygapView
+                android:layout_width="match_parent"
+                android:layout_height="10dp">
+
+            </com.ecjia.widgets.MyGraygapView>
+        </LinearLayout>
+
+    </com.ecjia.widgets.ScrollView_Main>
+
+    <com.ecjia.widgets.ECJiaTopView
+        android:id="@+id/mine_topview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48">
+
+        <com.ecjia.widgets.imagecircle.CircleImage
+            android:id="@+id/user_image_top"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="48dp"
+            android:cropToPadding="true"
+            android:padding="0dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/profile_no_avarta_icon_light"/>
+
+
+    </com.ecjia.widgets.ECJiaTopView>
+</FrameLayout>
+
+
+

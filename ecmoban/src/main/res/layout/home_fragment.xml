@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/home_topvoew"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/public_theme_color_normal">
+
+        <com.ecjia.widgets.imagecircle.CircleImage
+            android:id="@+id/top_view_list"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:src="@drawable/profile_no_avarta_icon"
+            android:visibility="visible"/>
+
+        <LinearLayout
+            android:id="@+id/city_item"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="4dp"
+                android:src="@drawable/home_local_icon"/>
+
+            <TextView
+                android:id="@+id/city_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="2dp"
+                android:gravity="center_vertical|right"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp"/>
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/home_cityshow"
+                android:tint="@color/white"
+                android:visibility="visible"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:id="@+id/search_input"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:padding="5dp"
+                android:src="@drawable/shoplist_search"/>
+
+            <FrameLayout
+                android:id="@+id/search_frame_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:src="@drawable/home_messege_icon"
+                    android:textColorHint="#aaaaaa"
+                    android:textSize="@dimen/list_item_small"/>
+
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/message_num"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="right|top"
+                    android:background="@drawable/shape_public_withe_bg_vol"
+                    android:textColor="#000000"
+                    android:textSize="8dp"
+                    android:visibility="gone"/>
+            </FrameLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/home_tablayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone">
+
+        </android.support.design.widget.TabLayout>
+
+        <ImageView
+            android:id="@+id/shop_category_more"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:src="@drawable/address_add"
+            android:tint="#000000"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:id="@+id/home_good_shop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+        <com.ecjia.widgets.GoodsViewPager
+            android:id="@+id/home_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"/>
+
+        <!--<include layout="@layout/fragment_good_shop"/>-->
+    </FrameLayout>
+
+
+</LinearLayout>

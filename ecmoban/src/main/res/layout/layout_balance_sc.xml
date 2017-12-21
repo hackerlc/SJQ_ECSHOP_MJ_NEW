@@ -1,0 +1,844 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/new_good_distance"
+            android:fillViewport="true"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <!-- 顶部图片 -->
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shopping_checkout_color_bar"/>
+
+        <!-- 顶部地址 -->
+
+        <LinearLayout
+            android:id="@+id/balance_user"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selecter_newitem_press"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <!--
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_marginLeft="10dp"
+                                                        android:text="@string/balance_receiver"
+                                                        android:textColor="#000000"
+                                                        android:textSize="@dimen/list_item_title"
+                                                        android:visibility="gone"/>
+
+                                                    <TextView
+                                                        android:id="@+id/receiver_name"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_marginLeft="10dp"
+                                                        android:layout_weight="1"
+                                                        android:textColor="#000000"
+                                                        android:textSize="@dimen/list_item_title"
+                                                        android:visibility="gone"/>
+                    -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+
+
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/receiver_name_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:adjustViewBounds="true"
+                            android:maxHeight="20dp"
+                            android:src="@drawable/receiver_name"
+                            />
+
+                        <TextView
+                            android:id="@+id/balance_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/receiver_name_icon"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_toRightOf="@+id/receiver_name_icon"
+                            android:minWidth="80dp"
+                            android:textSize="@dimen/list_item_title"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.3"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/receiver_phone_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/receiver_phone"/>
+
+                        <TextView
+                            android:id="@+id/balance_phoneNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/receiver_phone_icon"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/receiver_phone_icon"
+                            android:minWidth="80dp"
+                            android:textSize="@dimen/list_item_title"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/line"
+                    android:visibility="gone"/>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="55dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/balance_address"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="20dp"
+                        android:maxLines="2"
+                        android:textColor="#FF888888"
+                        android:textSize="@dimen/list_item_title"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/header_right_arrow"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- 只留最大一个布局 -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="@color/line_long_dark"/>
+
+        <LinearLayout
+            android:id="@+id/balance_distance"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_new_distance"
+                android:background="@drawable/new_good_distance"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="@color/line_long_dark"/>
+        </LinearLayout>
+
+        <!-- 商品信息列表 -->
+
+        <ListView
+            android:id="@+id/balance_goodslistview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#00000000"
+            android:dividerHeight="0.1dp"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"/>
+
+        <LinearLayout
+            android:id="@+id/ll_goodslist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selecter_newitem_press"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.ecjia.widgets.HorizontalListView
+                android:id="@+id/balance_horilistview"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginLeft="15dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="@color/line_long_dark"/>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_new_distance"
+            android:background="@drawable/new_good_distance"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="@color/line_long_dark"/>
+
+        <!-- 支付方式配送方式等 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/new_nothing_bg"
+            android:orientation="vertical">
+
+            <!-- 支付方式 -->
+
+            <LinearLayout
+                android:id="@+id/balance_pay"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/selecter_newitem_press"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/balance_pay"
+                    android:textColor="#FF666666"
+                    android:textSize="@dimen/list_item_title"/>
+
+                <TextView
+                    android:id="@+id/balance_pay_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/please_select"
+                    android:textSize="@dimen/list_item_title"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/header_right_arrow"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.6dp"
+                android:layout_marginLeft="15dp"
+                android:background="@color/line_short_dark"/>
+
+            <!-- 配送方式 -->
+
+            <LinearLayout
+                android:id="@+id/balance_dis"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/selecter_newitem_press"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/balance_shipping"
+                    android:textColor="#FF666666"
+                    android:textSize="@dimen/list_item_title"/>
+
+
+                <TextView
+                    android:id="@+id/balance_dis_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:hint="@string/please_select"
+                    android:textSize="@dimen/list_item_title"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/header_right_arrow"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/invoice_line"
+                android:layout_width="fill_parent"
+                android:layout_height="0.6dp"
+                android:layout_marginLeft="15dp"
+                android:background="@color/line_short_dark"/>
+
+            <!-- 发票 -->
+
+            <LinearLayout
+                android:id="@+id/balance_invoice"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_invoice"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/balance_bill"
+                    android:textColor="#FF666666"
+                    android:textSize="@dimen/list_item_title"/>
+
+                <TextView
+                    android:id="@+id/balance_invoice_message"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical|right"
+                    android:lines="1"
+                    android:textColor="#FF666666"
+                    android:textSize="@dimen/list_item_title"/>
+
+                <ImageView
+                    android:id="@+id/iv_invoice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/header_right_arrow"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.6dp"
+                android:layout_marginLeft="15dp"
+                android:background="@color/line_short_dark"/>
+
+            <!-- 备注 -->
+
+            <LinearLayout
+                android:id="@+id/balance_remark"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/selecter_newitem_press"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/remark_remark"
+                    android:textColor="#FF666666"
+                    android:textSize="@dimen/list_item_title"/>
+
+                <TextView
+                    android:gravity="center_vertical|right"
+                    android:id="@+id/tv_remark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:textColor="#FF666666"
+                    android:textSize="@dimen/list_item_title"/>
+
+                <TextView
+                    android:id="@+id/balance_remark_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#a3a3a3"
+                    android:textSize="@dimen/list_item_title"/>
+
+                <ImageView
+                    android:id="@+id/iv_remark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/header_right_arrow"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="@color/line_long_dark"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_new_distance"
+            android:background="@drawable/new_good_distance"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="@color/line_long_dark"/>
+
+        <!-- 红包积分区域 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/new_nothing_bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/balance_goods"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:text="@string/balance_list"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/list_item_title"/>
+
+                <TextView
+                    android:id="@+id/balance_goods_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="4"
+                    android:textColor="#a3a3a3"
+                    android:textSize="@dimen/list_item_title"/>
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/header_right_arrow"/>
+            </LinearLayout>
+
+            <!-- 红包 -->
+
+            <LinearLayout
+                android:id="@+id/balance_redPaper"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_redPaper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:text="@string/balance_redpocket"
+                    android:textColor="#FF666666"
+                    android:textSize="@dimen/list_item_title"/>
+
+                <TextView
+                    android:id="@+id/balance_redPaper_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="@dimen/list_item_title"/>
+
+                <ImageView
+                    android:id="@+id/iv_redpager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/header_right_arrow"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:layout_marginLeft="15dp"
+                android:background="@color/line_short_dark"/>
+
+            <!-- 积分 -->
+
+            <LinearLayout
+                android:id="@+id/balance_integral"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_integral"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:text="@string/balance_exp"
+                    android:textColor="#FF666666"
+                    android:textSize="@dimen/list_item_title"/>
+
+                <TextView
+                    android:id="@+id/balance_integral_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="@dimen/list_item_title"/>
+
+                <ImageView
+                    android:id="@+id/iv_integral"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/header_right_arrow"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/balance_moreitem_body"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical"></LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="@color/line_long_dark"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_new_distance"
+            android:background="@drawable/new_good_distance"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="@color/line_long_dark"/>
+        <!-- 价格总计 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/new_nothing_bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/balance_goodcast"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_cast"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:text="@string/balance_forall"
+                    android:textColor="#FF666666"
+                    android:textSize="@dimen/list_item_title"/>
+
+                <TextView
+                    android:id="@+id/balance_cast_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:text="￥0.00元"
+                    android:textColor="@color/my_red"
+                    android:textSize="@dimen/list_item_title"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:layout_marginLeft="15dp"
+                android:background="@color/line_short_dark"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:text="@string/balance_freigh"
+                    android:textColor="#FF666666"
+                    android:textSize="@dimen/list_item_title"/>
+
+                <TextView
+                    android:id="@+id/balance_fees"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:text="+￥0.00元"
+                    android:textColor="@color/my_red"
+                    android:textSize="@dimen/list_item_title"/>
+
+            </LinearLayout>
+
+
+            <!--折扣-->
+            <LinearLayout
+                android:id="@+id/discount_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/line_short_dark"/>
+
+                <LinearLayout
+                    android:id="@+id/balance_goback"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:text="@string/balance_return"
+                        android:textColor="#FF666666"
+                        android:textSize="@dimen/list_item_title"/>
+
+                    <TextView
+                        android:id="@+id/balance_goback_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="20dp"
+                        android:text="-￥0.00元"
+                        android:textColor="#33cc33"
+                        android:textSize="@dimen/list_item_title"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <!--红包-->
+            <LinearLayout
+                android:id="@+id/bonus_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/line_short_dark"/>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:text="@string/detail_redpaper_offset"
+                        android:textColor="#FF666666"
+                        android:textSize="@dimen/list_item_title"/>
+
+                    <TextView
+                        android:id="@+id/balance_bonus_fee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="20dp"
+                        android:text="-￥0.00元"
+                        android:textColor="#33cc33"
+                        android:textSize="@dimen/list_item_title"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--积分-->
+            <LinearLayout
+                android:id="@+id/integral_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/line_short_dark"/>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:text="@string/detail_score_offset"
+                        android:textColor="#FF666666"
+                        android:textSize="@dimen/list_item_title"/>
+
+                    <TextView
+                        android:id="@+id/balance_integral_fee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="20dp"
+                        android:text="-￥0.00元"
+                        android:textColor="#33cc33"
+                        android:textSize="@dimen/list_item_title"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--发票费用-->
+            <LinearLayout
+                android:id="@+id/invoice_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/line_short_dark"/>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:text="@string/balance_invoicefee"
+                        android:textColor="#FF666666"
+                        android:textSize="@dimen/list_item_title"/>
+
+                    <TextView
+                        android:id="@+id/invoice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="20dp"
+                        android:text="+￥0.00元"
+                        android:textColor="@color/my_red"
+                        android:textSize="@dimen/list_item_title"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="@color/line_long_dark"/>
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_new_distance"
+            android:background="@drawable/new_good_distance"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="@color/line_long_dark"/>
+    </LinearLayout>
+
+</ScrollView>

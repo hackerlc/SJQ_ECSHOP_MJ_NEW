@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/collect_top_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="#FFCCCCCC" />
+
+    <LinearLayout
+        android:id="@+id/collect_item"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical" >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/collect_check_item"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    >
+
+                    <CheckBox
+                        android:id="@+id/collect_item_del"
+                        style="@style/CustomCheckboxTheme"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center_vertical" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center" >
+
+                    <com.ecjia.widgets.webimageview.WebImageView
+                        android:id="@+id/collect_img"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/default_image"
+                        android:scaleType="centerCrop" />
+                </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/collect_name"
+                        android:layout_width="0dp"
+                        android:layout_weight="4"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        />
+                <LinearLayout
+                    android:id="@+id/collect_rightitem"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="上新"
+                    android:textColor="@color/TextColorGray"
+                    />
+                <TextView
+                    android:id="@+id/tv_newgoods_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:minWidth="30dp"
+                    android:text="0"
+                    />
+                <ImageView
+                    android:id="@+id/iv_open_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/arrow_collect_down"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_collect_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@color/line_short_dark"
+        android:visibility="gone"
+        >
+        <com.ecjia.widgets.HorizontalListView
+            android:id="@+id/shop_newgoodlist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/collect_buttom_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/line_long_dark"
+        android:visibility="gone"
+        />
+    <View
+        android:id="@+id/collect_short_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/line_long_dark"
+        android:layout_marginLeft="10dp"
+        android:visibility="gone"
+        />
+
+</LinearLayout>

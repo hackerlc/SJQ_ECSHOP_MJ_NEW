@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:bind="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="carNum"
+            type="String"/>
+
+        <variable
+            name="onClick"
+            type="android.view.View.OnClickListener"/>
+    </data>
+
+    <LinearLayout
+        android:id="@+id/ll_goodlist_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/new_good_distance"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/ic_head"
+            layout="@layout/layout_data_binding_head_search"
+            bind:onClick="@{onClick}"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rl_goods"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:listitem="@layout/item_business_goods"/>
+
+                <FrameLayout
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginBottom="35dp"
+                    android:layout_marginRight="35dp">
+
+                    <ImageView
+                        android:id="@+id/good_list_shopping_cart"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/shape_circle_bg"
+                        android:padding="10dp"
+                        android:src="@drawable/new_footer_shoppingcart_active_icon"/>
+
+                    <LinearLayout
+                        android:id="@+id/shopping_cart_num_bg_one"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="right|top"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/shape_main_collectnumbg"
+                        android:gravity="center"
+                        android:minWidth="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/shopping_cart_num"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@{carNum}"
+                            android:textColor="#ffffff"
+                            android:textSize="10dp"/>
+                    </LinearLayout>
+
+
+                </FrameLayout>
+            </FrameLayout>
+
+            <include
+                android:id="@+id/null_pager"
+                layout="@layout/null_goods"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="40dp"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/goodslist_bg"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="40dp"
+                android:background="#ffffff"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+    </LinearLayout>
+</layout>

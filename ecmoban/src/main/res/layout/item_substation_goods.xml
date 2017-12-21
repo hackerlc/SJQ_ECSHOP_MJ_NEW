@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:iview="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_goods_item_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:background="@drawable/selector_newitem_rad_press"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_goods_img_left"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:orientation="vertical"
+            >
+
+            <com.ecjia.widgets.SelectableRoundedImageView
+                android:id="@+id/goods_img_left"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/default_image"
+                app:sriv_border_color="#ffffff"
+                app:sriv_left_bottom_corner_radius="3dp"
+                app:sriv_left_top_corner_radius="3dp"
+                app:sriv_right_bottom_corner_radius="3dp"
+                app:sriv_right_top_corner_radius="3dp"/>
+
+        </LinearLayout>
+
+        <com.ecjia.widgets.AutoReturnView
+            android:id="@+id/goodlist_goodname_left"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:ellipsize="end"
+            iview:ar_color="#111111"
+            iview:ar_content="@string/collect_goods_info"
+            iview:ar_maxLines="2"
+            iview:ar_size="14"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/goodlist_shop_price_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/my_red"
+                android:textSize="20dp"
+                tools:text="2222"/>
+
+            <LinearLayout
+                android:id="@+id/ll_goodlist_mb_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/shape_mobile_buy"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/mobile_buy_icon"/>
+
+                <TextView
+                    android:id="@+id/tv_saving_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/my_red"
+                    android:textSize="12dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/goodlist_origin_price_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/my_dark"
+                android:text="123123"
+                android:textSize="@dimen/list_item_small"
+                android:visibility="visible"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/goods_item_top"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:visibility="visible"/>
+</LinearLayout>

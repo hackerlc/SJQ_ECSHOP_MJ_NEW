@@ -1,0 +1,245 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/topic_detail_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/topic_top_item"
+        android:layout_width="fill_parent"
+        android:background="@color/public_theme_color_normal"
+        android:layout_height="48dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="10dp"
+            android:src="@drawable/header_back_arrow" />
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/title_textsize"/>
+        <LinearLayout
+            android:id="@+id/topic_top_category"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/top_category"
+            android:padding="6dp"
+            android:visibility="invisible"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/top_category"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.ecjia.widgets.XListView
+            android:id="@+id/topic_detail_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/null_pager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            layout="@layout/null_shop"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/tab_big_item"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/shoplist_filter_height"
+            android:orientation="vertical"
+            android:background="#ffffff"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/tab_item_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/tab_item_one_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="#00000000"
+                            android:clickable="false"
+                            android:editable="false"
+                            android:enabled="false"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:text="@string/new_good"
+                            android:textColor="@color/public_theme_color_normal"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/tab_item_one_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/public_theme_color_normal" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tab_item_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_weight="0.9"
+                        android:gravity="center_vertical|center_horizontal">
+
+                        <TextView
+                            android:id="@+id/tab_item_two_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="#00000000"
+                            android:clickable="false"
+                            android:editable="false"
+                            android:enabled="false"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:text="@string/popularity"
+                            android:textColor="@color/filter_text_color"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+
+
+                    <View
+                        android:id="@+id/tab_item_two_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/public_theme_color_normal"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tab_item_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_weight="0.9"
+                        android:gravity="center_vertical|center_horizontal">
+
+                        <TextView
+                            android:id="@+id/tab_item_three_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="#00000000"
+                            android:clickable="false"
+                            android:editable="false"
+                            android:enabled="false"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:text="@string/expensive"
+                            android:textColor="@color/filter_text_color"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/tab_item_three_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/public_theme_color_normal"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tab_item_four"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_weight="0.9"
+                        android:gravity="center_vertical|center_horizontal">
+
+                        <TextView
+                            android:id="@+id/tab_item_four_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="#00000000"
+                            android:clickable="false"
+                            android:editable="false"
+                            android:enabled="false"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:text="@string/cheapest"
+                            android:textColor="@color/filter_text_color"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/tab_item_four_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/public_theme_color_normal"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_long_dark" />
+
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/new_good_distance"
+              android:orientation="vertical">
+
+
+    <include
+        layout="@layout/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"/>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_new_distance"
+                android:background="@drawable/new_good_distance"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/new_nothing_bg"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:background="#FFCCCCCC"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/myfind_groupbuy_item"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/selecter_newitem_press"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="15dp"
+                            android:background="@drawable/find_group"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="1"
+                            android:text="@string/groupbuy_act"
+                            android:textColor="#FF666666"
+                            android:textSize="@dimen/list_item_title"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:background="@drawable/header_right_arrow"
+                            android:visibility="visible"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:layout_marginLeft="50dp"
+                    android:background="#FFCCCCCC"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/new_nothing_bg"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <!--手机专享开始-->
+                    <LinearLayout
+                        android:id="@+id/myfind_mobile_item"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/selecter_newitem_press"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="15dp"
+                            android:background="@drawable/find_mobile_buy"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="1"
+                            android:text="@string/mobile_buy"
+                            android:textColor="#FF666666"
+                            android:textSize="@dimen/list_item_title"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:background="@drawable/header_right_arrow"
+                            android:visibility="visible"/>
+                    </LinearLayout>
+                    <!--手机专享结束-->
+                </LinearLayout>
+                <!--第二条短线-->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:layout_marginLeft="50dp"
+                    android:background="#FFCCCCCC"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/new_nothing_bg"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <!--消息中心开始-->
+                    <LinearLayout
+                        android:id="@+id/myfind_hot_item"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/selecter_newitem_press"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="15dp"
+                            android:background="@drawable/find_hot"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="1"
+                            android:text="@string/find_today_hot"
+                            android:textColor="#FF666666"
+                            android:textSize="@dimen/list_item_title"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:background="@drawable/header_right_arrow"
+                            android:visibility="visible"/>
+                    </LinearLayout>
+                    <!--消息中心结束-->
+                </LinearLayout>
+                <!--第二条短线-->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:layout_marginLeft="50dp"
+                    android:background="#FFCCCCCC"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/new_nothing_bg"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <!--消息中心开始-->
+                    <LinearLayout
+                        android:id="@+id/myfind_message_item"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/selecter_newitem_press"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="15dp"
+                            android:background="@drawable/find_message"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="1"
+                            android:text="@string/push_title"
+                            android:textColor="#FF666666"
+                            android:textSize="@dimen/list_item_title"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:background="@drawable/header_right_arrow"
+                            android:visibility="visible"/>
+                    </LinearLayout>
+                    <!--消息中心结束-->
+                </LinearLayout>
+                <!--第二条短线-->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:layout_marginLeft="50dp"
+                    android:background="#FFCCCCCC"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/new_nothing_bg"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <!--客服中心开始-->
+                    <LinearLayout
+                        android:id="@+id/myfind_consult_item"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/selecter_newitem_press"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="15dp"
+                            android:background="@drawable/find_consult"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="1"
+                            android:text="@string/consult_center"
+                            android:textColor="#FF666666"
+                            android:textSize="@dimen/list_item_title"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:background="@drawable/header_right_arrow"
+                            android:visibility="visible"/>
+
+                    </LinearLayout>
+                    <!--客服中心结束-->
+                </LinearLayout>
+                <!--第三条短线-->
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="#FFCCCCCC"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_new_distance"
+                android:background="@drawable/new_good_distance"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="#FFCCCCCC"/>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/new_nothing_bg"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <!--扫描二维码开始-->
+                    <LinearLayout
+                        android:id="@+id/myfind_zxing_item"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/selecter_newitem_press"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="15dp"
+                            android:background="@drawable/find_zxing"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="1"
+                            android:text="@string/find_run_zxing"
+                            android:textColor="#FF666666"
+                            android:textSize="@dimen/list_item_title"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:background="@drawable/header_right_arrow"
+                            android:visibility="visible"/>
+                    </LinearLayout>
+                    <!--扫描二维码结束-->
+                </LinearLayout>
+                <!--第二条短线-->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:layout_marginLeft="50dp"
+                    android:background="#FFCCCCCC"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/new_nothing_bg"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <!--浏览记录开始-->
+                    <LinearLayout
+                        android:id="@+id/myfind_map"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/selecter_newitem_press"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="15dp"
+                            android:background="@drawable/find_map"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="1"
+                            android:text="@string/quick_map"
+                            android:textColor="#FF666666"
+                            android:textSize="@dimen/list_item_title"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:background="@drawable/header_right_arrow"
+                            android:visibility="visible"/>
+
+                    </LinearLayout>
+                    <!--浏览记录结束-->
+                </LinearLayout>
+                <!--第三条短线-->
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="#FFCCCCCC"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_new_distance"
+                android:background="@drawable/new_good_distance"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="#FFCCCCCC"/>
+
+            <!--欢迎界面开始-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/myfind_lastbrowse"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/selecter_newitem_press"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/find_history"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:text="@string/lastbrowse"
+                        android:textColor="#FF666666"
+                        android:textSize="@dimen/list_item_title"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/header_right_arrow"
+                        android:visibility="visible"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:layout_marginLeft="50dp"
+                    android:background="#FFCCCCCC"/>
+
+                <LinearLayout
+                    android:id="@+id/myfind_help"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/selecter_newitem_press"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/find_help"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:text="@string/main_help"
+                        android:textColor="#FF666666"
+                        android:textSize="@dimen/list_item_title"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/header_right_arrow"
+                        android:visibility="visible"/>
+
+                </LinearLayout>
+            </LinearLayout>
+            <!--欢迎界面结束-->
+            <LinearLayout
+                android:id="@+id/myfind_push"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/selecter_newitem_press"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/find_push"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:text="@string/push_news"
+                    android:textColor="#FF666666"
+                    android:textSize="17dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/header_right_arrow"
+                    android:visibility="visible"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="#FFCCCCCC"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_new_distance"
+                android:background="@drawable/new_good_distance"/>
+
+            <com.ecjia.widgets.MyListView
+                android:id="@+id/customer_find_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="#00000000"
+                android:dividerHeight="0dp"
+                android:visibility="gone"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_new_distance"
+                android:background="@drawable/new_good_distance"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

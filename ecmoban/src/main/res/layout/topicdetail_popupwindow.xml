@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:background="#cccccc"
+        />
+    <com.ecjia.widgets.MyListView
+        android:id="@+id/topic_pop_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:listSelector="@drawable/selecter_newitem_press"
+        android:divider="@null" />
+
+    <View
+        android:id="@+id/topic_buttom_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#66666666"
+        android:layout_weight="1" />
+</LinearLayout>

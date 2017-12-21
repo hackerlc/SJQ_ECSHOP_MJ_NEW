@@ -1,0 +1,138 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_good_distance"
+    android:orientation="vertical">
+
+    <com.ecjia.widgets.ECJiaTopView
+        android:id="@+id/withdrawal_topview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.ecjia.widgets.ECJiaTopView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/youmoney"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/user_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:text="￥0.00"
+            android:textColor="@color/my_red"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/choose_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text=""
+            android:textColor="#999999"
+            android:textSize="@dimen/list_item_title"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12dp"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.6dp"
+        android:background="@color/line_long_dark"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/new_nothing_bg"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/money"
+            android:textColor="@color/new_textColor"
+            android:textSize="15dp"/>
+
+        <EditText
+            android:id="@+id/input_money"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:hint="@string/input"
+            android:inputType="numberDecimal"
+            android:maxLength="10"
+            android:textColor="@color/new_textColor"
+            android:textColorHint="#cccccc"
+            android:textSize="@dimen/list_item_title"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.6dp"
+        android:background="@color/line_long_dark"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/remark_input"
+            android:textSize="16dp"/>
+
+        <EditText
+            android:id="@+id/infomation_context"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shap_remark_edit"
+            android:gravity="top"
+            android:maxLines="6"
+            android:padding="7dp"
+            android:maxLength="100"
+            android:textColorHint="#66999999"
+            android:textSize="@dimen/list_item_title"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/withdrawal_ok"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/selector_login_button"
+        android:minWidth="100dp"
+        android:text="@string/outapply"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/title_textsize"/>
+
+</LinearLayout>

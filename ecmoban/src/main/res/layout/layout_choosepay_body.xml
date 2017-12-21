@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+    <LinearLayout
+        android:id="@+id/payweb_local"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--订单或者充值订单成功-->
+            <LinearLayout
+                android:id="@+id/choose_create"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/img_order_create"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="@string/newdetail_Succeed"
+                    android:textColor="#999999"
+                    android:textSize="16dp">
+
+                </TextView>
+            </LinearLayout>
+
+            <!--交易金额-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="8dp"
+                android:gravity="bottom|center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/pay_allmoney"
+                    android:textSize="16dp"/>
+
+                <TextView
+                    android:id="@+id/choose_total_fee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:text="￥0.00"
+                    android:textColor="@color/my_red"
+                    android:textSize="16dp"/>
+
+                <TextView
+                    android:id="@+id/choose_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text=""
+                    android:textColor="#999999"
+                    android:textSize="@dimen/list_item_title"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:background="@drawable/new_good_distance"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line_long_dark"/>
+            <!--支付方式名称-->
+            <LinearLayout
+                android:id="@+id/change_pay_type"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#FFFFFF"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/payment_way"
+                    android:textSize="@dimen/list_item_title"/>
+
+                <TextView
+                    android:id="@+id/choose_paytype"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textColor="@color/my_red"
+                    android:textSize="@dimen/list_item_title"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line_long_dark"/>
+
+            <!--错误提示-->
+            <LinearLayout
+                android:id="@+id/error_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/default_new_distance"
+                    android:background="@drawable/new_good_distance"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/line_long_dark"/>
+
+                <TextView
+                    android:id="@+id/error_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:textColor="#666666"
+                    android:textSize="14dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:background="@color/line_long_dark"/>
+            </LinearLayout>
+
+            <!--成功提示-->
+            <LinearLayout
+                android:id="@+id/yue_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/yue_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:text="@string/payment_succeed"
+                    android:textColor="#999999"
+                    android:textSize="14dp"/>
+
+                <LinearLayout
+                    android:id="@+id/yue_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/yue_buy"
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/selector_choose_buy"
+                        android:gravity="center"
+                        android:text="@string/payment_goshopping"
+                        android:textColor="#ffffff"
+                        android:textSize="16dp"/>
+
+                    <TextView
+                        android:id="@+id/yue_order"
+                        android:layout_width="120dp"
+                        android:layout_height="42dp"
+                        android:background="@drawable/selector_gotoorder"
+                        android:gravity="center"
+                        android:text="@string/payment_checkdetail"
+                        android:textSize="16dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--却换支付方式布局-->
+            <LinearLayout
+                android:id="@+id/type_rechange_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <View
+                    android:id="@+id/dis_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/default_new_distance"
+                    android:background="@drawable/new_good_distance"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/line_long_dark"/>
+
+                <LinearLayout
+                    android:id="@+id/choose_paytype_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/new_nothing_bg"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="105dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/payment_otherway"
+                        android:textSize="@dimen/list_item_title"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+
+                    <ImageView
+                        android:id="@+id/choose_showlist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/search_showchild"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:background="@color/line_long_dark"/>
+
+                <ListView
+                    android:id="@+id/choose_listview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/new_nothing_bg"
+                    android:divider="@null"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <!--确认支付-->
+        <LinearLayout
+            android:id="@+id/choose_btnitem"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/payweb_submit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/selector_login_button"
+                android:text="@string/pay_sure"
+                android:textColor="#FFFFFF"
+                android:textSize="17dp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_new_distance"
+            android:background="@drawable/new_good_distance"/>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#FFFFFF"
+              android:orientation="vertical">
+
+    <!-- <include layout="@layout/top_view" /> -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/public_theme_color_normal"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="#FFCCCCCC"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.ecjia.widgets.webimageview.WebImageView
+            android:id="@+id/spec_img"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:orientation="vertical"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_image">
+        </com.ecjia.widgets.webimageview.WebImageView>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/spec_fee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/my_red"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/spec_stock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#FF666666"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/spec_choose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="@string/spe_color_size"
+                android:textColor="#FF666666"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/spec_dismiss"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="15dp"
+            android:gravity="right|center_vertical"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/specification_dismiss"/>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/specification_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:overScrollMode="never"
+        android:visibility="visible"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="#FFCCCCCC"/>
+
+    <LinearLayout
+        android:id="@+id/specification_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/shop_car_item_ok"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="#EA0025"
+            android:text="@string/dialog_ensure"
+            android:textSize="18dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_view_height"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/px1"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/px100"
+            android:background="@color/text_color_33"/>
+
+        <TextView
+            android:id="@+id/spec_add_to_cart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="@string/gooddetail_shoppingcart"
+            android:textColor="@color/text_color_33"
+            android:textSize="16dp"/>
+
+        <View
+            android:layout_width="@dimen/px1"
+            android:layout_height="match_parent"
+            android:background="@color/text_color_33"/>
+
+        <TextView
+            android:id="@+id/spec_buy_now"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/px100"
+            android:layout_weight="1"
+            android:background="@color/main_color_e22664"
+            android:gravity="center"
+            android:text="@string/gooddetail_buy"
+            android:textColor="#ffffff"
+            android:textSize="16dp"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="@color/_333333"/>
+
+</LinearLayout>

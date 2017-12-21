@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/rl_img_div"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:paddingLeft="22dp"
+            android:paddingRight="22dp"
+            android:paddingTop="22dp">
+
+            <ImageView
+                android:id="@+id/iv_goods_img_1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginRight="22dp"
+                android:scaleType="centerCrop"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="55%"/>
+
+            <ImageView
+                android:id="@+id/iv_goods_img_2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentRight="true"
+                android:scaleType="centerCrop"
+                app:layout_heightPercent="42%"
+                app:layout_widthPercent="30%"/>
+
+            <ImageView
+                android:id="@+id/iv_goods_img_3"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:scaleType="centerCrop"
+                app:layout_heightPercent="42%"
+                app:layout_widthPercent="30%"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/main_color_7bf82d7c"/>
+
+            <TextView
+                android:id="@+id/tv_over_time"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/white"
+                tools:text="距离结束还剩"/>
+        </android.support.percent.PercentRelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_img_div"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:background="@drawable/shape_back_w_bor_g">
+
+            <TextView
+                android:id="@+id/tv_goods_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="6dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textSize="16sp"
+                tools:text="namenamenamenamenamenamenamenamenamenamenamename"/>
+
+            <View
+                android:id="@+id/v_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/tv_goods_name"
+                android:background="@color/main_color_e7e7e7"/>
+
+            <Button
+                android:id="@+id/btn_enter"
+                style="@style/SnatchWholesaleBtn2"
+                android:layout_below="@id/v_line"
+                android:layout_marginBottom="22dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="22dp"
+                android:clickable="false"
+                android:text="去参团"/>
+
+            <com.ecjia.widgets.IndicatorProgressBar
+                android:id="@+id/ip_price"
+                style="@style/TogetherWholesaleProgressBar"
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/v_line"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_toLeftOf="@id/btn_enter"
+                android:max="100"
+                app:btmContentNum="50"
+                app:btmEndNum="60"
+                app:btmStartNum="40"
+                app:btmStartText="成团"
+                app:btmContentText="成团"
+                app:btmEndText="成团"
+                app:btmTextColor="@color/main_font_color_9"
+                app:btmTextSize="12sp"
+                app:buyNum="52"
+                app:pointColor="@color/main_color_e7e7e7"
+                app:pointLightColor="@color/main_color_db0f61"
+                app:topContentText="$50"
+                app:topEndText="55"
+                app:topLightTextColor="@color/title_bg_color"
+                app:topLightTextSize="18sp"
+                app:topStartText="$60"
+                app:topTextColor="@color/main_font_color_9"
+                app:topTextSize="16sp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ecjia.view.adapter.adaptercell.FourGoodItemCell xmlns:android="http://schemas.android.com/apk/res/android"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="wrap_content"
+                                                     android:background="@drawable/new_nothing_bg"
+                                                     android:gravity="center"
+                                                     android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/home_promote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="#FFCCCCCC"
+            android:visibility="gone"/>
+
+        <include
+            android:id="@+id/good_title"
+            layout="@layout/new_good_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:id="@+id/newgood_item_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.5">
+
+                <LinearLayout
+                    android:layout_width="142dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="142dp"
+                        android:layout_height="142dp"
+                        android:background="@drawable/gooditem_borderline"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/new_gooditem_photo1"
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/default_image"/>
+
+                        <TextView
+                            android:layout_width="38dp"
+                            android:layout_height="38dp"
+                            android:layout_gravity="right"
+                            android:background="@drawable/index_hot_icon"
+                            android:gravity="center"
+                            android:text="@string/hotselling_recommend"
+                            android:textColor="#ffffff"
+                            android:textSize="13dp"/>
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/new_good_info1"
+                        android:layout_width="142dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginTop="5dp"
+                        android:lines="2"
+                        android:text=""/>
+
+                    <TextView
+                        android:id="@+id/new_shop_price1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="￥100.00"
+                        android:textColor="#FFFF0000"/>
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0.5">
+
+                <LinearLayout
+                    android:layout_width="142dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="142dp"
+                        android:layout_height="142dp"
+                        android:background="@drawable/gooditem_borderline"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/new_gooditem_photo2"
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/default_image"/>
+
+                        <TextView
+                            android:layout_width="38dp"
+                            android:layout_height="38dp"
+                            android:layout_gravity="right"
+                            android:background="@drawable/index_hot_icon"
+                            android:gravity="center"
+                            android:text="@string/hotselling_recommend"
+                            android:textColor="#ffffff"
+                            android:textSize="13dp"/>
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/new_good_info2"
+                        android:layout_width="142dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginTop="5dp"
+                        android:lines="2"
+                        android:text=""/>
+
+                    <TextView
+                        android:id="@+id/new_shop_price2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="￥100.00"
+                        android:textColor="#FFFF0000"/>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/newgood_item_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.5">
+
+                <LinearLayout
+                    android:layout_width="142dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="142dp"
+                        android:layout_height="142dp"
+                        android:background="@drawable/gooditem_borderline"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/new_gooditem_photo3"
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/default_image"/>
+
+                        <TextView
+                            android:layout_width="38dp"
+                            android:layout_height="38dp"
+                            android:layout_gravity="right"
+                            android:background="@drawable/index_hot_icon"
+                            android:gravity="center"
+                            android:text="@string/hotselling_recommend"
+                            android:textColor="#ffffff"
+                            android:textSize="13dp"/>
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/new_good_info3"
+                        android:layout_width="142dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginTop="5dp"
+                        android:lines="2"
+                        android:text=""/>
+
+                    <TextView
+                        android:id="@+id/new_shop_price3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="￥100.00"
+                        android:textColor="#FFFF0000"/>
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0.5">
+
+                <LinearLayout
+                    android:layout_width="142dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="142dp"
+                        android:layout_height="142dp"
+                        android:background="@drawable/gooditem_borderline"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/new_gooditem_photo4"
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/default_image"/>
+
+                        <TextView
+                            android:layout_width="38dp"
+                            android:layout_height="38dp"
+                            android:layout_gravity="right"
+                            android:background="@drawable/index_hot_icon"
+                            android:gravity="center"
+                            android:text="@string/hotselling_recommend"
+                            android:textColor="#ffffff"
+                            android:textSize="13dp"/>
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/new_good_info4"
+                        android:layout_width="142dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginTop="5dp"
+                        android:lines="2"
+                        android:text=""/>
+
+                    <TextView
+                        android:id="@+id/new_shop_price4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="￥100.00"
+                        android:textColor="#FFFF0000"/>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="#FFCCCCCC"
+            android:visibility="gone"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_new_distance"
+            android:background="#FFFFFF"/>
+    </LinearLayout>
+
+</com.ecjia.view.adapter.adaptercell.FourGoodItemCell>

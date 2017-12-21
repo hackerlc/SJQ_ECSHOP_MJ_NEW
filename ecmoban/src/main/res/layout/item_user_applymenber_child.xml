@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_marginRight="@dimen/layout_marginLR"
+              android:layout_marginLeft="@dimen/layout_marginLR"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ly_parent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px100"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color_33"
+            android:textSize="16sp"
+            tools:text="品牌"/>
+
+        <TextView
+            android:id="@+id/tv_type_child"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/px30"
+            android:layout_marginRight="@dimen/px30"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:textColor="@color/_999999"
+            android:textSize="14sp"
+            tools:text="男"/>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="@dimen/px40"
+            android:layout_height="@dimen/px30"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_menber_select"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="@color/line_long_dark"/>
+
+</LinearLayout>

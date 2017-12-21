@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_view" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.ecjia.widgets.XListView
+            android:id="@+id/sweep_record_list"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:scrollbars="none"
+            android:visibility="gone"/>
+
+        <include
+            android:id="@+id/null_pager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            layout="@layout/null_shareqr"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

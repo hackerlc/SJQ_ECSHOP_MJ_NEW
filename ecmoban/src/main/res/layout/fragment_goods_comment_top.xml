@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ffffff"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/comment_count_ll"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/comment_count_name"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:text="全部"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/comment_count"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:text="(0)"
+            android:textSize="14dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/comment_positive_ll"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/comment_positive_name"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:text="好评"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/comment_positive"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:text="(0)"
+            android:textSize="14dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/comment_moderate_ll"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/comment_moderate_name"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:text="中评"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/comment_moderate"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:text="(0)"
+            android:textSize="14dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/comment_negative_ll"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/comment_negative_name"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:text="差评"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/comment_negative"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:text="(0)"
+            android:textSize="14dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/comment_showorder_ll"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/comment_showorder_name"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:text="晒图"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/comment_showorder"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:text="(0)"
+            android:textSize="14dp"/>
+    </LinearLayout>
+</LinearLayout>

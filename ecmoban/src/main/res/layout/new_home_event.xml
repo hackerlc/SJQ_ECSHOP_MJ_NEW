@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <import type="java.util.ArrayList"/>
+        <import type="com.ecjia.entity.responsemodel.QUICK"/>
+        <variable
+            name="list"
+            type="ArrayList&lt;QUICK>"/>
+        <variable
+            name="onClick"
+            type="android.view.View.OnClickListener"/>
+    </data>
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/iv_img_1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:src="@{list[0].img}"
+            android:onClick="@{onClick}"/>
+        <ImageView
+            android:id="@+id/iv_img_2"
+            android:layout_width="0dp"
+            android:layout_height="240dp"
+            android:layout_below="@id/iv_img_1"
+            android:scaleType="centerCrop"
+            app:layout_widthPercent="40%"
+            android:src="@{list[1].img}"
+            android:onClick="@{onClick}"/>
+        <ImageView
+            android:id="@+id/iv_img_3"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_below="@id/iv_img_1"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerCrop"
+            app:layout_widthPercent="60%"
+            android:src="@{list[2].img}"
+            android:onClick="@{onClick}"/>
+        <ImageView
+            android:id="@+id/iv_img_4"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_below="@id/iv_img_3"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerCrop"
+            app:layout_widthPercent="60%"
+            android:src="@{list[3].img}"
+            android:onClick="@{onClick}"/>
+    </android.support.percent.PercentRelativeLayout>
+</layout>

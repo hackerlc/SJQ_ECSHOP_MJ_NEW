@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:id="@+id/shoplist_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_good_distance"
+    android:orientation="vertical">
+    <!-- 标题 -->
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/searcher_new_header_bg"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/shoplist"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/title_textsize"/>
+
+        <ImageView
+            android:id="@+id/view_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="10dp"
+            android:src="@drawable/header_back_arrow"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/shoplist_iv_search"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/shoplist_search"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+        <com.ecjia.widgets.XListView
+            android:id="@+id/shoplist_xlist"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:scrollbars="none"/>
+
+        <LinearLayout
+            android:id="@+id/body_title_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.ecjia.widgets.HorizontalListView
+                    android:id="@+id/body_categorylist"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/body_category_num"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/TextColorGray"
+                    android:textSize="16dp"
+                    android:visibility="gone"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/TextColorGray"/>
+
+                <LinearLayout
+                    android:id="@+id/body_show_more"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/body_show_more_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/search_showchild"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.4dp"
+                android:background="#FFCCCCCC"/>
+        </LinearLayout>
+
+        <include
+            android:id="@+id/null_pager"
+            layout="@layout/null_shop"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone"/>
+    </FrameLayout>
+</LinearLayout>

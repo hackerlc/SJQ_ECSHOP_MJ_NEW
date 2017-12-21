@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/goodsdetail_redpaper_iv"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="40dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_favour_name"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_gravity="top"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/shape_colorf5a415_2rad"
+        android:gravity="center"
+        android:minWidth="18dp"
+        android:paddingRight="4dp"
+        android:layout_marginLeft="15dp"
+        android:paddingLeft="4dp"
+        android:text="活动"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textSize="12dp"/>
+
+    <TextView
+        android:id="@+id/tv_favour_content"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="55dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical|left"
+        android:textColor="@color/new_textColor"
+        android:textSize="12dp"/>
+
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="scanning_unusual">Results abnormal</string>
+    <string name="scanning_exist_unusual">Results abnormal</string>
+    <string name="scanning_finish">Finish</string>
+    <string name="scanning_zxing">Scan QR Code</string>
+    <string name="scanning_back_home">Enter</string>
+    <!--1.4-->
+    <string name="history">history</string>
+    <string name="scanning_notify">Attention</string>
+    <string name="scanning_notify_content">Camera promission limit</string>
+    <string name="scanning_comfirm">Sure</string>
+
+    <string name="scanning_notify_two">Put code in the rect,then to scan</string>
+
+</resources>

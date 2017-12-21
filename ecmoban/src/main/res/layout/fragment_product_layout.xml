@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="#FFFFFF"
+             android:orientation="vertical">
+
+    <com.ecjia.view.activity.goodsdetail.view.ScrollViewWrapper
+        android:id="@+id/gooddetail_sc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        app:wrapper_padding="96">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.ecjia.view.activity.goodsdetail.view.PageOneView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"
+                android:scrollbars="none"
+                app:pageone_padding="96">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.ecjia.view.activity.goodsdetail.view.BottomElasticScrollView
+                        android:id="@+id/page_one_goodsdetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <include
+                                android:id="@+id/pageone_headerview"
+                                layout="@layout/pageone_headerview"/>
+
+                            <include
+                                android:id="@+id/pageone_footerview"
+                                layout="@layout/pageone_footerview"/>
+                        </LinearLayout>
+
+                    </com.ecjia.view.activity.goodsdetail.view.BottomElasticScrollView>
+                </LinearLayout>
+            </com.ecjia.view.activity.goodsdetail.view.PageOneView>
+
+            <com.ecjia.view.activity.goodsdetail.view.PageTwoView
+                android:id="@+id/buttom_scrollview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                app:pageone_padding="96">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <!--标题-->
+                    <include
+                        android:id="@+id/buttom_toolbar"
+                        layout="@layout/gooddetail_toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/top_view_height"/>
+
+
+                    <com.ecjia.view.activity.goodsdetail.view.TopElasticScrollView
+                        android:id="@+id/page_two_errorview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <com.ecjia.widgets.ErrorView
+                                android:id="@+id/not_info"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#ffffff"
+                                android:orientation="vertical"
+                                app:errorImage="@drawable/null_paramer"
+                                app:errorText="@string/no_result">
+
+                            </com.ecjia.widgets.ErrorView>
+                        </LinearLayout>
+                    </com.ecjia.view.activity.goodsdetail.view.TopElasticScrollView>
+
+
+                    <com.ecjia.view.activity.goodsdetail.view.TopElasticScrollView
+                        android:id="@+id/page_two_webview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <com.ecjia.view.activity.goodsdetail.view.FixWebView
+                                android:id="@+id/my_web"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"/>
+                        </LinearLayout>
+                    </com.ecjia.view.activity.goodsdetail.view.TopElasticScrollView>
+
+                    <com.ecjia.view.activity.goodsdetail.view.TopElasticScrollView
+
+                        android:id="@+id/page_two_listview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <com.ecjia.view.activity.goodsdetail.view.MyListView
+                                android:id="@+id/property_list"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:divider="@null"
+                                android:headerDividersEnabled="false"
+                                android:overScrollFooter="#00000000"/>
+
+                        </LinearLayout>
+                    </com.ecjia.view.activity.goodsdetail.view.TopElasticScrollView>
+
+
+                </LinearLayout>
+
+            </com.ecjia.view.activity.goodsdetail.view.PageTwoView>
+        </LinearLayout>
+
+    </com.ecjia.view.activity.goodsdetail.view.ScrollViewWrapper>
+
+
+</FrameLayout>

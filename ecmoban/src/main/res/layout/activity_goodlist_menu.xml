@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="horizontal" >
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:background="#FFcccccc" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/new_good_distance"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/goodlist_screen"
+                android:textSize="@dimen/title_textsize" />
+
+            <TextView
+                android:id="@+id/filter_finish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:padding="5dp"
+                android:textSize="17dp"
+                android:text="@string/goodlistmeun_clear"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FFCCCCCC" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+             >
+
+            <ExpandableListView
+                android:id="@+id/goodlist_filterlist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/new_nothing_bg"
+                android:childDivider="@null"
+                android:childIndicatorLeft="0dp"
+                android:divider="@null"
+                android:footerDividersEnabled="false"
+                android:groupIndicator="@null"
+                android:listSelector="@drawable/selecter_newitem_press"
+                android:overScrollMode="never"
+                 >
+            </ExpandableListView>
+
+            <LinearLayout
+                android:id="@+id/goodlist_null"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/null_filter" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/goodlist_no_screen"
+                    android:textColor="#66666666"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/maybe_youlike"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <View
+            android:id="@+id/youlike_top"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@drawable/new_good_distance"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="你可能喜欢"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_height="45dp" />
+            <ImageView
+                android:id="@+id/youlike_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/search_showchild"/>
+        </LinearLayout>
+        </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="@color/line_long_dark"
+        />
+
+        <LinearLayout
+            android:id="@+id/shopcar_linear"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="#ffffff"
+            android:visibility="gone"
+            android:layout_gravity="center_vertical|right"
+            android:clipChildren="false"
+            android:layerType="software"
+           >
+
+            <android.support.v4.view.ViewPager
+                android:layout_width="100dp"
+                android:layout_height="170dp"
+                android:id="@+id/youlike_viewpager"
+                android:clipChildren="false"
+                android:layout_gravity="right"
+
+                ></android.support.v4.view.ViewPager>
+            <View
+                android:id="@+id/youlike_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/new_good_distance"
+                />
+
+        </LinearLayout>
+
+
+
+
+</LinearLayout>

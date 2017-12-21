@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="swipelistviewstyle">
+        <attr name="right_width" format="dimension"></attr>
+    </declare-styleable>
+
+    <!-- AutoReturnView使用不能删除 -->
+    <declare-styleable name="ar_text_view">
+        <attr name="ar_color" format="string"/>
+        <attr name="ar_size" format="string"/>
+        <attr name="ar_maxLines" format="string"/>
+        <attr name="ar_content" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="CYTextView">
+        <attr name="mytextSize" format="dimension"/>
+        <attr name="mytextColor" format="reference|color"/>
+        <attr name="lineSpacingExtra" format="dimension"/>
+        <attr name="typeface"/>
+    </declare-styleable>
+
+    <attr name="typeface">
+        <enum name="normal" value="0"/>
+        <enum name="sans" value="1"/>
+        <enum name="serif" value="2"/>
+        <enum name="monospace" value="3"/>
+    </attr>
+    <declare-styleable name="SelectableRoundedImageView">
+        <attr name="sriv_left_top_corner_radius" format="dimension"/>
+        <attr name="sriv_right_top_corner_radius" format="dimension"/>
+        <attr name="sriv_left_bottom_corner_radius" format="dimension"/>
+        <attr name="sriv_right_bottom_corner_radius" format="dimension"/>
+        <attr name="sriv_border_width" format="dimension"/>
+        <attr name="sriv_border_color" format="color"/>
+        <attr name="sriv_oval" format="boolean"/>
+        <attr name="android:scaleType"/>
+    </declare-styleable>
+
+    <declare-styleable name="ErrorView">
+        <attr name="errorImage" format="reference"/>
+        <attr name="errorText" format="string|reference"/>
+    </declare-styleable>
+
+    <!--自定义ratingbar-->
+    <declare-styleable name="XlHRatingBar">
+        <attr name="starCount" format="integer"/>
+        <!--总的星星数-->
+        <attr name="canEdit" format="boolean"/>
+        <!--是否可以点击选择，有时候纯展示用不需要选择-->
+        <attr name="widthAndHeight" format="dimension"/>
+        <!--单个星星的宽度-->
+        <attr name="newDividerWidth" format="dimension"/>
+        <!--星星左右间距-->
+        <attr name="countSelected" format="integer"/>
+        <!--当前已选中的星星个数-->
+        <attr name="stateResId" format="reference"/>
+        <!--单个星星不同状态下对应的图标-->
+        <attr name="differentSize" format="boolean"/>
+        <!--是否支持大小不等星星样式-->
+    </declare-styleable>
+
+    <declare-styleable name="IndicatorProgressBar">
+        <!--顶部提示器默认文字颜色，尺寸-->
+        <attr name="topTextColor" format="color"/>
+        <attr name="topTextSize" format="dimension"/>
+        <!--顶部提示器高亮文字颜色，尺寸-->
+        <attr name="topLightTextColor" format="color"/>
+        <attr name="topLightTextSize" format="dimension"/>
+        <!--圆点默认颜色和高亮颜色-->
+        <attr name="pointColor" format="color"/>
+        <attr name="pointLightColor" format="color"/>
+        <!--顶部开始提示器-->
+        <attr name="topStartText" format="string"/>
+        <!--顶部中间提示器-->
+        <attr name="topContentText" format="string"/>
+        <!--顶部末尾提示器-->
+        <attr name="topEndText" format="string"/>
+        <!--底部提示器文字颜色，尺寸-->
+        <attr name="btmTextColor" format="color"/>
+        <attr name="btmTextSize" format="dimension"/>
+        <!--部提示器开始文字,会加到底部第一个提示器文字最后-->
+        <attr name="btmStartText" format="string"/>
+        <attr name="btmEndText" format="string"/>
+        <attr name="btmContentText" format="string"/>
+        <!--底部提示器开始数量-->
+        <attr name="btmStartNum" format="integer"/>
+        <!--底部提示器中间数量-->
+        <attr name="btmContentNum" format="integer"/>
+        <!--底部提示器结束数量-->
+        <attr name="btmEndNum" format="integer"/>
+        <!--当前数量-->
+        <attr name="buyNum" format="integer"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="PriceImageView">
+        <attr name="priceStr" format="string"/>
+        <attr name="priceStrColor" format="color"/>
+        <attr name="priceStrSize" format="dimension"/>
+        <attr name="divColor" format="color"/>
+        <attr name="divWidth" format="dimension"/>
+    </declare-styleable>
+</resources>

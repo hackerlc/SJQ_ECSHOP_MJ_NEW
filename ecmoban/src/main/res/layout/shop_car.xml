@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ddd"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_good_distance"
+    android:orientation="vertical">
+    <!--标题开始-->
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/searcher_new_header_bg"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/shopcar_shopcar"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/title_textsize"/>
+
+        <ImageView
+            android:id="@+id/top_view_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="10dp"
+            android:src="@drawable/header_back_arrow"/>
+
+        <com.ecjia.widgets.imagecircle.CircleImage
+            android:id="@+id/top_view_list"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:src="@drawable/profile_no_avarta_icon"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/shopcar_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:text="@string/collect_compile"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/title_right_textsize"
+            android:visibility="gone"/>
+    </FrameLayout>
+    <!--标题结束-->
+    <!--正文开始-->
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <!--购物车列表开始-->
+
+        <FrameLayout
+            android:id="@+id/shop_car_isnot"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="#00000000"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <com.ecjia.widgets.XListView
+                    android:id="@+id/shop_car_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="60dp"
+                    android:divider="#00000000"></com.ecjia.widgets.XListView>
+
+
+            </LinearLayout>
+
+        </FrameLayout>
+        <!--购物车列表结束-->
+        <!--为空页面开始-->
+        <FrameLayout
+            android:id="@+id/shop_car_null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/null_shoppingcar"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/shopcar_nothing"
+                    android:textColor="#666666"
+                    android:textSize="16dp"/>
+
+                <TextView
+                    android:id="@+id/shopcar_go_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/selector_shopcar2_buttom"
+                    android:gravity="center"
+                    android:minWidth="110dp"
+                    android:text="@string/shopcar_add"
+                    android:textColor="#ffffff"
+                    android:textSize="16dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/shopcar_add"
+                    android:textColor="#999999"
+                    android:textSize="15dp"
+                    android:visibility="gone"/>
+            </LinearLayout>
+        </FrameLayout>
+        <!--为空页面结束-->
+
+        <!--底部开始-->
+        <LinearLayout
+            android:id="@+id/shop_car_buttomitem"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:background="#f2f2f4"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/cart_checkall_item"
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cart_checkall_check"
+                    style="@style/CustomCheckboxshopcarTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center_vertical"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:text="@string/choose_all"
+                android:textSize="14dp"/>
+
+            <LinearLayout
+                android:id="@+id/shop_car_buttomleft"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/shopcar_total"
+                        android:textColor="@color/my_black"
+                        android:textSize="16dp"/>
+
+                    <TextView
+                        android:id="@+id/shop_car_footer_total"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="left"
+                        android:text="￥1000"
+                        android:textColor="@color/my_red"
+                        android:textSize="16dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/shopcar_num"
+                        android:textColor="@color/my_black"
+                        android:textSize="14dp"/>
+
+                    <TextView
+                        android:id="@+id/shop_car_totalno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="left"
+                        android:textSize="14dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/shop_car_buttomright"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical|right"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/shop_car_footer_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/selector_shopcar_buttom"
+                    android:gravity="center"
+                    android:minWidth="100dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/shopcar_payoff"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp"/>
+
+                <LinearLayout
+                    android:id="@+id/shop_car_footer_balance2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="15dp"
+                    android:minWidth="100dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/shop_car_footer_collect"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/selector_new_addtocart"
+                        android:clickable="false"
+                        android:gravity="center"
+                        android:minWidth="100dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="@string/collect"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15dp"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/shop_car_footer_delete"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/selector_shopcar_buttom"
+                        android:clickable="false"
+                        android:gravity="center"
+                        android:minWidth="100dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="@string/collect_delete"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        <!--底部结束-->
+    </FrameLayout>
+    <!--正文结束-->
+</LinearLayout>

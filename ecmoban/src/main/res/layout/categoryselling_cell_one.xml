@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ecjia.view.adapter.adaptercell.CategorySellingCell xmlns:android="http://schemas.android.com/apk/res/android"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:gravity="center"
+                                                        android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/new_nothing_bg"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/good_cell_one"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.6dp"
+                android:background="#FFCCCCCC"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/good_cell_name_one"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                 />
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.6dp"
+                android:background="#FFCCCCCC"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                android:background="@drawable/shape_rectangle_line" >
+
+                <com.ecjia.widgets.webimageview.WebImageView
+                    android:id="@+id/good_cell_photo_one"
+                    android:layout_width="260dp"
+                    android:layout_height="260dp"
+                    android:gravity="center"
+                    android:layout_margin="20dp"
+                    android:padding="1dp"
+                    android:src="@drawable/default_image"
+                     />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.6dp"
+                android:background="#FFCCCCCC"
+                 />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_new_distance"
+                android:background="#FFFFFF" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#eeeeee"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/good_cell_two"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2.5dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.1dp"
+                        android:background="#FFCCCCCC" />
+
+                    <TextView
+                        android:id="@+id/good_cell_name_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="4"
+                        android:minLines="3"
+                        android:textColor="#555555"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/good_cell_price_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ff0000"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <com.ecjia.widgets.webimageview.WebImageView
+                    android:id="@+id/good_cell_photo_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/default_image"
+                     />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#eeeeee" />
+
+            <LinearLayout
+                android:id="@+id/good_cell_three"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2.5dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/good_cell_name_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="4"
+                        android:minLines="3"
+                        android:textColor="#555555"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/good_cell_price_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ff0000"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <com.ecjia.widgets.webimageview.WebImageView
+                    android:id="@+id/good_cell_photo_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/default_image"
+                     />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</com.ecjia.view.adapter.adaptercell.CategorySellingCell>

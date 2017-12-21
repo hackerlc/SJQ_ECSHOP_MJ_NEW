@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/choosecity_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:padding="6dp"
+            android:src="@drawable/choosecity_back"
+            android:visibility="visible"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/choose_city"
+            android:textSize="19dp"/>
+
+        <TextView
+            android:id="@+id/tv_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="@string/location_refresh"
+            android:textSize="15dp"
+            android:visibility="gone"
+            />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_long_dark"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <EditText
+            android:id="@+id/et_city_input"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/shape_localsearch"
+            android:ellipsize="end"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            android:singleLine="true"
+            android:textSize="14dp"/>
+
+        <ImageView
+            android:id="@+id/search_search"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:padding="6dp"
+            android:src="@drawable/searcher_new_search_icon"/>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:scrollbars="none"/>
+
+        <com.ecjia.widgets.MyLetterListView
+            android:id="@+id/MyLetterListView"
+            android:layout_width="35dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</LinearLayout>

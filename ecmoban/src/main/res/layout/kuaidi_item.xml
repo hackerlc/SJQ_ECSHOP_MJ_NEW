@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0.5dp"
+                android:layout_marginBottom="0.5dp">
+
+                <com.ecjia.widgets.DashedLineView
+                    android:visibility="visible"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_width="1dp"
+                    android:layout_marginBottom="12dp"
+                    android:id="@+id/dashedlin_top"
+                    />
+
+
+                <com.ecjia.widgets.DashedLineView
+                    android:id="@+id/dashedlin_bottom"
+                    android:visibility="visible"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_width="1dp"
+                    />
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_centerInParent="true"
+                android:id="@+id/img_status2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/shape_kuaidi_status"
+                android:visibility="visible"/>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/log_text"
+                android:textSize="@dimen/list_item_title"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginRight="15dp"/>
+
+            <LinearLayout
+                android:gravity="bottom"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_weight="2"
+                android:layout_height="25dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textSize="@dimen/list_item_small"
+                    android:id="@+id/log_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/log_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:textSize="@dimen/list_item_small"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="@color/line_long_dark"/>
+</LinearLayout>

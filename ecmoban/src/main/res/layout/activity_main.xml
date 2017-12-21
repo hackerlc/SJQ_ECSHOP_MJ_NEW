@@ -1,0 +1,467 @@
+<com.ecjia.widgets.dragLayout.DragLayout
+    android:id="@+id/dl"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_bg">
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:paddingBottom="30dp"-->
+    <!--android:paddingTop="30dp">-->
+    <!--&lt;!&ndash;头部布局（包括头像、已登录未登录）&ndash;&gt;-->
+    <!--<LinearLayout-->
+    <!--android:id="@+id/profile_head"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginBottom="30dp"-->
+    <!--android:layout_marginLeft="30dp"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<com.ecjia.widgets.imagecircle.CircleImage-->
+    <!--android:id="@+id/profile_newuser_img"-->
+    <!--android:layout_width="70dp"-->
+    <!--android:layout_height="70dp"-->
+    <!--android:adjustViewBounds="true"-->
+    <!--android:src="@drawable/profile_no_avarta_icon"/>-->
+
+    <!--<FrameLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="70dp"-->
+    <!--android:layout_marginLeft="20dp">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/user_name"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:textSize="17dp"/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/no_login"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:text="@string/main_no_login"-->
+    <!--android:textSize="17dp"-->
+    <!--/>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="40dp"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/user_level"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:textSize="@dimen/list_item_title"/>-->
+    <!--</LinearLayout>-->
+    <!--</FrameLayout>-->
+    <!--</LinearLayout>-->
+    <!--&lt;!&ndash;头部结束&ndash;&gt;-->
+    <!--&lt;!&ndash;主页列表开始。。。&ndash;&gt;-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_below="@id/profile_head"-->
+    <!--android:orientation="vertical">-->
+    <!--&lt;!&ndash;准备与底部设置进行划分的布局&ndash;&gt;-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_marginTop="70dp"-->
+    <!--android:layout_weight="9"-->
+    <!--android:orientation="vertical">-->
+
+    <!--&lt;!&ndash;主页开始&ndash;&gt;-->
+    <!--<LinearLayout-->
+    <!--android:id="@+id/profile_myhome"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:background="@drawable/selector_drag_item"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="23dp"-->
+    <!--android:layout_height="23dp"-->
+    <!--android:layout_marginLeft="30dp"-->
+    <!--android:background="@drawable/mainpage_home_icon"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="15dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="@string/main_home"-->
+    <!--android:textColor="#FFFFFF"-->
+    <!--android:textSize="@dimen/list_item_title"/>-->
+    <!--</LinearLayout>-->
+    <!--&lt;!&ndash;主页结束&ndash;&gt;-->
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0.6dp"-->
+    <!--android:layout_marginLeft="30dp"-->
+    <!--android:background="#30E8E8E8"/>-->
+    <!--&lt;!&ndash;可滑动控件开始&ndash;&gt;-->
+    <!--&lt;!&ndash;<com.ecjia.widgets.NewScrollView&ndash;&gt;-->
+
+    <!--<com.ecjia.widgets.NewScrollView-->
+    <!--android:id="@+id/main_sv"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:fadingEdge="none"-->
+    <!--android:overScrollMode="never">-->
+    <!--&lt;!&ndash;可滑动列表开始&ndash;&gt;-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="5dp"/>-->
+    <!--&lt;!&ndash;订单查询开始&ndash;&gt;-->
+    <!--<LinearLayout-->
+    <!--android:id="@+id/profile_checkorder"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:background="@drawable/selector_drag_item"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="23dp"-->
+    <!--android:layout_height="23dp"-->
+    <!--android:layout_marginLeft="30dp"-->
+    <!--android:background="@drawable/mainpage_order_icon"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="15dp"-->
+    <!--android:text="@string/main_check_order"-->
+    <!--android:textColor="#FFFFFF"-->
+    <!--android:textSize="@dimen/list_item_title"/>-->
+    <!--</LinearLayout>-->
+    <!--&lt;!&ndash;订单查询结束&ndash;&gt;-->
+    <!--&lt;!&ndash;我的钱包开始&ndash;&gt;-->
+    <!--<LinearLayout-->
+    <!--android:id="@+id/profile_mypurse"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:background="@drawable/selector_drag_item"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="23dp"-->
+    <!--android:layout_height="23dp"-->
+    <!--android:layout_marginLeft="30dp"-->
+    <!--android:background="@drawable/mainpage_purse_icon"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="15dp"-->
+    <!--android:text="@string/purse_mypurse"-->
+    <!--android:textColor="#FFFFFF"-->
+    <!--android:textSize="@dimen/list_item_title"/>-->
+    <!--</LinearLayout>-->
+    <!--&lt;!&ndash;我的钱包结束&ndash;&gt;-->
+    <!--&lt;!&ndash;我的收藏开始&ndash;&gt;-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/profile_collect"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:background="@drawable/selector_drag_item"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="23dp"-->
+    <!--android:layout_height="23dp"-->
+    <!--android:layout_marginLeft="30dp"-->
+    <!--android:background="@drawable/mainpage_good_icon"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="15dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="@string/collect_myfavorite"-->
+    <!--android:textColor="#FFFFFF"-->
+    <!--android:textSize="@dimen/list_item_title"/>-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/main_collectnum_item"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:layout_marginRight="110dp"-->
+    <!--android:background="@drawable/shape_main_collectnumbg"-->
+    <!--android:minWidth="10dp">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/profile_collect_num"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="5dp"-->
+    <!--android:layout_marginRight="5dp"-->
+    <!--android:gravity="center"-->
+    <!--android:textColor="#FFFFFF"-->
+    <!--android:textSize="12dp"/>-->
+    <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+    <!--&lt;!&ndash;我的收藏结束&ndash;&gt;-->
+    <!--&lt;!&ndash;店铺收藏开始&ndash;&gt;-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/profile_shop_collect"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:background="@drawable/selector_drag_item"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="23dp"-->
+    <!--android:layout_height="23dp"-->
+    <!--android:layout_marginLeft="30dp"-->
+    <!--android:background="@drawable/mainpage_shop_icon"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="15dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="@string/collect_myfavoriteshop"-->
+    <!--android:textColor="#FFFFFF"-->
+    <!--android:textSize="@dimen/list_item_title"/>-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/main_shop_collectnum_item"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:layout_marginRight="110dp"-->
+    <!--android:background="@drawable/shape_main_collectnumbg"-->
+    <!--android:minWidth="10dp"-->
+    <!--android:visibility="gone">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/profile_shop_collect_num"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="5dp"-->
+    <!--android:layout_marginRight="5dp"-->
+    <!--android:gravity="center"-->
+    <!--android:textColor="#FFFFFF"-->
+    <!--android:textSize="12dp"/>-->
+    <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+    <!--&lt;!&ndash;店铺收藏结束&ndash;&gt;-->
+    <!--&lt;!&ndash;收货地址管理开始&ndash;&gt;-->
+    <!--<LinearLayout-->
+    <!--android:id="@+id/profile_address_manage"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:background="@drawable/selector_drag_item"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="23dp"-->
+    <!--android:layout_height="23dp"-->
+    <!--android:layout_marginLeft="30dp"-->
+    <!--android:background="@drawable/mainpage_address_icon"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="15dp"-->
+    <!--android:text="@string/main_address"-->
+    <!--android:textColor="#FFFFFF"-->
+    <!--android:textSize="@dimen/list_item_title"/>-->
+    <!--</LinearLayout>-->
+    <!--&lt;!&ndash;收货地址管理结束&ndash;&gt;-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/profile_xian"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="5dp"/>-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0.6dp"-->
+    <!--android:layout_marginLeft="30dp"-->
+    <!--android:background="#30E8E8E8"/>-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="5dp"/>-->
+    <!--</LinearLayout>-->
+    <!--&lt;!&ndash;修改密码&ndash;&gt;-->
+    <!--<LinearLayout-->
+    <!--android:id="@+id/profile_change_password"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:background="@drawable/selector_drag_item"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="23dp"-->
+    <!--android:layout_height="23dp"-->
+    <!--android:layout_marginLeft="30dp"-->
+    <!--android:background="@drawable/mainpage_password_icon"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="15dp"-->
+    <!--android:text="@string/customer_change_password"-->
+    <!--android:textColor="#FFFFFF"-->
+    <!--android:textSize="@dimen/list_item_title"/>-->
+    <!--</LinearLayout>-->
+    <!--&lt;!&ndash;修改密码&ndash;&gt;-->
+    <!--&lt;!&ndash;帮助中心&ndash;&gt;-->
+    <!--<LinearLayout-->
+    <!--android:id="@+id/profile_information"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:background="@drawable/selector_drag_item"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:visibility="gone">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="23dp"-->
+    <!--android:layout_height="23dp"-->
+    <!--android:layout_marginLeft="30dp"-->
+    <!--android:background="@drawable/mainpage_help_icon"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="15dp"-->
+    <!--android:text="@string/main_help"-->
+    <!--android:textColor="#FFFFFF"-->
+    <!--android:textSize="@dimen/list_item_title"/>-->
+    <!--</LinearLayout>-->
+    <!--&lt;!&ndash;帮助中心&ndash;&gt;-->
+    <!--&lt;!&ndash;发现开始&ndash;&gt;-->
+    <!--<LinearLayout-->
+    <!--android:id="@+id/profile_find"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:background="@drawable/selector_drag_item"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:visibility="gone">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="23dp"-->
+    <!--android:layout_height="23dp"-->
+    <!--android:layout_marginLeft="30dp"-->
+    <!--android:background="@drawable/mainpage_find_icon"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="15dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="@string/find_find"-->
+    <!--android:textColor="#FFFFFF"-->
+    <!--android:textSize="@dimen/list_item_title"/>-->
+    <!--</LinearLayout>-->
+    <!--&lt;!&ndash;发现结束&ndash;&gt;-->
+
+    <!--</LinearLayout>-->
+    <!--&lt;!&ndash;</com.ecjia.widgets.NewScrollView>&ndash;&gt;-->
+    <!--</com.ecjia.widgets.NewScrollView>-->
+
+
+    <!--</LinearLayout>-->
+    <!--&lt;!&ndash;设置开始&ndash;&gt;-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_marginLeft="30dp"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="bottom"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/profile_setting"-->
+    <!--android:layout_width="25dp"-->
+    <!--android:layout_height="25dp"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:background="@drawable/mainpage_set_icon"-->
+    <!--android:padding="5dp"/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/profile_newset"-->
+    <!--android:layout_width="90dp"-->
+    <!--android:layout_height="25dp"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_marginLeft="15dp"-->
+    <!--android:text="@string/setting"-->
+    <!--android:textColor="#ffffff"-->
+    <!--android:textSize="@dimen/list_item_title"/>-->
+    <!--</LinearLayout>-->
+    <!--&lt;!&ndash;设置结束&ndash;&gt;-->
+
+
+    <!--</LinearLayout>-->
+    <!--</RelativeLayout>-->
+
+    <include layout="@layout/layout_main_activity_below"/>
+
+    <com.ecjia.widgets.dragLayout.MyRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eeeeee">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#000000"
+            android:orientation="vertical">
+
+            <fragment
+                android:id="@+id/tabs_fragment"
+                android:name="com.ecjia.view.fragment.TabsFragment"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                tools:layout="@layout/toolbar"/>
+
+            <FrameLayout
+                android:id="@+id/fragment_container"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/tabs_fragment"
+                android:layout_alignParentTop="true"
+                android:background="#ffffff">
+            </FrameLayout>
+
+        </RelativeLayout>
+    </com.ecjia.widgets.dragLayout.MyRelativeLayout>
+
+</com.ecjia.widgets.dragLayout.DragLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:id="@+id/layout_title"
+        style="@style/themehead_title">
+
+        <ImageView
+            android:id="@+id/imageView_back"
+            style="@style/themehead_title_back_white"/>
+        <TextView
+            android:id="@+id/textView_more"
+            style="@style/themehead_title_textmore"
+            tools:text="完成"/>
+        <TextView
+            android:id="@+id/textView_title"
+            style="@style/themehead_title_text"
+            tools:text="标题"/>
+
+    </RelativeLayout>
+</layout>

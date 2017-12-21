@@ -1,0 +1,133 @@
+apply plugin: 'com.android.application'
+apply plugin: 'me.tatarka.retrolambda'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '25.0.0'
+    signingConfigs {
+        release {
+            keyAlias '杭州四季青网络科技有限公司'
+            keyPassword 'sjq654321!@#'
+            storeFile file('../key/sjq.keystore')
+            storePassword 'sjq654321!@#'
+        }
+    }
+    defaultConfig {
+        applicationId "cn.sjq.city"
+        minSdkVersion 15
+        targetSdkVersion 23
+//        versionCode 201
+//        versionName "2.0.1"
+        versionCode 202
+        versionName "2.0.2"
+        multiDexEnabled true
+    }
+
+    dataBinding {
+        enabled true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            //移除无用的资源文件
+            shrinkResources false
+            signingConfig signingConfigs.release
+        }
+        debug {
+            signingConfig signingConfigs.release
+        }
+    }
+
+    productFlavors {
+    }
+
+    //在生成的apk文件，修改下命名而已
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def oldFile = output.outputFile
+            if (variant.buildType.name.equals('release')) {
+                output.outputFile = new File(oldFile.parent, oldFile.name.replace("ecmoban", "cs_sijiqing").replace(".apk", "-v" + defaultConfig.versionName + "-" + defaultConfig.versionCode + ".apk"))
+            }
+        }
+    }
+
+    dexOptions {
+        incremental true
+        javaMaxHeapSize "4g"
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+
+    useLibrary 'org.apache.http.legacy'
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    lintOptions {
+        checkReleaseBuilds false
+    }
+}
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.jakewharton:butterknife-gradle-plugin:8.4.0'
+    }
+}
+
+dependencies {
+    compile project(':slidinglibrary')
+    compile project(':captureActivity')
+    compile project(':imglibrary')
+    compile project(':wheel')
+    compile project(':easeui')
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile 'com.android.support:design:23.3.0'
+    compile 'com.android.support:percent:22.2.0'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile 'se.emilsjolander:stickylistheaders:2.7.0'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    //http
+    compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    compile 'com.squareup.okhttp3:okhttp-urlconnection:3.2.0'
+    compile 'com.squareup.retrofit2:converter-scalars:2.1.0'
+    //butterknife
+    compile 'com.jakewharton:butterknife:8.4.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+    //    RxJava rxlifecycle
+    compile 'com.trello.rxlifecycle2:rxlifecycle:2.0.1'
+    compile 'com.trello.rxlifecycle2:rxlifecycle-android:2.0.1'
+    compile 'com.trello.rxlifecycle2:rxlifecycle-components:2.0.1'
+    //网络框架gearLibrary
+    compile project(':gearlibrary')
+    //自动生成相关类框架
+    compile project(':gearapifinder-annotation')
+    annotationProcessor project(':gearapifinder-compiler')
+    //6.0权限管理
+    compile 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.3@aar'
+    //图片选择框架
+    compile 'cn.finalteam:galleryfinal:1.4.8.7'
+    //配置JSON解析
+    compile 'com.alibaba:fastjson:1.2.6'
+    //下拉刷新
+    compile 'in.srain.cube:ultra-ptr:1.0.11'
+    compile project(':PushSDK')
+    compile files('libs/com.umeng.message_3.1.0.jar')
+    //activity快速跳转 传值注解
+    compile 'com.github.yubaokang.IntentInject:intentinject-api:1.0.2'
+    annotationProcessor 'com.github.yubaokang.IntentInject:intentinject-compiler:1.0.2'
+    compile files('libs/BaiduLBS_Android.jar')
+}

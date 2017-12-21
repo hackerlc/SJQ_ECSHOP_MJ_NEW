@@ -1,0 +1,133 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ffffff"
+              android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+
+        <LinearLayout
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/bonus_amount_left"
+                    android:gravity="bottom"
+                    android:textSize="22dp"
+                    android:textColor="#ff0000"
+                    android:text="100"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+
+
+                <TextView
+                    android:paddingBottom="2dp"
+                    android:id="@+id/bonus_amount_right"
+                    android:gravity="bottom"
+                    android:textSize="15dp"
+                    android:textColor="#ff0000"
+                    android:text=".00元"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textSize="15dp"
+                    android:textColor="#000000"
+                    android:text="@string/order_over"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:id="@+id/request_amount"
+                    android:textSize="15dp"
+                    android:textColor="#000000"
+                    android:text="100.00"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:textSize="15dp"
+                    android:textColor="#000000"
+                    android:gravity="center_vertical"
+                    android:text="@string/no_free_shippingfee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textSize="13dp"
+                    android:textColor="#999999"
+                    android:gravity="top"
+                    android:text="@string/used_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:id="@+id/activity_time"
+                    android:textSize="13dp"
+                    android:textColor="#999999"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/receiver_sure"
+            android:textSize="16dp"
+            android:textColor="#ff0000"
+            android:gravity="center"
+            android:text="@string/receive_redpaper"
+            android:background="@drawable/selector_public_red_stroke_white_bg_corner"
+            android:layout_marginRight="15dp"
+            android:layout_width="70dp"
+            android:layout_height="30dp"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/middle_line"
+        android:visibility="gone"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_long_dark"/>
+
+    <View
+        android:id="@+id/bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_long_dark"/>
+</LinearLayout>

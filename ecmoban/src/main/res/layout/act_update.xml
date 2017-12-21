@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ffffff"
+              android:orientation="vertical">
+
+
+    <com.ecjia.widgets.ECJiaTopView
+        android:id="@+id/update_topview"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+    </com.ecjia.widgets.ECJiaTopView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ecmoban_logo"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/update_this_version"
+                        android:textSize="12dp"/>
+
+                    <TextView
+                        android:id="@+id/old_version"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:textSize="12dp"/>
+
+                    <TextView
+                        android:id="@+id/new_version"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/my_red"
+                        android:textSize="12dp"/>
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="100dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="bottom">
+
+                    <FrameLayout
+                        android:id="@+id/progress_ll"
+                        android:layout_width="100dp"
+                        android:layout_height="28dp"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ProgressBar
+                            android:id="@+id/progress_bar"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="100dp"
+                            android:layout_height="28dp"
+                            android:layout_gravity="center"
+                            android:max="100"
+                            android:progress="0"
+                            android:progressDrawable="@drawable/progress_color"/>
+
+                        <TextView
+                            android:id="@+id/progress_tex"
+                            android:layout_width="100dp"
+                            android:layout_height="28dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textSize="12dp"
+                            android:visibility="gone"/>
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/update_ok"
+                        android:layout_width="100dp"
+                        android:layout_height="28dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/shape_public_bg"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="@string/update_re_check"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12dp"/>
+                </FrameLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="15dp"
+            android:background="@color/line_long_dark"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/new_version_fearture"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="@string/update_version_feature"
+                    android:textSize="15dp"
+                    android:visibility="invisible"/>
+
+                <TextView
+                    android:id="@+id/updeta_log"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text=""
+                    android:textSize="14dp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/update_allrealy_new"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="@string/update_now_is_newest"
+                    android:visibility="gone"/>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_install"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/shape_gray_stroke_white_bg_corner"
+                android:focusable="true"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="安装"
+                android:textColor="#666666"
+                android:visibility="gone"/>
+
+
+            <Button
+                android:id="@+id/btn_delete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/shape_white_stroke_corner_press"
+                android:focusable="true"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="清除安装包"
+                android:textColor="#666666"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

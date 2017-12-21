@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             android:background="@drawable/new_good_distance"
+             >
+
+    <com.ecjia.widgets.ECJiaTopView
+        android:id="@+id/invitation_topview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.ecjia.widgets.ECJiaTopView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="45dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:textColor="@color/filter_text_color"
+                        android:text="@string/invitation_reward_points"
+                        android:gravity="center"
+                        android:layout_marginTop="15dp"
+                        />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center_horizontal"
+                        >
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/tv_points_reward"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:text="0"
+                                android:textSize="60dp"
+                                android:textStyle="bold"
+                                android:textColor="#04B72A"
+                                />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="10dp"
+                                android:layout_alignRight="@+id/tv_points_reward"
+                                android:layout_below="@+id/tv_points_reward"
+                                android:background="@drawable/icon_reward_bottom"
+                                />
+
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/iv_points_reward"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="15dp"
+                            android:tint="#04B72A"
+                            android:src="@drawable/icon_reward_tips"
+                            />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:background="@color/line_long_dark"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:textColor="@color/filter_text_color"
+                        android:text="@string/invitation_reward_redpacket"
+                        android:gravity="center"
+                        android:layout_marginTop="15dp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center_horizontal"
+                        >
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/tv_redpacket_reward"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:text="0"
+                                android:textSize="60dp"
+                                android:textStyle="bold"
+                                android:textColor="#00ABF3"
+                                />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="10dp"
+                                android:layout_alignRight="@+id/tv_redpacket_reward"
+                                android:layout_below="@+id/tv_redpacket_reward"
+                                android:background="@drawable/icon_reward_bottom"
+                                />
+
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/iv_redpacket_reward"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="15dp"
+                            android:tint="#00ABF3"
+                            android:src="@drawable/icon_reward_tips"
+                            />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:background="@color/line_long_dark"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:textColor="@color/filter_text_color"
+                        android:text="@string/invitation_reward_cash"
+                        android:gravity="center"
+                        android:layout_marginTop="15dp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center_horizontal"
+                        >
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/tv_cash_reward"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:text="0"
+                                android:textSize="60dp"
+                                android:textStyle="bold"
+                                android:textColor="#FF5D20"
+                                />
+
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="10dp"
+                                android:layout_alignRight="@+id/tv_cash_reward"
+                                android:layout_below="@+id/tv_cash_reward"
+                                android:background="@drawable/icon_reward_bottom"
+                                />
+
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/iv_cash_reward"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="15dp"
+                            android:tint="#FF5D20"
+                            android:src="@drawable/icon_reward_tips"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:background="@color/line_long_dark"
+                    />
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_gravity="bottom"
+            >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="@color/line_long_dark"
+                />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="horizontal"
+
+            >
+
+            <FrameLayout
+                android:id="@+id/fl_invitation_detail"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    >
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/icon_invitation_detail"
+                        android:tint="@color/public_theme_color_normal"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/invitation_reward_detail"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:textColor="@color/new_textColor"
+                        />
+
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="0.6dp"
+                android:layout_height="match_parent"
+                android:background="@color/line_long_dark"
+                />
+
+            <FrameLayout
+                android:id="@+id/fl_get_reward"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    >
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/icon_get_reward"
+                        android:tint="@color/public_theme_color_normal"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/invitation_get_reward"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:textColor="@color/new_textColor"
+                        />
+
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+        </LinearLayout>
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+</LinearLayout>

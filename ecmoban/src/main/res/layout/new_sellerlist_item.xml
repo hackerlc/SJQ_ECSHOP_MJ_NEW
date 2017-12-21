@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="data"
+            type="com.ecjia.entity.model.ShopInfo"/>
+    </data>
+<LinearLayout
+    android:id="@+id/shoplist_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_shop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+        <ImageView
+            android:id="@+id/seller_banner"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:scaleType="centerCrop"
+            android:src="@{data.shop_logo}"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+        <TextView
+            android:id="@+id/iv_market"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="12dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:background="@drawable/shape_main_bottom_item_t_b"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:text="@{data.shop_name}"
+            tools:text="四季青老市场"/>
+        <TextView
+            android:id="@+id/tv_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@{data.cat_name}"
+            android:textColor="@android:color/white"
+            android:maxLines="1"/>
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tv_des"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="2dp"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:text=""
+            android:visibility="gone"
+            tools:text="四季青官方旗舰店"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:paddingLeft="22dp"
+            android:paddingRight="22dp"
+            android:layout_below="@id/tv_des"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape_main_bottom_item_tb_b"
+            android:layout_marginTop="6dp"
+            android:textColor="@android:color/white"
+            android:visibility="gone"
+            android:text="进入店铺"/>
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:src="@drawable/bg_inverted_triangle"/>-->
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_goods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/item_main_goods"/>
+
+    <View
+        android:id="@+id/bottom_div"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/new_good_distance"
+        android:visibility="visible"/>
+
+</LinearLayout>
+</layout>

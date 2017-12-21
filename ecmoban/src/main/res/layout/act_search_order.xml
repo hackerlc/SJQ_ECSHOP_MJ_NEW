@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/fl_search_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffdddddd"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.85">
+
+                <EditText
+                    android:id="@+id/et_search_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/shape_search_edit_bg"
+                    android:gravity="center_vertical"
+                    android:hint="@string/search_order"
+                    android:imeOptions="actionSearch"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textColorHint="#aaaaaa"
+                    android:textSize="@dimen/list_item_small"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/searcher_new_search_icon"/>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_search_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.18"
+                android:gravity="center_vertical|right"
+                android:text="@string/dialog_cancel"
+                android:textColor="#000000"
+                android:textSize="@dimen/title_right_textsize"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/order_search_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#a0000000"/>
+
+        <com.ecjia.widgets.ErrorView
+            android:id="@+id/null_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:visibility="gone"
+            app:errorImage="@drawable/null_order"
+            app:errorText="@string/no_result">
+
+        </com.ecjia.widgets.ErrorView>
+
+        <com.ecjia.widgets.XListView
+            android:id="@+id/order_search_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:divider="@null"
+            android:scrollbars="vertical">
+
+        </com.ecjia.widgets.XListView>
+
+    </FrameLayout>
+
+</LinearLayout>

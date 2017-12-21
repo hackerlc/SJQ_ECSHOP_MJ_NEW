@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="scanning_unusual">扫描异常</string>
+    <string name="scanning_exist_unusual">扫描的结果存在异常</string>
+    <string name="scanning_finish">完成</string>
+    <string name="scanning_zxing">二维码扫描</string>
+    <!--1.4-->
+    <string name="history">扫码记录</string>
+
+    <string name="scanning_back_home">回到程序</string>
+
+    <string name="scanning_notify">提示</string>
+    <string name="scanning_notify_content">请开启摄像头权限</string>
+    <string name="scanning_comfirm">确定</string>
+    <string name="scanning_notify_two">将二维码／条形码放入框内，即可自动扫描</string>
+
+
+</resources>

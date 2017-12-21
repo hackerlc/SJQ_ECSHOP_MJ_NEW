@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="#f3f3f3"
+             android:gravity="center"
+             android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/found_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/found_item_image"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/found_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:textColor="#333333"
+            android:textSize="15dp"/>
+
+        <ImageView
+            android:id="@+id/found_item_add"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="#ffffff"
+            android:scaleType="centerInside"
+            android:src="@drawable/found_add"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/found_item_rightline"
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="@color/line_long_dark"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_gravity="bottom"
+        android:background="@color/line_long_dark"/>
+</FrameLayout>

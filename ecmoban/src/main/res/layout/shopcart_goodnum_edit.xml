@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_goodnum_edit"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/shopcar_modification_num"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="#FFCCCCCC" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#FFFFFF"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/shop_goods_edit"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:enabled="true"
+                android:gravity="center"
+                android:numeric="integer"
+                android:singleLine="true"
+                android:maxLength="5"
+                android:text="0"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="#FFCCCCCC" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/shop_goods_cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/dialog_cancel"
+                    android:textSize="@dimen/list_item_mid"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/selector_editdialog_cancelbotton"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/shop_goods_ok"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/dialog_ensure"
+                    android:textSize="@dimen/list_item_mid"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/selector_editdialog_surebotton"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

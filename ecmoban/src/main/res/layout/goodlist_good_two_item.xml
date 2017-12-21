@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ecjia.widgets.TwoGoodItemCell
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="#ffffff"
+    android:orientation="horizontal">
+
+    <include
+        android:id="@+id/good_item_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        layout="@layout/goodlist_good_two"
+       />
+    <include
+        android:id="@+id/good_item_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        layout="@layout/goodlist_good_two"
+       />
+
+</com.ecjia.widgets.TwoGoodItemCell>

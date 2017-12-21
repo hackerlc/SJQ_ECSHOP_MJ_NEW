@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.ecjia.widgets.ECJiaTopView
+        android:id="@+id/goodslist_navbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"/>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/viewPager_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <com.ecjia.widgets.GoodsViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:visibility="visible">
+            </com.ecjia.widgets.GoodsViewPager>
+
+            <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px1"
+            android:background="@color/_333333"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px95"
+                android:layout_gravity="bottom"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="@dimen/px100"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/collection_button"
+                        android:layout_width="@dimen/px40"
+                        android:layout_height="@dimen/px40"
+                        android:src="@drawable/item_info_collection_disabled_btn"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="收藏"
+                              android:textColor="@color/TextColorGray"
+                              android:textSize="@dimen/texte_size_10"/>
+                </LinearLayout>
+
+                <View android:layout_width="@dimen/px1"
+                      android:layout_height="match_parent"
+                      android:layout_marginBottom="@dimen/px10"
+                      android:layout_marginTop="@dimen/px10"
+                      android:background="@color/line_e6"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_send_messg"
+                    android:layout_width="@dimen/px100"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/messg_button"
+                        android:layout_width="@dimen/px40"
+                        android:layout_height="@dimen/px40"
+                        android:src="@drawable/ic_send_message"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="询单"
+                        android:textColor="@color/TextColorGray"
+                        android:textSize="@dimen/texte_size_10"/>
+                </LinearLayout>
+
+                <View android:layout_width="@dimen/px1"
+                      android:layout_height="match_parent"
+                      android:layout_marginBottom="@dimen/px10"
+                      android:layout_marginTop="@dimen/px10"
+                      android:background="@color/line_e6"/>
+
+                <FrameLayout
+                    android:layout_width="@dimen/px100"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:id="@+id/good_detail_shopping_cart"
+                            android:layout_width="@dimen/px40"
+                            android:layout_height="@dimen/px40"
+                            android:layout_gravity="center"
+                            android:src="@drawable/new_shopping_cart_icon"/>
+                        <TextView android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:text="购物车"
+                                  android:textColor="@color/TextColorGray"
+                                  android:textSize="@dimen/texte_size_10"/>
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:id="@+id/shopping_cart_num_bg_one"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/shape_main_collectnumbg"
+                            android:gravity="center"
+                            android:minWidth="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/shopping_cart_num"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginRight="4dp"
+                                android:gravity="center"
+                                android:text="0"
+                                android:textColor="#ffffff"
+                                android:textSize="10dp"/>
+                        </LinearLayout>
+
+                    </FrameLayout>
+                </FrameLayout>
+                <View android:layout_width="@dimen/px1"
+                      android:layout_height="match_parent"
+                      android:background="@color/text_color_33"/>
+                <TextView
+                    android:id="@+id/add_to_cart"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text="@string/gooddetail_shoppingcart"
+                    android:textColor="@color/text_color_33"
+                    android:textSize="16dp"/>
+                <View android:layout_width="@dimen/px1"
+                      android:layout_height="match_parent"
+                      android:background="@color/text_color_33"/>
+                <TextView
+                    android:id="@+id/buy_now"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@color/title_bgcolor"
+                    android:gravity="center"
+                    android:text="@string/gooddetail_buy"
+                    android:textColor="#ffffff"
+                    android:textSize="16dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.ecjia.widgets.ErrorView
+            android:id="@+id/no_goods_undercarriage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            app:errorImage="@drawable/null_goods"
+            app:errorText="@string/no_result">
+        </com.ecjia.widgets.ErrorView>
+
+    </FrameLayout>
+
+
+</LinearLayout>

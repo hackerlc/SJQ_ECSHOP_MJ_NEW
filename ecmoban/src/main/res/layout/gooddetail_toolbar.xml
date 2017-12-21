@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="#FFFFFF"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/tabOne_item"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tabone_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="#00000000"
+            android:clickable="false"
+            android:editable="false"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="@string/detail_goodsdetail"
+            android:textColor="@color/filter_text_color"
+            android:textSize="14dp"/>
+
+        <View
+            android:id="@+id/line_one"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="3dp"
+            android:background="@color/my_red"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="12dp"
+        android:background="#CCCCCC"/>
+
+    <RelativeLayout
+        android:id="@+id/tabTwo_item"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tabtwo_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="#00000000"
+            android:clickable="false"
+            android:editable="false"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="@string/detail_goodsparamas"
+            android:textColor="@color/filter_text_color"
+            android:textSize="14dp"/>
+
+        <View
+            android:id="@+id/line_two"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="3dp"
+            android:background="@color/my_red"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/new_good_distance"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/comment_list_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="vertical"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_long_dark"/>
+
+    <FrameLayout
+        android:background="@color/white"
+        android:id="@+id/comment_list_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+    <com.ecjia.view.activity.goodsdetail.view.CommentViewPager
+        android:id="@+id/comment_list_vierpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+    </com.ecjia.view.activity.goodsdetail.view.CommentViewPager>
+
+    <ListView
+        android:id="@+id/comment_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/new_nothing_bg"
+        android:divider="@null"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:visibility="gone">
+    </ListView>
+
+    <FrameLayout
+        android:id="@+id/no_comment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/null_comments"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:text="@string/comment_no_comment"
+            android:textColor="#999999"
+            android:textSize="14dp"/>
+
+
+    </FrameLayout>
+</LinearLayout>

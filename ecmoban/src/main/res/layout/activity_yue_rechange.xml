@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/new_good_distance"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        layout="@layout/top_view" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/new_textColor"
+            android:text="@string/yue_user"
+            android:textSize="@dimen/list_item_title" />
+
+        <TextView
+            android:id="@+id/yue_username"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/new_textColor"
+            android:textSize="@dimen/list_item_title" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.6dp"
+        android:background="@color/line_long_dark" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/new_nothing_bg"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/yue_money"
+            android:textColor="@color/new_textColor"
+            android:textSize="@dimen/list_item_title" />
+
+        <EditText
+            android:id="@+id/yue_money"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#ffffff"
+            android:hint="@string/yue_inputhint"
+            android:textColorHint="#cccccc"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/list_item_title"
+            android:inputType="numberDecimal"
+            android:maxLength="10"
+            android:textColor="@color/new_textColor"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.6dp"
+        android:background="@color/line_long_dark" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_new_distance"
+        android:background="@drawable/new_good_distance" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.6dp"
+        android:background="@color/line_long_dark" />
+
+    <LinearLayout
+        android:id="@+id/yue_choosetype"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/selecter_newitem_press"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/yue_choosedtype"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:textSize="17dp"
+            />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/yue_showlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/search_showchild" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.6dp"
+        android:background="@color/line_long_dark" />
+
+    <ListView
+        android:id="@+id/yue_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/new_nothing_bg"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_new_distance"
+        android:background="@drawable/new_good_distance" />
+
+    <Button
+        android:id="@+id/rechange_ok"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/selector_login_button"
+        android:minWidth="100dp"
+        android:text="@string/yue_ok"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/title_textsize" />
+</LinearLayout>
